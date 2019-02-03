@@ -1,0 +1,68 @@
+{
+  "author": {
+    "email": "will.soto9+github@gmail.com",
+    "name": "Will Soto",
+    "url": "https://github.com/willsoto"
+  },
+  "description": "Objection module for NestJS",
+  "devDependencies": {
+    "@babel/core": "7.2.2",
+    "@babel/preset-env": "7.3.1",
+    "@babel/preset-typescript": "7.1.0",
+    "@nestjs/common": "5.6.2",
+    "@nestjs/core": "5.6.2",
+    "@nestjs/testing": "5.6.2",
+    "@types/jest": "23.3.13",
+    "@typescript-eslint/eslint-plugin": "1.2.0",
+    "@willsoto/eslint-config-base": "1.4.2",
+    "babel-jest": "24.0.0",
+    "eslint": "5.13.0",
+    "eslint-config-prettier": "4.0.0",
+    "husky": "1.3.1",
+    "jest": "24.0.0",
+    "knex": "0.16.3",
+    "lint-staged": "8.1.3",
+    "objection": "1.5.3",
+    "prettier": "1.16.4",
+    "reflect-metadata": "0.1.13",
+    "rimraf": "2.6.3",
+    "rollup": "1.1.2",
+    "rollup-plugin-eslint": "5.0.0",
+    "rollup-plugin-filesize": "6.0.1",
+    "rollup-plugin-typescript": "1.0.0",
+    "sqlite3": "4.0.6",
+    "typescript": "3.3.1"
+  },
+  "keywords": [
+    "nestjs",
+    "objection",
+    "knex",
+    "database"
+  ],
+  "license": "Apache-2.0",
+  "lint-staged": {
+    "*.ts": [
+      "yarn lint",
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "main": "src/index.ts",
+  "name": "@willsoto/nestjs-objection",
+  "peerDependencies": {
+    "@nestjs/common": ">=5.4.0",
+    "@nestjs/core": ">=5.4.0",
+    "knex": ">=0.16.0",
+    "objection": ">=1.4.0"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "yarn lint && yarn clean",
+    "build": "rollup --config rollup.config.js && yarn typings",
+    "lint": "eslint lib --ext ts --fix",
+    "pretypings": "rimraf typings",
+    "typings": "tsc --project tsconfig.json --declaration --declarationDir typings --emitDeclarationOnly",
+    "test": "jest"
+  },
+  "version": "0.2.1"
+}
