@@ -1,10 +1,11 @@
+import { eslint } from "rollup-plugin-eslint";
 import filesize from "rollup-plugin-filesize";
 import typescript from "rollup-plugin-typescript";
-import { eslint } from "rollup-plugin-eslint";
 import pkg from "./package.json";
 
 const formats = ["umd", "esm", "cjs"];
 const globals = {
+  "@nestjs/common": "nestjsCommon",
   knex: "Knex",
   objection: "Objection"
 };
