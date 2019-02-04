@@ -1,11 +1,11 @@
 workflow "CI" {
   on       = "push"
-  resolves = ["Unit Tests", "Build", "Typings"]
+  resolves = ["Unit Tests", "Build"]
 }
 
 workflow "PR" {
   on       = "pull_request"
-  resolves = ["Unit Tests", "Build", "Typings"]
+  resolves = ["Unit Tests", "Build"]
 }
 
 workflow "Publish New Releases" {
@@ -33,16 +33,9 @@ action "Build" {
   args  = "build"
 }
 
-action "Typings" {
-  uses  = "actions/npm@3c8332795d5443adc712d30fa147db61fd520b5a"
-  needs = ["Install"]
-  runs  = "yarn"
-  args  = "typings"
-}
-
 action "Publish" {
   uses    = "actions/npm@3c8332795d5443adc712d30fa147db61fd520b5a"
-  needs   = ["Unit Tests", "Build", "Typings"]
+  needs   = ["Unit Tests", "Build"]
   args    = "publish --access public"
   secrets = ["NPM_AUTH_TOKEN"]
 }
