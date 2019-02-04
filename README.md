@@ -2,6 +2,12 @@
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/willsoto/nestjs-objection.svg)](https://greenkeeper.io/)
 
+## Table of Contents
+
+- [Installation](#installation)
+- [Examples](#examples)
+- [Configuration](#configuration)
+
 ## Installation
 
 ```bash
