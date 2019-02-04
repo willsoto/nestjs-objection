@@ -1,4 +1,4 @@
-# Nest JS Objection
+# NestJS Objection
 
 ## Installation
 
@@ -6,7 +6,11 @@
 yarn add @willsoto/nestjs-objection
 ```
 
-_Note that Knex and Objection are `peerDependencies` to make version management easier_
+_Note that Knex and Objection are `peerDependencies` to make version management easier, so those must be installed separately_
+
+```bash
+yarn add knex objection
+```
 
 ## Getting Started
 
