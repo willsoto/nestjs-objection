@@ -61,6 +61,10 @@
       "yarn lint",
       "prettier --write",
       "git add"
+    ],
+    "*.md": [
+      "prettier --write",
+      "git add"
     ]
   },
   "main": "src/index.ts",
