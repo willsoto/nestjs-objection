@@ -41,7 +41,7 @@ action "Typings" {
 }
 
 action "Tag" {
-  needs = ["CI"]
+  needs = ["Unit Tests", "Build", "Typings"]
   uses  = "actions/bin/filter@master"
   args  = "tag"
 }
