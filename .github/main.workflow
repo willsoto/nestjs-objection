@@ -9,7 +9,7 @@ workflow "PR" {
 }
 
 workflow "Publish New Releases" {
-  on       = "push"
+  on       = "release"
   resolves = ["Publish"]
 }
 
@@ -40,15 +40,9 @@ action "Typings" {
   args  = "typings"
 }
 
-action "Tag" {
-  needs = ["Unit Tests", "Build", "Typings"]
-  uses  = "actions/bin/filter@master"
-  args  = "tag"
-}
-
 action "Publish" {
-  needs   = ["Tag"]
   uses    = "actions/npm@3c8332795d5443adc712d30fa147db61fd520b5a"
+  needs   = ["Unit Tests", "Build", "Typings"]
   args    = "publish --access public"
   secrets = ["NPM_AUTH_TOKEN"]
 }
