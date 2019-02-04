@@ -1,5 +1,7 @@
 # NestJS Objection
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/willsoto/nestjs-objection.svg)](https://greenkeeper.io/)
+
 ## Installation
 
 ```bash
