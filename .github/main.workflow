@@ -8,6 +8,11 @@ workflow "PR" {
   resolves = ["Unit Tests", "Build", "Typings"]
 }
 
+workflow "Publish New Releases" {
+  on       = "push"
+  resolves = ["Publish"]
+}
+
 action "Install" {
   uses = "actions/npm@3c8332795d5443adc712d30fa147db61fd520b5a"
   runs = "yarn"
@@ -33,4 +38,17 @@ action "Typings" {
   needs = ["Install"]
   runs  = "yarn"
   args  = "typings"
+}
+
+action "Tag" {
+  needs = ["CI"]
+  uses  = "actions/bin/filter@master"
+  args  = "tag"
+}
+
+action "Publish" {
+  needs   = ["Tag"]
+  uses    = "actions/npm@3c8332795d5443adc712d30fa147db61fd520b5a"
+  args    = "publish --access public"
+  secrets = ["NPM_AUTH_TOKEN"]
 }
