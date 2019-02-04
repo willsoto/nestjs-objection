@@ -34,8 +34,11 @@ import { BaseModel } from "./base";
       // https://vincit.github.io/objection.js/#models
       Model: BaseModel,
       config: {
-        ...config.get<knex.Config>("database"),
-        ...knexSnakeCaseMappers()
+        client: "sqlite3",
+        useNullAsDefault: true,
+        connection: {
+          filename: "./example.sqlite"
+        }
       }
     })
   ],
