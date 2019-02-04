@@ -14,9 +14,9 @@ _Note that Knex and Objection are `peerDependencies` to make version management 
 yarn add knex objection
 ```
 
-## Getting Started
+## Examples
 
-### forRoot
+### `ObjectionModule.forRoot`
 
 ```typescript
 import { ObjectionModule } from "@willsoto/nestjs-objection";
@@ -47,7 +47,7 @@ import { BaseModel } from "./base";
 export class DatabaseModule {}
 ```
 
-### forRootAsync
+### `ObjectionModule.forRootAsync`
 
 ```typescript
 import { ObjectionModule } from "@willsoto/nestjs-objection";
@@ -80,3 +80,10 @@ import { BaseModel } from "./base";
 })
 export class DatabaseModule {}
 ```
+
+## Configuration
+
+| Name     | Type     | Required | Default             |
+| -------- | -------- | -------- | ------------------- |
+| `Model`  | `Object` | `false`  | `objection.Model`   |
+| `config` | `Object` | `false`  | Knex default config |
