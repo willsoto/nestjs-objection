@@ -1,4 +1,3 @@
-export const OBJECTION_MODULE_OPTIONS_PROVIDER =
-  "ObjectionModuleOptionsProvider";
-export const OBJECTION_BASE_MODEL_PROVIDER = "ObjectionBaseModelProvider";
-export const KNEX_CONNECTION_PROVIDER = "KnexConnectionProvider";
+export const OBJECTION_MODULE_OPTIONS = "ObjectionModuleOptions";
+export const OBJECTION_BASE_MODEL = "ObjectionBaseModel";
+export const KNEX_CONNECTION = "KnexConnection";

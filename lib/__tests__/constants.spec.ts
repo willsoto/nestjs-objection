@@ -1,6 +1,6 @@
 import * as constants from "../constants";
 
-describe("NestJS Objection constants", () => {
+describe("Constants", () => {
   test("has 3", () => {
     const expected = 3;
 
