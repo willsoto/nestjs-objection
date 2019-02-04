@@ -1,12 +1,13 @@
 {
   "author": {
-    "email": "will.soto9+github@gmail.com",
+    "email": "willsoto@users.noreply.github.com",
     "name": "Will Soto",
     "url": "https://github.com/willsoto"
   },
   "description": "Objection module for NestJS",
   "devDependencies": {
     "@babel/core": "7.2.2",
+    "@babel/plugin-proposal-decorators": "7.3.0",
     "@babel/preset-env": "7.3.1",
     "@babel/preset-typescript": "7.1.0",
     "@commitlint/cli": "7.5.0",
@@ -72,5 +73,6 @@
     "typings": "tsc --project tsconfig.json --declaration --declarationDir typings --emitDeclarationOnly",
     "test": "jest"
   },
+  "typings": "./typings/index.d.ts",
   "version": "0.2.1"
 }

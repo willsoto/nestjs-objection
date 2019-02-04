@@ -1,9 +1,9 @@
 import { Test, TestingModule } from "@nestjs/testing";
 import knex from "knex";
 import { Model } from "objection";
-import { ObjectionCoreModule } from "../module";
+import { ObjectionModule } from "../module";
 
-describe("ObjectionCoreModule", () => {
+describe("ObjectionModule", () => {
   let testingModule: TestingModule;
   const config: knex.Config = {
     client: "sqlite3",
@@ -17,7 +17,7 @@ describe("ObjectionCoreModule", () => {
     beforeEach(async () => {
       testingModule = await Test.createTestingModule({
         imports: [
-          ObjectionCoreModule.forRoot({
+          ObjectionModule.forRoot({
             config
           })
         ]
@@ -41,7 +41,7 @@ describe("ObjectionCoreModule", () => {
     beforeEach(async () => {
       testingModule = await Test.createTestingModule({
         imports: [
-          ObjectionCoreModule.forRootAsync({
+          ObjectionModule.forRootAsync({
             useFactory() {
               return {
                 config
