@@ -1,5 +1,10 @@
 workflow "CI" {
-  on = "push"
+  on       = "push"
+  resolves = ["Unit Tests", "Build", "Typings"]
+}
+
+workflow "PR" {
+  on       = "pull_request"
   resolves = ["Unit Tests", "Build", "Typings"]
 }
 
@@ -10,22 +15,22 @@ action "Install" {
 }
 
 action "Unit Tests" {
-  uses = "actions/npm@3c8332795d5443adc712d30fa147db61fd520b5a"
+  uses  = "actions/npm@3c8332795d5443adc712d30fa147db61fd520b5a"
   needs = ["Install"]
-  runs = "yarn"
-  args = "test"
+  runs  = "yarn"
+  args  = "test"
 }
 
 action "Build" {
-  uses = "actions/npm@3c8332795d5443adc712d30fa147db61fd520b5a"
+  uses  = "actions/npm@3c8332795d5443adc712d30fa147db61fd520b5a"
   needs = ["Install"]
-  runs = "yarn"
-  args = "build"
+  runs  = "yarn"
+  args  = "build"
 }
 
 action "Typings" {
-  uses = "actions/npm@3c8332795d5443adc712d30fa147db61fd520b5a"
+  uses  = "actions/npm@3c8332795d5443adc712d30fa147db61fd520b5a"
   needs = ["Install"]
-  runs = "yarn"
-  args = "typings"
+  runs  = "yarn"
+  args  = "typings"
 }
