@@ -57,12 +57,12 @@
   ],
   "license": "Apache-2.0",
   "lint-staged": {
-    "*.ts": [
-      "yarn lint",
+    "*.md": [
       "prettier --write",
       "git add"
     ],
-    "*.md": [
+    "*.ts": [
+      "yarn lint",
       "prettier --write",
       "git add"
     ]
@@ -76,14 +76,15 @@
     "objection": ">=1.4.0"
   },
   "scripts": {
-    "build": "rollup --config rollup.config.js && yarn typings",
+    "build": "rollup --config rollup.config.js",
     "clean": "rimraf dist",
     "lint": "eslint lib --ext ts --fix",
+    "postbuild": "yarn typings",
+    "postrelease": "conventional-github-releaser -p angular",
     "prebuild": "yarn lint && yarn clean",
-    "prerelease": "yarn build && yarn typings",
+    "prerelease": "yarn build",
     "pretypings": "rimraf typings",
     "release": "standard-version --sign --message 'chore(release): %s [skip ci]'",
-    "postrelease": "conventional-github-releaser -p angular",
     "test": "jest",
     "typings": "tsc --project tsconfig.json --declaration --declarationDir typings --emitDeclarationOnly"
   },
