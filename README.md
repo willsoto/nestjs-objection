@@ -4,9 +4,14 @@
 
 ## Table of Contents
 
+- [Description](#description)
 - [Installation](#installation)
 - [Examples](#examples)
 - [Configuration](#configuration)
+
+## Description
+
+Integrates [Objection.js](https://vincit.github.io/objection.js/) and [Knex](https://knexjs.org/) with [Nest](https://nestjs.com/)
 
 ## Installation
 
