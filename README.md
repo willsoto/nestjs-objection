@@ -1,5 +1,7 @@
 # NestJS Objection
 
+[![pipeline status](https://gitlab.com/willsoto/nestjs-objection/badges/master/pipeline.svg)](https://gitlab.com/willsoto/nestjs-objection/commits/master)
+[![coverage report](https://gitlab.com/willsoto/nestjs-objection/badges/master/coverage.svg)](https://gitlab.com/willsoto/nestjs-objection/commits/master)
 [![Greenkeeper badge](https://badges.greenkeeper.io/willsoto/nestjs-objection.svg)](https://greenkeeper.io/)
 
 ## Table of Contents
