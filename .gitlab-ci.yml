@@ -1,0 +1,43 @@
+stages:
+  - build
+  - test
+
+# cache using branch name
+# https://gitlab.com/help/ci/caching/index.md
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - .npm
+    - node_modules
+
+.install:
+  before_script:
+    - yarn install
+
+.test:
+  extends: .install
+  stage: test
+  script:
+    - yarn test --coverage
+
+.build:
+  extends: .install
+  stage: build
+  script:
+    - yarn build
+
+test-10:
+  extends: .test
+  image: node:10-alpine
+
+build-10:
+  extends: .build
+  image: node:10-alpine
+
+test-11:
+  extends: .test
+  image: node:11-alpine
+
+build-11:
+  extends: .build
+  image: node:11-alpine
