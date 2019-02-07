@@ -8,7 +8,7 @@ import {
 // eslint-disable-next-line new-cap
 @Module({})
 export class ObjectionModule {
-  public static forRoot(options?: ObjectionModuleOptions): DynamicModule {
+  public static forRoot(options: ObjectionModuleOptions): DynamicModule {
     return {
       module: ObjectionModule,
       imports: [ObjectionCoreModule.forRoot(options)]

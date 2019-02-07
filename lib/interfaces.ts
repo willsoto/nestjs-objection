@@ -5,7 +5,7 @@ import { Model } from "objection";
 
 export interface ObjectionModuleOptions {
   Model?: typeof Model;
-  config?: Knex.Config;
+  config: Knex.Config;
 }
 
 export interface ObjectionModuleOptionsFactory {

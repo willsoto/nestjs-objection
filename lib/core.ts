@@ -14,10 +14,9 @@ import {
 } from "./interfaces";
 
 export class ObjectionCoreModule {
-  public static forRoot(options: ObjectionModuleOptions = {}): DynamicModule {
-    const knexConfig = options.config || {};
+  public static forRoot(options: ObjectionModuleOptions): DynamicModule {
     const Base = options.Model || Model;
-    const connection = knex(knexConfig);
+    const connection = knex(options.config);
 
     Base.knex(connection);
 
@@ -54,9 +53,7 @@ export class ObjectionCoreModule {
       provide: KNEX_CONNECTION,
       inject: [OBJECTION_MODULE_OPTIONS],
       useFactory(objectionModuleOptions: ObjectionModuleOptions) {
-        const config = objectionModuleOptions.config || {};
-
-        return knex(config);
+        return knex(objectionModuleOptions.config);
       }
     };
 
@@ -93,9 +90,7 @@ export class ObjectionCoreModule {
   ): Provider[] {
     if (options.useExisting || options.useFactory) {
       return [this.createAsyncOptionsProvider(options)];
-    }
-
-    if (!options.useClass) {
+    } else if (!options.useClass) {
       throw new Error("Invalid configuration");
     }
 

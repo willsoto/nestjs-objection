@@ -96,7 +96,7 @@ export class DatabaseModule {}
 
 ## Configuration
 
-| Name     | Type     | Required | Default             |
-| -------- | -------- | -------- | ------------------- |
-| `Model`  | `Object` | `false`  | `objection.Model`   |
-| `config` | `Object` | `false`  | Knex default config |
+| Name     | Type     | Required | Default           |
+| -------- | -------- | -------- | ----------------- |
+| `Model`  | `Object` | `false`  | `objection.Model` |
+| `config` | `Object` | `true`   |                   |
