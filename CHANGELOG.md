@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.0"></a>
+
+# [1.0.0](https://github.com/willsoto/nestjs-objection/compare/v0.3.1...v1.0.0) (2019-02-07)
+
+### Bug Fixes
+
+- **package:** remove duplicate typings script ([2388553](https://github.com/willsoto/nestjs-objection/commit/2388553))
+
+### Code Refactoring
+
+- make knex.config required ([0a40d73](https://github.com/willsoto/nestjs-objection/commit/0a40d73))
+
+### Features
+
+- **ci:** switch to GitLab CI ([545f2ac](https://github.com/willsoto/nestjs-objection/commit/545f2ac))
+
+### BREAKING CHANGES
+
+- config is now required
+
+Signed-off-by: Will Soto <willsoto@users.noreply.github.com>
+
 <a name="0.3.2"></a>
 
 ## [0.3.2](https://github.com/willsoto/nestjs-objection/compare/v0.3.1...v0.3.2) (2019-02-06)
