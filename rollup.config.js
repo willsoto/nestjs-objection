@@ -29,5 +29,11 @@ export default {
       `
   })),
   external: Object.keys(globals),
-  plugins: [eslint(), typescript(), filesize()]
+  plugins: [
+    eslint(),
+    typescript({
+      tsconfig: "./tsconfig.build.json"
+    }),
+    filesize()
+  ]
 };

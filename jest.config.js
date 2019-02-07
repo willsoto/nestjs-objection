@@ -3,5 +3,9 @@ module.exports = {
   collectCoverage: true,
   coverageDirectory: "coverage",
   coverageReporters: ["json", "text", "lcov"],
-  testEnvironment: "node"
+  testEnvironment: "node",
+  moduleNameMapper: {
+    "^@/(.*)$": "<rootDir>/lib/$1"
+  },
+  testMatch: ["<rootDir>/tests/**/*.spec.ts"]
 };

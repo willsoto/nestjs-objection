@@ -1,7 +1,7 @@
+import { ObjectionModule } from "@/module";
 import { Test, TestingModule } from "@nestjs/testing";
 import knex from "knex";
 import { Model } from "objection";
-import { ObjectionModule } from "../module";
 
 describe("ObjectionModule", () => {
   let testingModule: TestingModule;

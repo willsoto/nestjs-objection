@@ -86,7 +86,7 @@
     "pretypings": "rimraf typings",
     "release": "standard-version --sign --message 'chore(release): %s [skip ci]'",
     "test": "jest",
-    "typings": "tsc --project tsconfig.json --declaration --declarationDir typings --emitDeclarationOnly"
+    "typings": "tsc --project tsconfig.build.json --declaration --declarationDir typings --emitDeclarationOnly"
   },
   "typings": "./typings/index.d.ts",
   "version": "0.3.2"

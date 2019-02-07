@@ -7,11 +7,14 @@
     "lib": ["esnext"],
     "module": "es2015",
     "moduleResolution": "node",
+    "paths": {
+      "@/*": ["lib/*"]
+    },
     "pretty": true,
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true
   },
-  "include": ["lib/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "include": ["lib/**/*.ts", "tests/**/*.ts"]
 }

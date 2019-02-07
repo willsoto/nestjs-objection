@@ -88,7 +88,7 @@ export class ObjectionCoreModule {
     };
   }
 
-  private static createAsyncProviders(
+  public static createAsyncProviders(
     options: ObjectionModuleAsyncOptions
   ): Provider[] {
     if (options.useExisting || options.useFactory) {
@@ -108,7 +108,7 @@ export class ObjectionCoreModule {
     ];
   }
 
-  private static createAsyncOptionsProvider(
+  public static createAsyncOptionsProvider(
     options: ObjectionModuleAsyncOptions
   ): Provider {
     if (options.useFactory) {
