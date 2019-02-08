@@ -907,10 +907,10 @@
     multer "1.3.0"
     uuid "3.3.2"
 
-"@nestjs/core@5.7.0":
-  version "5.7.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-5.7.0.tgz#3256dbb04adb90d9eb0489cfb2e47acc61af2587"
-  integrity sha512-M0iMNccmisSxuo/ZxzRSyrImUClBM0/RepZEFZsK4K0Lyaow9kGeUXaY8GnVMaQOzEQVU84MDZ608KegSlos7A==
+"@nestjs/core@5.7.1":
+  version "5.7.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-5.7.1.tgz#0ad29b39dab1d3f04cff34f5459f430fdd1d4e2b"
+  integrity sha512-a1qtceXZqnwFDt6Yf2dcfb/itkKCDTvEBf2jEo6vK12pGHiIeyFBJ0cA0ZtMqB8SbVMeDqTMTdySWwBQkduBNg==
   dependencies:
     "@nuxtjs/opencollective" "0.1.0"
     body-parser "1.18.3"
@@ -923,10 +923,10 @@
     path-to-regexp "2.2.1"
     uuid "3.3.2"
 
-"@nestjs/testing@5.7.0":
-  version "5.7.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-5.7.0.tgz#a64e884767a5b8548308119193164ecbd072c17a"
-  integrity sha512-/BJ2cA5MNoSDajq8sdcl4C7OJyVzew7/QofeNoWPnAzSTlCeWBYNDC+nrkyS+uU1sQgm4mvCvW6UTEHiUta83Q==
+"@nestjs/testing@5.7.1":
+  version "5.7.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-5.7.1.tgz#e600b1d5fa73e4c14e5f53451400ae53e214e56c"
+  integrity sha512-Ro7BECl5liZXUOEDOm3JVbcqQNcizBwZAyH/+IuBL8TffPSM3xDFRQCc3cBZ0IIB/O2XidxeDqXDblQUEJiClw==
   dependencies:
     deprecate "1.0.0"
     optional "0.1.4"
