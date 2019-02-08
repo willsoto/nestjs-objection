@@ -923,10 +923,10 @@
     path-to-regexp "2.2.1"
     uuid "3.3.2"
 
-"@nestjs/testing@5.7.0":
-  version "5.7.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-5.7.0.tgz#a64e884767a5b8548308119193164ecbd072c17a"
-  integrity sha512-/BJ2cA5MNoSDajq8sdcl4C7OJyVzew7/QofeNoWPnAzSTlCeWBYNDC+nrkyS+uU1sQgm4mvCvW6UTEHiUta83Q==
+"@nestjs/testing@5.7.1":
+  version "5.7.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-5.7.1.tgz#e600b1d5fa73e4c14e5f53451400ae53e214e56c"
+  integrity sha512-Ro7BECl5liZXUOEDOm3JVbcqQNcizBwZAyH/+IuBL8TffPSM3xDFRQCc3cBZ0IIB/O2XidxeDqXDblQUEJiClw==
   dependencies:
     deprecate "1.0.0"
     optional "0.1.4"
