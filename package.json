@@ -67,7 +67,8 @@
       "git add"
     ]
   },
-  "main": "src/index.ts",
+  "main": "dist/nestjs-objection.umd.js",
+  "module": "dist/nestjs-objection.esm.js",
   "name": "@willsoto/nestjs-objection",
   "peerDependencies": {
     "@nestjs/common": ">=5.4.0",
