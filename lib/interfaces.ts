@@ -1,11 +1,11 @@
 import { Type } from "@nestjs/common";
 import { ModuleMetadata } from "@nestjs/common/interfaces";
-import Knex from "knex";
+import knex from "knex";
 import { Model } from "objection";
 
 export interface ObjectionModuleOptions {
   Model?: typeof Model;
-  config: Knex.Config;
+  config: knex.Config;
 }
 
 export interface ObjectionModuleOptionsFactory {
@@ -26,4 +26,4 @@ export interface ObjectionModuleAsyncOptions
   ): Promise<ObjectionModuleOptions> | ObjectionModuleOptions;
 }
 
-export type Connection = Knex;
+export type Connection = knex;
