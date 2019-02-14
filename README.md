@@ -8,8 +8,10 @@
 
 - [Description](#description)
 - [Installation](#installation)
-- [Examples](#examples)
+- [API](#api)
 - [Configuration](#configuration)
+- [Examples](#examples)
+  - [Injecting the Connection](#injecting-the-connection)
 
 ## Description
 
@@ -27,7 +29,7 @@ _Note that Knex and Objection are `peerDependencies` to make version management 
 yarn add knex objection
 ```
 
-## Examples
+## API
 
 ### `ObjectionModule.forRoot`
 
@@ -100,3 +102,33 @@ export class DatabaseModule {}
 | -------- | -------- | -------- | ----------------- |
 | `Model`  | `Object` | `false`  | `objection.Model` |
 | `config` | `Object` | `true`   |                   |
+
+## Examples
+
+### Injecting the connection
+
+```ts
+import { HealthCheckError } from "@godaddy/terminus";
+import { Inject, Injectable } from "@nestjs/common";
+import { HealthIndicatorResult } from "@nestjs/terminus";
+import { Connection, KNEX_CONNECTION } from "@willsoto/nestjs-objection";
+
+@Injectable()
+export class PrimaryDatabaseHealthIndicator {
+  constructor(@Inject(KNEX_CONNECTION) public connection: Connection) {}
+
+  async ping(): Promise<HealthIndicatorResult> {
+    try {
+      await this.connection.raw("SELECT 1");
+
+      return {
+        "db-primary": {
+          status: "up"
+        }
+      };
+    } catch (error) {
+      throw new HealthCheckError("Unable to connect to database", error);
+    }
+  }
+}
+```
