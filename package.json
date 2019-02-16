@@ -35,7 +35,7 @@
     "rollup-plugin-filesize": "6.0.1",
     "rollup-plugin-typescript": "1.0.0",
     "sqlite3": "4.0.6",
-    "standard-version": "4.4.0",
+    "standard-version": "5.0.0",
     "typescript": "3.3.3"
   },
   "files": [
