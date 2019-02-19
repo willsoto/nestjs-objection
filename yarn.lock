@@ -5848,10 +5848,10 @@ object.pick@^1.2.0, object.pick@^1.3.0:
   dependencies:
     isobject "^3.0.1"
 
-objection@1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/objection/-/objection-1.6.0.tgz#439a5c1bc9a30aca9581cb3518d785414eb5f2e3"
-  integrity sha512-hChCUl7GjaoXslhyOPV46Cdkc5GCt1G+JLDXisT3DW8P5GVy6d1wCasxPgZMWCR0bManQ6HxvdE5REwJPlIJgg==
+objection@1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/objection/-/objection-1.6.1.tgz#05e455442105889fcfc902ae7942c8c44288ff57"
+  integrity sha512-+eIAtiRRWWwcxhyaLXqYCZHnUmGrpvS/E9n538tEO6Ot2PxSzTbrfpwD0xky4Lb9ehCDaNbNByyW3fTGtU+12g==
   dependencies:
     ajv "^6.1.1"
     bluebird "^3.5.3"
