@@ -12,7 +12,7 @@
     "@babel/preset-typescript": "7.3.3",
     "@commitlint/cli": "7.5.2",
     "@commitlint/config-conventional": "7.5.0",
-    "@nestjs/common": "5.7.2",
+    "@nestjs/common": "5.7.3",
     "@nestjs/core": "5.7.2",
     "@nestjs/testing": "5.7.2",
     "@types/jest": "24.0.6",
