@@ -968,10 +968,10 @@
     path-to-regexp "2.2.1"
     uuid "3.3.2"
 
-"@nestjs/testing@5.7.2":
-  version "5.7.2"
-  resolved "https://registry.npmjs.org/@nestjs/testing/-/testing-5.7.2.tgz#5598444d3f2d472012efc25acfbe6308381208bd"
-  integrity sha512-eTRVj13Ru31hnhwRCuzQmfDtYTBgefrvo0YTXYCUg5G05Y9ixUHfClNVArU0hlVa/ViCywSsqR5IwfQE+H/2kQ==
+"@nestjs/testing@5.7.3":
+  version "5.7.3"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-5.7.3.tgz#e7f0a070d73a009347963dbc993ee92bd083bef5"
+  integrity sha512-rBc/pmvYhdESbKiBDWa+jL4fzcwzkgS61ls5f2eoOxQLyFmNGCQnFPG9J4xjZwYUwcYTH8SMEwjqAa5s65gehQ==
   dependencies:
     deprecate "1.0.0"
     optional "0.1.4"
