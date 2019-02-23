@@ -15,10 +15,10 @@ import {
 
 export class ObjectionCoreModule {
   public static forRoot(options: ObjectionModuleOptions): DynamicModule {
-    const Base = options.Model || Model;
+    const BaseModel = options.Model || Model;
     const connection = knex(options.config);
 
-    Base.knex(connection);
+    BaseModel.knex(connection);
 
     const objectionModuleOptions: Provider = {
       provide: OBJECTION_MODULE_OPTIONS,
@@ -27,7 +27,7 @@ export class ObjectionCoreModule {
 
     const objectionBaseModelProvider: Provider = {
       provide: OBJECTION_BASE_MODEL,
-      useValue: Base
+      useValue: BaseModel
     };
 
     const knexConnectionProvider: Provider = {
@@ -64,11 +64,11 @@ export class ObjectionCoreModule {
         connection: Connection,
         objectionModuleOptions: ObjectionModuleOptions
       ) {
-        const Base = objectionModuleOptions.Model || Model;
+        const BaseModel = objectionModuleOptions.Model || Model;
 
-        Base.knex(connection);
+        BaseModel.knex(connection);
 
-        return Base;
+        return BaseModel;
       }
     };
     const asyncProviders = this.createAsyncProviders(options);
