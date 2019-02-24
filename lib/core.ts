@@ -1,5 +1,5 @@
 import { DynamicModule, Provider } from "@nestjs/common";
-import knex from "knex";
+import * as Knex_ from "knex";
 import { Model } from "objection";
 import {
   KNEX_CONNECTION,
@@ -13,10 +13,14 @@ import {
   ObjectionModuleOptionsFactory
 } from "./interfaces";
 
+// Workaround due to https://github.com/rollup/rollup/issues/670
+const Knex = Knex_;
+
 export class ObjectionCoreModule {
   public static forRoot(options: ObjectionModuleOptions): DynamicModule {
     const BaseModel = options.Model || Model;
-    const connection = knex(options.config);
+    // eslint-disable-next-line new-cap
+    const connection = Knex(options.config);
 
     BaseModel.knex(connection);
 
@@ -53,7 +57,8 @@ export class ObjectionCoreModule {
       provide: KNEX_CONNECTION,
       inject: [OBJECTION_MODULE_OPTIONS],
       useFactory(objectionModuleOptions: ObjectionModuleOptions) {
-        return knex(objectionModuleOptions.config);
+        // eslint-disable-next-line new-cap
+        return Knex(objectionModuleOptions.config);
       }
     };
 

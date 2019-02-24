@@ -21,16 +21,17 @@ export default {
     banner: `
       /**
        *
-       * NestJS Objection
        * ${pkg.name}@${pkg.version}
        * ${pkg.license}
        *
-       */
-      `
+       */`
   })),
   external: Object.keys(globals),
   plugins: [
-    eslint(),
+    eslint({
+      throwOnWarning: true,
+      throwOnError: true
+    }),
     typescript({
       tsconfig: "./tsconfig.build.json"
     }),
