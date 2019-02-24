@@ -1,5 +1,5 @@
 import { DynamicModule, Provider } from "@nestjs/common";
-import * as Knex_ from "knex";
+import Knex from "knex";
 import { Model } from "objection";
 import {
   KNEX_CONNECTION,
@@ -12,9 +12,6 @@ import {
   ObjectionModuleOptions,
   ObjectionModuleOptionsFactory
 } from "./interfaces";
-
-// Workaround due to https://github.com/rollup/rollup/issues/670
-const Knex = Knex_;
 
 export class ObjectionCoreModule {
   public static forRoot(options: ObjectionModuleOptions): DynamicModule {
