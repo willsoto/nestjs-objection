@@ -90,5 +90,5 @@
     "typings": "tsc --project tsconfig.build.json --declaration --declarationDir typings --emitDeclarationOnly"
   },
   "typings": "./typings/index.d.ts",
-  "version": "1.0.3"
+  "version": "1.0.4"
 }
