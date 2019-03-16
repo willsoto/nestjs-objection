@@ -1124,12 +1124,11 @@
     path-to-regexp "2.2.1"
     uuid "3.3.2"
 
-"@nestjs/testing@~5.7.4":
-  version "5.7.4"
-  resolved "https://registry.npmjs.org/@nestjs/testing/-/testing-5.7.4.tgz#418e993416bd0c1b27b3adf14cc7d59f4ff2a622"
-  integrity sha512-3lIsTmkdkFJODxiMFtVmAIxCmXMnVcUU9fhHmzO20S3ERZ+hAFZDXuB3vTwFEiBzxva0fKZw6OnnqTlDyGNXaw==
+"@nestjs/testing@~6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-6.0.0.tgz#be921e774cfea9c321c35eea8c4f4a44f2aa14d0"
+  integrity sha512-BRsMFJKBRrFbzzdG00w5Rfz6DMews9hVs1CMpCZlo/mi5sml3O+JgM+IAkZ0+cLFmr8Ij3OQ5fh/lMWMoIDnOQ==
   dependencies:
-    deprecate "1.0.0"
     optional "0.1.4"
 
 "@nuxtjs/opencollective@0.1.0":
