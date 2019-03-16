@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/willsoto/nestjs-objection/compare/v1.0.4...v1.1.0) (2019-03-16)
+
+
+### Features
+
+* upgrade [@nestjs](https://github.com/nestjs)/* to v6 ([3fadbfa](https://github.com/willsoto/nestjs-objection/commit/3fadbfa)), closes [#48](https://github.com/willsoto/nestjs-objection/issues/48) [#49](https://github.com/willsoto/nestjs-objection/issues/49) [#50](https://github.com/willsoto/nestjs-objection/issues/50)
+
+
+
 <a name="1.0.4"></a>
 ## [1.0.4](https://github.com/willsoto/nestjs-objection/compare/v1.0.3...v1.0.4) (2019-02-24)
 
