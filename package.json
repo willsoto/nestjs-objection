@@ -14,7 +14,7 @@
     "@commitlint/config-conventional": "~7.5.0",
     "@nestjs/common": "~5.7.4",
     "@nestjs/core": "~5.7.4",
-    "@nestjs/testing": "~5.7.4",
+    "@nestjs/testing": "~6.0.0",
     "@types/jest": "~24.0.11",
     "@typescript-eslint/eslint-plugin": "~1.4.2",
     "@willsoto/eslint-config-base": "~1.4.2",
