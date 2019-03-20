@@ -110,24 +110,20 @@ export class DatabaseModule {}
 ```ts
 import { HealthCheckError } from "@godaddy/terminus";
 import { Inject, Injectable } from "@nestjs/common";
-import { HealthIndicatorResult } from "@nestjs/terminus";
+import { HealthIndicatorResult, HealthIndicator } from "@nestjs/terminus";
 import { Connection, KNEX_CONNECTION } from "@willsoto/nestjs-objection";
 
 @Injectable()
-export class PrimaryDatabaseHealthIndicator {
+export class PrimaryDatabaseHealthIndicator extends HealthIndicator {
   constructor(@Inject(KNEX_CONNECTION) public connection: Connection) {}
 
-  async ping(): Promise<HealthIndicatorResult> {
+  async ping(key: string = "db-primary"): Promise<HealthIndicatorResult> {
     try {
       await this.connection.raw("SELECT 1");
-
-      return {
-        "db-primary": {
-          status: "up"
-        }
-      };
+      return super.getStatus(key, true);
     } catch (error) {
-      throw new HealthCheckError("Unable to connect to database", error);
+      const status = super.getStatus(key, false, { message: error.message });
+      throw new HealthCheckError("Unable to connect to database", status);
     }
   }
 }
