@@ -17,7 +17,7 @@
     "@nestjs/testing": "~6.0.0",
     "@types/jest": "~24.0.11",
     "@typescript-eslint/eslint-plugin": "~1.5.0",
-    "@willsoto/eslint-config-base": "~1.4.2",
+    "@willsoto/eslint-config-base": "~2.0.0",
     "babel-jest": "~24.5.0",
     "conventional-github-releaser": "~3.1.2",
     "eslint": "~5.16.0",
