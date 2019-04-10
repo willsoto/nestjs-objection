@@ -1054,10 +1054,10 @@
     cli-color "1.4.0"
     uuid "3.3.2"
 
-"@nestjs/core@~6.0.0":
-  version "6.0.0"
-  resolved "https://registry.npmjs.org/@nestjs/core/-/core-6.0.0.tgz#e2bd6eaa698d97e0ea48672315d97cc2cdbe28de"
-  integrity sha512-N4RP9QreS8EJJS+BIsjqRsn7nzzxPXJZLkItnp5SipepX6bqAC+xHLXqd1qA3IIyZ4M9Ia2rs85z5yGlC3EMeQ==
+"@nestjs/core@~6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@nestjs/core/-/core-6.1.0.tgz#87b590bfb21722780ff6088eda5da37797889344"
+  integrity sha512-oIkntxF6a+fLTn371lB2oMKQ9ZqovvlkRT6WSSQ7EaJ8ao2jfrXozIyVMQPJ1xavnUjzqCNMziCDJhwIymZXeg==
   dependencies:
     "@nuxtjs/opencollective" "0.2.1"
     fast-safe-stringify "2.0.6"
