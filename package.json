@@ -27,7 +27,7 @@
     "knex": "~0.16.3",
     "lint-staged": "~8.1.5",
     "objection": "~1.6.3",
-    "prettier": "~1.16.4",
+    "prettier": "~1.17.0",
     "reflect-metadata": "~0.1.13",
     "rimraf": "~2.6.3",
     "rollup": "~1.10.0",
