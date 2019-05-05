@@ -53,7 +53,7 @@ export class ObjectionCoreModule {
     const knexConnectionProvider: Provider = {
       provide: KNEX_CONNECTION,
       inject: [OBJECTION_MODULE_OPTIONS],
-      useFactory(objectionModuleOptions: ObjectionModuleOptions) {
+      useFactory(objectionModuleOptions: ObjectionModuleOptions): Knex {
         // eslint-disable-next-line new-cap
         return Knex(objectionModuleOptions.config);
       }
@@ -65,7 +65,7 @@ export class ObjectionCoreModule {
       useFactory(
         connection: Connection,
         objectionModuleOptions: ObjectionModuleOptions
-      ) {
+      ): typeof Model {
         const BaseModel = objectionModuleOptions.Model || Model;
 
         BaseModel.knex(connection);
@@ -118,7 +118,9 @@ export class ObjectionCoreModule {
 
     return {
       provide: OBJECTION_MODULE_OPTIONS,
-      async useFactory(optionsFactory: ObjectionModuleOptionsFactory) {
+      async useFactory(
+        optionsFactory: ObjectionModuleOptionsFactory
+      ): Promise<ObjectionModuleOptions> {
         const opts = await optionsFactory.createObjectionModuleOptions();
 
         return opts;
