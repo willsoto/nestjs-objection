@@ -30,7 +30,7 @@
     "prettier": "~1.17.0",
     "reflect-metadata": "~0.1.13",
     "rimraf": "~2.6.3",
-    "rollup": "~1.10.0",
+    "rollup": "~1.11.3",
     "rollup-plugin-eslint": "~5.1.0",
     "rollup-plugin-filesize": "~6.0.1",
     "rollup-plugin-typescript": "~1.0.0",
