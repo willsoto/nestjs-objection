@@ -1118,10 +1118,10 @@
     optional "0.1.4"
     uuid "3.3.2"
 
-"@nestjs/testing@~6.1.1":
-  version "6.1.1"
-  resolved "https://registry.npmjs.org/@nestjs/testing/-/testing-6.1.1.tgz#cc871867f9bd053069467a5a2f1b429945413313"
-  integrity sha512-EQLRES20n8zWkFRXgwFKjCE0s/WsHvqv3v22umqq2XHiep7WiJub0hNG/FcC00WltXPDPAaEDu0XDPr56UWZhQ==
+"@nestjs/testing@~6.2.0":
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-6.2.0.tgz#084573cd635f8f59b434966e35039c616af62208"
+  integrity sha512-sAdXmZugvhYyp6tze5FdcH6tuIoDI0R8l7nI+PFDXuwxUSvfm8eHOloRbmYRD8ULGfY6OEvmO5uzoz/73IcMMw==
   dependencies:
     optional "0.1.4"
 
