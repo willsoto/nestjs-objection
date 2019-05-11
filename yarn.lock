@@ -1097,10 +1097,10 @@
     mkdirp "^0.5.1"
     rimraf "^2.5.2"
 
-"@nestjs/common@~6.1.0":
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-6.1.0.tgz#5f70c88db621149ace3abcf428bccec78091e29e"
-  integrity sha512-T/AJOGzTGcMi88ZBqty1NYVYiRCnkFKXKB8DOfQ2FmfE5kvqJ5T/MqKemcpy+MumtZo4Eux9nAL3j2A7EX61Ng==
+"@nestjs/common@~6.2.0":
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-6.2.0.tgz#edc59fa0b42c5d7b96e88bdc3c52012780758da3"
+  integrity sha512-0svQuCrG6ofMYgHzk/GzJ+vpIkLq4vZmTeww1qLipggS40IjQ0+NzwEBOTr6TeHVDmsM2YDmIU1DJiaGy2o9Hw==
   dependencies:
     axios "0.18.0"
     cli-color "1.4.0"
