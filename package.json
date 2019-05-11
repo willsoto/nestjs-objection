@@ -10,13 +10,13 @@
     "@babel/plugin-proposal-decorators": "~7.4.4",
     "@babel/preset-env": "~7.4.4",
     "@babel/preset-typescript": "~7.3.3",
-    "@commitlint/cli": "~7.6.0",
+    "@commitlint/cli": "~7.6.1",
     "@commitlint/config-conventional": "~7.6.0",
     "@nestjs/common": "~6.1.0",
     "@nestjs/core": "~6.1.0",
-    "@nestjs/testing": "~6.1.1",
+    "@nestjs/testing": "~6.2.0",
     "@types/jest": "~24.0.12",
-    "@typescript-eslint/eslint-plugin": "~1.7.0",
+    "@typescript-eslint/eslint-plugin": "~1.8.0",
     "@willsoto/eslint-config-base": "~2.0.0",
     "babel-jest": "~24.8.0",
     "conventional-github-releaser": "~3.1.2",
@@ -34,7 +34,7 @@
     "rollup-plugin-eslint": "~5.1.0",
     "rollup-plugin-filesize": "~6.0.1",
     "rollup-plugin-typescript": "~1.0.1",
-    "sqlite3": "~4.0.6",
+    "sqlite3": "~4.0.8",
     "standard-version": "~6.0.1",
     "typescript": "~3.4.5"
   },
@@ -71,10 +71,10 @@
   "module": "dist/nestjs-objection.esm.js",
   "name": "@willsoto/nestjs-objection",
   "peerDependencies": {
-    "@nestjs/common": ">=5.4.0",
-    "@nestjs/core": ">=5.4.0",
-    "knex": ">=0.16.0",
-    "objection": ">=1.4.0"
+    "@nestjs/common": ">=6.2.0",
+    "@nestjs/core": ">=6.2.0",
+    "knex": ">=0.16.5",
+    "objection": ">=1.6.8"
   },
   "scripts": {
     "build": "rollup --config rollup.config.js",
