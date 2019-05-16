@@ -90,5 +90,9 @@
     "typings": "tsc --project tsconfig.build.json --declaration --declarationDir typings --emitDeclarationOnly"
   },
   "typings": "./typings/index.d.ts",
-  "version": "1.1.0"
+  "version": "1.1.0",
+  "volta": {
+    "node": "10.15.3",
+    "yarn": "1.16.0"
+  }
 }
