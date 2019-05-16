@@ -3,7 +3,7 @@ import filesize from "rollup-plugin-filesize";
 import typescript from "rollup-plugin-typescript";
 import pkg from "./package.json";
 
-const formats = ["umd", "esm", "cjs"];
+const formats = ["umd", "esm"];
 const globals = {
   "@nestjs/common": "nestjsCommon",
   knex: "Knex",
