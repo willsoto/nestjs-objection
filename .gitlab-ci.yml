@@ -41,3 +41,11 @@ test-11:
 build-11:
   extends: .build
   image: node:11-alpine
+
+test-12:
+  extends: .test
+  image: node:12-alpine
+
+build-12:
+  extends: .build
+  image: node:12-alpine
