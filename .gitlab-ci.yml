@@ -1,7 +1,3 @@
-stages:
-  - build
-  - test
-
 # cache using branch name
 # https://gitlab.com/help/ci/caching/index.md
 cache:
@@ -10,43 +6,24 @@ cache:
     - .npm
     - node_modules
 
-.install:
+.scripts:
+  coverage: '/All\sfiles.*?\s+(\d+.\d+)/'
   before_script:
     - apk update && apk upgrade && apk add python make g++
     - yarn install
-
-.test:
-  extends: .install
-  stage: test
   script:
+    - yarn lint
+    - yarn build
     - yarn test --coverage
 
-.build:
-  extends: .install
-  stage: build
-  script:
-    - yarn build
+node-lts:
+  image: node:lts-alpine
+  extends: .scripts
 
-test-10:
-  extends: .test
-  image: node:10-alpine
-
-build-10:
-  extends: .build
-  image: node:10-alpine
-
-test-11:
-  extends: .test
+node-11:
   image: node:11-alpine
+  extends: .scripts
 
-build-11:
-  extends: .build
-  image: node:11-alpine
-
-test-12:
-  extends: .test
+node-12:
   image: node:12-alpine
-
-build-12:
-  extends: .build
-  image: node:12-alpine
+  extends: .scripts
