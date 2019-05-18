@@ -12,6 +12,7 @@ cache:
 
 .install:
   before_script:
+    - apk update && apk upgrade && apk add python make g++
     - yarn install
 
 .test:
