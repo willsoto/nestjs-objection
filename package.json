@@ -31,7 +31,7 @@
     "reflect-metadata": "~0.1.13",
     "rimraf": "~2.6.3",
     "rollup": "~1.12.3",
-    "rollup-plugin-eslint": "~5.1.0",
+    "rollup-plugin-eslint": "~6.0.0",
     "rollup-plugin-filesize": "~6.1.0",
     "rollup-plugin-typescript": "~1.0.1",
     "sqlite3": "~4.0.8",
