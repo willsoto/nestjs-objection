@@ -1,3 +1,4 @@
+/* eslint-disable new-cap */
 import { DynamicModule, Module } from "@nestjs/common";
 import { ObjectionCoreModule } from "./core";
 import {
@@ -5,7 +6,6 @@ import {
   ObjectionModuleOptions
 } from "./interfaces";
 
-// eslint-disable-next-line new-cap
 @Module({})
 export class ObjectionModule {
   public static forRoot(options: ObjectionModuleOptions): DynamicModule {

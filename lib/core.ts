@@ -1,4 +1,5 @@
-import { DynamicModule, Provider } from "@nestjs/common";
+/* eslint-disable new-cap */
+import { DynamicModule, Global, Module, Provider } from "@nestjs/common";
 import Knex from "knex";
 import { Model } from "objection";
 import {
@@ -13,10 +14,11 @@ import {
   ObjectionModuleOptionsFactory
 } from "./interfaces";
 
+@Global()
+@Module({})
 export class ObjectionCoreModule {
   public static forRoot(options: ObjectionModuleOptions): DynamicModule {
     const BaseModel = options.Model || Model;
-    // eslint-disable-next-line new-cap
     const connection = Knex(options.config);
 
     BaseModel.knex(connection);
@@ -54,7 +56,6 @@ export class ObjectionCoreModule {
       provide: KNEX_CONNECTION,
       inject: [OBJECTION_MODULE_OPTIONS],
       useFactory(objectionModuleOptions: ObjectionModuleOptions): Knex {
-        // eslint-disable-next-line new-cap
         return Knex(objectionModuleOptions.config);
       }
     };
