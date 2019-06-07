@@ -1,0 +1,24 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "@willsoto/eslint-config-base/typescript",
+    "prettier",
+    "prettier/@typescript-eslint"
+  ],
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "overrides": [
+    {
+      "files": ["tests/*.ts"],
+      "rules": {
+        "@typescript-eslint/explicit-function-return-type": "off"
+      }
+    }
+  ]
+}
