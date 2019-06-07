@@ -117,6 +117,10 @@ export class ObjectionCoreModule {
       };
     }
 
+    if (!options.useClass || !options.useExisting) {
+      throw new Error("Invalid configuration");
+    }
+
     return {
       provide: OBJECTION_MODULE_OPTIONS,
       async useFactory(
