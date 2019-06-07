@@ -1,6 +1,41 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [2.0.0](https://github.com/willsoto/nestjs-objection/compare/v1.1.0...v2.0.0) (2019-06-07)
+
+
+### Bug Fixes
+
+* **ci:** install python, make and g++ for all images ([c96fab2](https://github.com/willsoto/nestjs-objection/commit/c96fab2))
+* **core:** guard against missing options ([d04a68f](https://github.com/willsoto/nestjs-objection/commit/d04a68f))
+* **core:** mark Module as Global ([6042ce9](https://github.com/willsoto/nestjs-objection/commit/6042ce9)), closes [#106](https://github.com/willsoto/nestjs-objection/issues/106)
+
+
+### Features
+
+* **ci:** add node:12 to build matrix ([51ce4f0](https://github.com/willsoto/nestjs-objection/commit/51ce4f0))
+* **dockerfile:** add node 12 dockerfile ([57fd8cc](https://github.com/willsoto/nestjs-objection/commit/57fd8cc))
+* **package:** add volta ([e49405a](https://github.com/willsoto/nestjs-objection/commit/e49405a))
+* **package:** update @nestjs/* to v6.3.1 ([2581b45](https://github.com/willsoto/nestjs-objection/commit/2581b45))
+* **package:** update dependencies ([2271091](https://github.com/willsoto/nestjs-objection/commit/2271091)), closes [#88](https://github.com/willsoto/nestjs-objection/issues/88) [#89](https://github.com/willsoto/nestjs-objection/issues/89)
+* **package:** update dependencies ([c19ea4b](https://github.com/willsoto/nestjs-objection/commit/c19ea4b)), closes [#86](https://github.com/willsoto/nestjs-objection/issues/86) [#87](https://github.com/willsoto/nestjs-objection/issues/87)
+* **package:** upgrade all dependencies ([96c38c7](https://github.com/willsoto/nestjs-objection/commit/96c38c7)), closes [#81](https://github.com/willsoto/nestjs-objection/issues/81) [#82](https://github.com/willsoto/nestjs-objection/issues/82) [#83](https://github.com/willsoto/nestjs-objection/issues/83) [#84](https://github.com/willsoto/nestjs-objection/issues/84) [#85](https://github.com/willsoto/nestjs-objection/issues/85)
+* **readme:** Add modifyable key to health indicator ([7e1a082](https://github.com/willsoto/nestjs-objection/commit/7e1a082))
+
+
+### refactor
+
+* **rollup:** remove CJS from outputs ([aa3454e](https://github.com/willsoto/nestjs-objection/commit/aa3454e))
+
+
+### BREAKING CHANGES
+
+* **rollup:** no longer builds a CJS module, use UMD instead
+
+Signed-off-by: Will Soto <willsoto@users.noreply.github.com>
+
+
 
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/willsoto/nestjs-objection/compare/v1.0.4...v1.1.0) (2019-03-16)
