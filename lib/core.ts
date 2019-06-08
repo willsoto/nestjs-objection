@@ -1,5 +1,5 @@
 /* eslint-disable new-cap */
-import { DynamicModule, Global, Module, Provider } from "@nestjs/common";
+import { DynamicModule, Module, Provider } from "@nestjs/common";
 import Knex from "knex";
 import { Model } from "objection";
 import {
@@ -14,7 +14,6 @@ import {
   ObjectionModuleOptionsFactory
 } from "./interfaces";
 
-@Global()
 @Module({})
 export class ObjectionCoreModule {
   public static forRoot(options: ObjectionModuleOptions): DynamicModule {

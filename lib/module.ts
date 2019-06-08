@@ -11,7 +11,8 @@ export class ObjectionModule {
   public static forRoot(options: ObjectionModuleOptions): DynamicModule {
     return {
       module: ObjectionModule,
-      imports: [ObjectionCoreModule.forRoot(options)]
+      imports: [ObjectionCoreModule.forRoot(options)],
+      exports: [ObjectionCoreModule]
     };
   }
 
@@ -20,7 +21,8 @@ export class ObjectionModule {
   ): DynamicModule {
     return {
       module: ObjectionModule,
-      imports: [ObjectionCoreModule.forRootAsync(options)]
+      imports: [ObjectionCoreModule.forRootAsync(options)],
+      exports: [ObjectionCoreModule]
     };
   }
 }
