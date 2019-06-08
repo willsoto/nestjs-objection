@@ -117,8 +117,12 @@ export class ObjectionCoreModule {
       };
     }
 
-    if (!options.useClass || !options.useExisting) {
-      throw new Error("Invalid configuration");
+    const inject = options.useClass || options.useExisting;
+
+    if (!inject) {
+      throw new Error(
+        "Invalid configuration. Must provide useFactory, useClass or useExisting"
+      );
     }
 
     return {
@@ -130,7 +134,7 @@ export class ObjectionCoreModule {
 
         return opts;
       },
-      inject: [options.useClass || options.useExisting]
+      inject: [inject]
     };
   }
 }
