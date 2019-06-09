@@ -17,6 +17,10 @@ describe("Integration", () => {
     connection = testingModule.get<Knex>(KNEX_CONNECTION);
   });
 
+  afterEach(async () => {
+    await connection.destroy();
+  });
+
   test("database works", () => {
     return expect(connection.raw("select 1")).resolves.toEqual([{ "1": 1 }]);
   });
