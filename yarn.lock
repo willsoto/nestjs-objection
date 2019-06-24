@@ -1030,9 +1030,9 @@
     rimraf "^2.5.2"
 
 "@nestjs/common@~6.3.1":
-  version "6.3.1"
-  resolved "https://registry.npmjs.org/@nestjs/common/-/common-6.3.1.tgz#222f25251eb1b67c6e552e00b266048daa569bbc"
-  integrity sha512-uuI/CCe6MFISMX+fSpkRvvQ6CBlXW89+5wfiveQ22AzAxgqGLAyWvNVHUE8F+zev7QDbxbY9vfPtm8CE5kiJVQ==
+  version "6.3.2"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-6.3.2.tgz#14f2d7ea1c268ba2a3b2d11787f6351fe760ec08"
+  integrity sha512-4g8hlQ2cCM0ze9K1w+7OYhTVGL6PuC7tXAgFM14MOTeKVAUz2QrJveGNE0hagDTKFagx9FvwF3B7ZSOIohw7aA==
   dependencies:
     axios "0.19.0"
     cli-color "1.4.0"
