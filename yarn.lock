@@ -1076,10 +1076,10 @@
     fastify-formbody "3.1.0"
     path-to-regexp "3.0.0"
 
-"@nestjs/terminus@~6.3.1":
-  version "6.3.4"
-  resolved "https://registry.yarnpkg.com/@nestjs/terminus/-/terminus-6.3.4.tgz#76b322c648e8b1d7be2119c30c9ca17ad47fd8e1"
-  integrity sha512-1Cz4DV1bhKGRc/Qc/yyps35lNBzDaNPWUedmZVxgdBK6TXkU7A8tQKKGYopO7Jn0JJJ9RVotxxdzSu3n9HAgVg==
+"@nestjs/terminus@~6.4.0":
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/@nestjs/terminus/-/terminus-6.4.0.tgz#64339d535f1c8500457b3c85742909f7286ec582"
+  integrity sha512-jcqtDfLGsUMnpFhfLrQgmLhIhxfrzHtJTHbu0rKGlKpPxc2XQKWCMx3fw2OV5CJTXgjUY0t5fQxLQDF9sdj6Ag==
   dependencies:
     check-disk-space "^2.1.0"
     gulp "^4.0.2"
