@@ -1115,9 +1115,9 @@
     typeorm "^0.2.16"
 
 "@nestjs/testing@~6.5.1":
-  version "6.5.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-6.5.1.tgz#181720eb510cde812772eac61cefb67a01276939"
-  integrity sha512-8F4Y8/8VrKpBGb+Em01YhaseSE2MTNg8Bz/39hY4HRBn7cWtv5RxnEUJ+EKaxQXPgc8W4mm6BysSscWb6CIu3A==
+  version "6.5.2"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-6.5.2.tgz#5a66f9214c534efdd509fa4116bb14c20b3780f5"
+  integrity sha512-wyob7CkuCdq+NBhq78JyX5Llk4tQv2fS1jcVqhvHp96zc9RxemOMvN1GUHTXo4SNVxE+hlUV1smvcsPPsmlj8Q==
   dependencies:
     optional "0.1.4"
 
