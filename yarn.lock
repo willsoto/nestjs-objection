@@ -5956,10 +5956,10 @@ kleur@^3.0.0:
   resolved "https://registry.npmjs.org/kleur/-/kleur-3.0.1.tgz#4f5b313f5fa315432a400f19a24db78d451ede62"
   integrity sha512-P3kRv+B+Ra070ng2VKQqW4qW7gd/v3iD8sy/zOdcYRsfiD+QBokQNOps/AfP6Hr48cBhIIBFWckB9aO+IZhrWg==
 
-knex@~0.18.0:
-  version "0.18.4"
-  resolved "https://registry.yarnpkg.com/knex/-/knex-0.18.4.tgz#2f8e5903265c313e9120c49879132d2e6f312ad3"
-  integrity sha512-BnCU+Xsvv05AUOKZ5hh9xbG1pbZkjhHlJSeBL7BCbTDIum5eyNIs8/jYaHa7nheonQpKCWez3/xne4OBndNaEg==
+knex@~0.19.0:
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/knex/-/knex-0.19.0.tgz#3c0383e70f01b35836079b8ef837fc6566c1aab3"
+  integrity sha512-4acpjPAugogM5KmffJ6wG2e9nrmDq6Xg4tWk0pEHJKfAnqBefMPD0Si9oA2aYzg3Fsfey5FvZYXEDNBsNHeVkw==
   dependencies:
     bluebird "^3.5.5"
     colorette "1.0.8"
@@ -5972,7 +5972,7 @@ knex@~0.18.0:
     lodash "^4.17.14"
     mkdirp "^0.5.1"
     pg-connection-string "2.0.0"
-    tarn "^1.1.5"
+    tarn "^2.0.0"
     tildify "2.0.0"
     uuid "^3.3.2"
     v8flags "^3.1.3"
@@ -9091,10 +9091,10 @@ tar@^4:
     safe-buffer "^5.1.2"
     yallist "^3.0.2"
 
-tarn@^1.1.5:
-  version "1.1.5"
-  resolved "https://registry.npmjs.org/tarn/-/tarn-1.1.5.tgz#7be88622e951738b9fa3fb77477309242cdddc2d"
-  integrity sha512-PMtJ3HCLAZeedWjJPgGnCvcphbCOMbtZpjKgLq3qM5Qq9aQud+XHrL0WlrlgnTyS8U+jrjGbEXprFcQrxPy52g==
+tarn@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/tarn/-/tarn-2.0.0.tgz#c68499f69881f99ae955b4317ca7d212d942fdee"
+  integrity sha512-7rNMCZd3s9bhQh47ksAQd92ADFcJUjjbyOvyFjNLwTPpGieFHMC84S+LOzw0fx1uh6hnDz/19r8CPMnIjJlMMA==
 
 term-size@^2.1.0:
   version "2.1.0"
