@@ -34,7 +34,7 @@
     "rimraf": "~2.6.3",
     "rollup": "~1.19.3",
     "rollup-plugin-eslint": "~7.0.0",
-    "rollup-plugin-filesize": "~6.1.0",
+    "rollup-plugin-filesize": "~6.2.0",
     "rollup-plugin-typescript": "~1.0.1",
     "sqlite3": "~4.0.8",
     "standard-version": "~7.0.0",
