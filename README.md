@@ -1,7 +1,8 @@
 # NestJS Objection
 
-[![pipeline status](https://gitlab.com/willsoto/nestjs-objection/badges/master/pipeline.svg)](https://gitlab.com/willsoto/nestjs-objection/commits/master)
-[![coverage report](https://gitlab.com/willsoto/nestjs-objection/badges/master/coverage.svg)](https://gitlab.com/willsoto/nestjs-objection/commits/master)
+[![npm version](https://badge.fury.io/js/%40willsoto%2Fnestjs-objection.svg)](https://badge.fury.io/js/%40willsoto%2Fnestjs-objection)
+[![NPM downloads](https://img.shields.io/npm/dt/@willsoto/nestjs-objection.svg)](https://www.npmjs.com/package/@willsoto/nestjs-objection)
+[![build status](https://action-badges.now.sh/willsoto/nestjs-objection)](https://action-badges.now.sh/)
 
 ## Table of Contents
 
