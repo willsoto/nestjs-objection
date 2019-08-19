@@ -36,7 +36,7 @@
     "rollup-plugin-eslint": "~7.0.0",
     "rollup-plugin-filesize": "~6.2.0",
     "rollup-plugin-typescript": "~1.0.1",
-    "sqlite3": "~4.0.8",
+    "sqlite3": "~4.1.0",
     "standard-version": "~7.0.0",
     "typescript": "~3.5.1"
   },
