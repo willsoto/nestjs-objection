@@ -16,7 +16,7 @@
     "@nestjs/common": "~6.5.1",
     "@nestjs/core": "~6.5.1",
     "@nestjs/terminus": "~6.5.0",
-    "@nestjs/testing": "~6.5.1",
+    "@nestjs/testing": "~6.6.2",
     "@types/jest": "~24.0.13",
     "@typescript-eslint/eslint-plugin": "~1.9.0",
     "@willsoto/eslint-config-base": "~2.0.0",
