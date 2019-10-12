@@ -3,10 +3,10 @@ name: Node CI
 on:
   push:
     branches:
-    - master
+      - master
   pull_request:
     branches:
-    - master
+      - master
 
 jobs:
   test:
@@ -18,16 +18,15 @@ jobs:
         os: [ubuntu-latest]
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node_version }}
-      uses: actions/setup-node@v1
-      with:
-        version: ${{ matrix.node_version }}
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node_version }}
+        uses: actions/setup-node@v1
+        with:
+          version: ${{ matrix.node_version }}
 
-    - name: install, build and test
-      run: |
-        npm install -g yarn
-        yarn install
-        yarn lint
-        yarn build
-        yarn test --coverage
+      - name: install, build and test
+        run: |
+          yarn install
+          yarn lint
+          yarn build
+          yarn test --coverage
