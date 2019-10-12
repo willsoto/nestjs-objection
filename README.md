@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/%40willsoto%2Fnestjs-objection.svg)](https://badge.fury.io/js/%40willsoto%2Fnestjs-objection)
 [![NPM downloads](https://img.shields.io/npm/dt/@willsoto/nestjs-objection.svg)](https://www.npmjs.com/package/@willsoto/nestjs-objection)
-[![build status](https://action-badges.now.sh/willsoto/nestjs-objection)](https://action-badges.now.sh/)
+![](https://github.com/willsoto/nestjs-objection/workflows/Tests/badge.svg)
 
 ## Table of Contents
 
