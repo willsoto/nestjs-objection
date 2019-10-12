@@ -1,10 +1,36 @@
 {
-  "author": {
-    "email": "willsoto@users.noreply.github.com",
-    "name": "Will Soto",
-    "url": "https://github.com/willsoto"
-  },
+  "name": "@willsoto/nestjs-objection",
   "description": "Objection module for NestJS",
+  "license": "Apache-2.0",
+  "author": "Will Soto <willsoto@users.noreply.github.com> (https://github.com/willsoto)",
+  "version": "2.0.0",
+  "main": "dist/nestjs-objection.umd.js",
+  "module": "dist/nestjs-objection.esm.js",
+  "files": [
+    "dist",
+    "lib",
+    "typings"
+  ],
+  "scripts": {
+    "prebuild": "yarn clean",
+    "build": "rollup --config rollup.config.js",
+    "postbuild": "yarn typings",
+    "clean": "rimraf dist",
+    "lint": "eslint lib --ext ts --fix",
+    "prerelease": "yarn build",
+    "release": "standard-version --sign --message 'chore(release): %s [skip ci]'",
+    "postrelease": "conventional-github-releaser -p angular",
+    "test": "jest",
+    "pretypings": "rimraf typings",
+    "typings": "tsc --project tsconfig.build.json --declaration --declarationDir typings --emitDeclarationOnly"
+  },
+  "typings": "./typings/index.d.ts",
+  "peerDependencies": {
+    "@nestjs/common": ">=6.2.0",
+    "@nestjs/core": ">=6.2.0",
+    "knex": ">=0.16.5",
+    "objection": ">=1.6.8"
+  },
   "devDependencies": {
     "@babel/core": "~7.6.4",
     "@babel/plugin-proposal-decorators": "~7.6.0",
@@ -31,6 +57,7 @@
     "lint-staged": "~9.4.2",
     "objection": "~1.6.9",
     "prettier": "~1.18.2",
+    "prettier-package-json": "~2.1.0",
     "reflect-metadata": "~0.1.13",
     "rimraf": "~3.0.0",
     "rollup": "~1.23.1",
@@ -41,10 +68,11 @@
     "standard-version": "~7.0.0",
     "typescript": "~3.6.4"
   },
-  "files": [
-    "lib",
-    "dist",
-    "typings"
+  "keywords": [
+    "database",
+    "knex",
+    "nestjs",
+    "objection"
   ],
   "husky": {
     "hooks": {
@@ -52,15 +80,8 @@
       "pre-commit": "lint-staged"
     }
   },
-  "keywords": [
-    "nestjs",
-    "objection",
-    "knex",
-    "database"
-  ],
-  "license": "Apache-2.0",
   "lint-staged": {
-    "*.md": [
+    "*.{md,yaml,yml}": [
       "prettier --write",
       "git add"
     ],
@@ -68,32 +89,12 @@
       "yarn lint",
       "prettier --write",
       "git add"
+    ],
+    "package.json": [
+      "prettier-package-json --write",
+      "git add"
     ]
   },
-  "main": "dist/nestjs-objection.umd.js",
-  "module": "dist/nestjs-objection.esm.js",
-  "name": "@willsoto/nestjs-objection",
-  "peerDependencies": {
-    "@nestjs/common": ">=6.2.0",
-    "@nestjs/core": ">=6.2.0",
-    "knex": ">=0.16.5",
-    "objection": ">=1.6.8"
-  },
-  "scripts": {
-    "build": "rollup --config rollup.config.js",
-    "clean": "rimraf dist",
-    "lint": "eslint lib --ext ts --fix",
-    "postbuild": "yarn typings",
-    "postrelease": "conventional-github-releaser -p angular",
-    "prebuild": "yarn clean",
-    "prerelease": "yarn build",
-    "pretypings": "rimraf typings",
-    "release": "standard-version --sign --message 'chore(release): %s [skip ci]'",
-    "test": "jest",
-    "typings": "tsc --project tsconfig.build.json --declaration --declarationDir typings --emitDeclarationOnly"
-  },
-  "typings": "./typings/index.d.ts",
-  "version": "2.0.0",
   "volta": {
     "node": "12.12.0",
     "yarn": "1.19.1"
