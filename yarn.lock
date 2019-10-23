@@ -828,9 +828,9 @@
     find-up "^4.0.0"
 
 "@godaddy/terminus@~4.2.0":
-  version "4.2.0"
-  resolved "https://registry.npmjs.org/@godaddy/terminus/-/terminus-4.2.0.tgz#d0689aea5aa2be337f918345d6d93be49eee4666"
-  integrity sha512-KwBZMmxFIhrsGrGqQFsQajR/mSv+ZsIc8FSkDi5yYblm/jfdUpcBqKF0nkRNCyFCZVKnJ9oHJ8PTL2p2fdO9KQ==
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@godaddy/terminus/-/terminus-4.2.1.tgz#4698f05a9f1322d9abe931e258f8ed3cfd941997"
+  integrity sha512-JmpB/FNSRgXwHcdbRIOhAajI9A2F9bUdZURvM55hLPSXdkHHH2F2Cg3PorA4v3mJbCM53xqRFE57ND/xU2WBiw==
   dependencies:
     es6-promisify "^6.0.0"
     stoppable "^1.0.5"
