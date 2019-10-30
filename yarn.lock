@@ -5406,9 +5406,9 @@ kleur@^3.0.3:
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
 knex@~0.20.0:
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/knex/-/knex-0.20.0.tgz#f1c83718ab60da2fc81ff00de1dd4616400564dd"
-  integrity sha512-2IQUDItwSAuhTxtH/T4VibEuFMngI9LUkpgM0qD/JH1xWARRtWIJ9mU8hNNnFgrKh9RZdPYZToBgsV/UEaje4g==
+  version "0.20.1"
+  resolved "https://registry.yarnpkg.com/knex/-/knex-0.20.1.tgz#e2765492a810b3ae6b4c1b49a7bc4719c83f5c12"
+  integrity sha512-vQvlzsCw4kkqWLmUFVhPX8H4KrfSLVSVGbMJVo4fhJ8N5fN+CH0LzgAmQBh0iwbJY7x8Sk3T4pEjnUlUKjnCPw==
   dependencies:
     bluebird "^3.7.1"
     colorette "1.1.0"
