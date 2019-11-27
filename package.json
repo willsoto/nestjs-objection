@@ -42,7 +42,7 @@
     "@nestjs/common": "6.10.2",
     "@nestjs/core": "6.10.2",
     "@nestjs/terminus": "6.5.3",
-    "@nestjs/testing": "6.10.1",
+    "@nestjs/testing": "6.10.2",
     "@types/jest": "24.0.23",
     "@typescript-eslint/eslint-plugin": "2.9.0",
     "@typescript-eslint/parser": "2.9.0",
