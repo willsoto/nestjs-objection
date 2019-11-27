@@ -39,7 +39,7 @@
     "@commitlint/cli": "8.2.0",
     "@commitlint/config-conventional": "8.2.0",
     "@godaddy/terminus": "4.2.1",
-    "@nestjs/common": "6.10.1",
+    "@nestjs/common": "6.10.2",
     "@nestjs/core": "6.10.1",
     "@nestjs/terminus": "6.5.3",
     "@nestjs/testing": "6.10.1",
