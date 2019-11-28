@@ -53,7 +53,7 @@
     "eslint-config-prettier": "6.7.0",
     "husky": "3.1.0",
     "jest": "24.9.0",
-    "knex": "0.20.2",
+    "knex": "0.20.3",
     "lint-staged": "9.5.0",
     "objection": "1.6.11",
     "prettier": "1.19.1",
