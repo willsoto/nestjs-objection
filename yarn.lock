@@ -840,10 +840,10 @@
   dependencies:
     find-up "^4.0.0"
 
-"@godaddy/terminus@4.3.0":
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/@godaddy/terminus/-/terminus-4.3.0.tgz#6d23cf869fad50a1bab9534919b46263ea76cbd5"
-  integrity sha512-SPz9JLh0CfYYBBEOJMlEACHTnLkG6lS6x0CoeVo90oygAdc5BVEBUsF3qfb6fAL78Z5JBdPPxuvT0Jt31ySIjA==
+"@godaddy/terminus@4.3.1":
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/@godaddy/terminus/-/terminus-4.3.1.tgz#20bc24271df373ae362b3948c9dd95d22736b5c2"
+  integrity sha512-zChILIprb4nWTGJ/pXafbGZqJA7yB6JzFQp5f8PBR5B0cJ6f9Nd40ySLFTBzko+PEZgVaJlKrJi5gUQLTI9dpw==
   dependencies:
     es6-promisify "^6.0.0"
     stoppable "^1.0.5"
