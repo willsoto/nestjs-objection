@@ -55,7 +55,7 @@
     "jest": "24.9.0",
     "knex": "0.20.3",
     "lint-staged": "9.5.0",
-    "objection": "2.0.0",
+    "objection": "2.0.1",
     "prettier": "1.19.1",
     "prettier-package-json": "2.1.0",
     "reflect-metadata": "0.1.13",
