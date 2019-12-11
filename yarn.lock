@@ -1100,10 +1100,10 @@
     redis "2.8.0"
     typeorm "0.2.20"
 
-"@nestjs/testing@6.10.8":
-  version "6.10.8"
-  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-6.10.8.tgz#f7d15db8143c031bb2aef95cdabff109ab9716a1"
-  integrity sha512-Tz2wCZbtJF9Ra0wBMGtYMC2QuT3/4xtTA1k0TrzI/8RFxL9nLtTQMJVkC296vLjQ7suEMZeOdhasisHoB1rsIQ==
+"@nestjs/testing@6.10.10":
+  version "6.10.10"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-6.10.10.tgz#f16f13bd2c904cd374db58c981ab94bee0d286fe"
+  integrity sha512-dusjypkEyiqaQiA4zReb3dE9SGDjkgtOozJXVG12MyUHtKwDkD/ok5dAzynqgbhVIiykIzozUwUPOjauMstTxA==
   dependencies:
     optional "0.1.4"
 
