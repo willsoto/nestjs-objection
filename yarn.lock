@@ -6517,10 +6517,10 @@ object.pick@^1.2.0, object.pick@^1.3.0:
   dependencies:
     isobject "^3.0.1"
 
-objection@2.0.6:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/objection/-/objection-2.0.6.tgz#002377e580b214e96aa220867c7accfacfde1b9b"
-  integrity sha512-kfWrXXvf4eHtLEECdtOFAL95Yb6PWZYbd8K1VTDXvMqia6q6p10zuyIMxK3WH46d7hgxUSz3hjwSk7DlIqODFQ==
+objection@2.0.7:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/objection/-/objection-2.0.7.tgz#b74386a8be7ef8882de8694d3f9d7e29ab232c31"
+  integrity sha512-WRCuGE45K04QhovQ4R9Zs2CsneqbbYMmLdpyQIgUKAzkqPNk8swDFr5VlXEW7NEAZ33xiH7PMDli16e65nWGwA==
   dependencies:
     ajv "^6.10.2"
     db-errors "^0.2.3"
