@@ -1045,10 +1045,10 @@
     object-hash "2.0.1"
     uuid "3.3.3"
 
-"@nestjs/microservices@6.10.1":
-  version "6.10.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/microservices/-/microservices-6.10.1.tgz#17a0a67a0d6f96ba6e19819ad2f4c5edcad6a341"
-  integrity sha512-GZLCuYRpOLE+ECZ39WcrQ4O2CiCmlKRLj/Xczo0cC5VyGTFnwWp3wxKvU1i3qJXsfLIw0dnlT/kVOMbzljeMkA==
+"@nestjs/microservices@6.10.11":
+  version "6.10.11"
+  resolved "https://registry.yarnpkg.com/@nestjs/microservices/-/microservices-6.10.11.tgz#d823186e11baacc9b47fccd08da60d3033b70306"
+  integrity sha512-PUM0uqdescg93mkEvp89MU6pEji8OEOhRmDKEKzVhapEVX4fdc9yiZJTQVDAHPzRXuV20G/jkD6Z7lCBucnnjQ==
   dependencies:
     iterare "1.2.0"
     json-socket "0.3.0"
@@ -1058,47 +1058,47 @@
   resolved "https://registry.npmjs.org/@nestjs/mongoose/-/mongoose-6.1.2.tgz#fe1c227f5c1fd0f5c9be5c4e37b2897f744bc0b0"
   integrity sha512-BkbkguvaPPGbL/41lK6P22DaQodBC9Yv9rUAmNlQVShChtwss7/cGj68AKC3jEoidrx75wCyDO3P8Tp6pggE4w==
 
-"@nestjs/platform-express@6.10.1":
-  version "6.10.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-6.10.1.tgz#12cfa39e0651048ac7f526c2f1b0f73171af8acb"
-  integrity sha512-Tm5jRoPKhWj2VloM9fGkgR9S/yLQnDDfgPE9dvJX89hVQHS8RA7ub9kKfXF1iJjV+nAjk4XpPj8yGoUpYrC31g==
+"@nestjs/platform-express@6.10.11":
+  version "6.10.11"
+  resolved "https://registry.yarnpkg.com/@nestjs/platform-express/-/platform-express-6.10.11.tgz#d21a3620e9164e4c4469e8c7311e04841e53aa23"
+  integrity sha512-J4Y1A3DVWW6WukummhMK6ER03H7S3m12a938tmJjDqGBAuDInFS4a6t0lFe0ivJLfvlTU9xjZ0PU7Z+VhDt6aQ==
   dependencies:
     body-parser "1.19.0"
     cors "2.8.5"
     express "4.17.1"
     multer "1.4.2"
 
-"@nestjs/platform-fastify@6.10.1":
-  version "6.10.1"
-  resolved "https://registry.yarnpkg.com/@nestjs/platform-fastify/-/platform-fastify-6.10.1.tgz#03564bcd370f08490c7cbd9b4a29e4278d5b8cc7"
-  integrity sha512-OPK9F4UmTbucuGLN/ZIqmQSLXd5WtM2sZGN4j68w5kdf3eNe12K7qwEwDj5m20tTVvhV6fklljUgY2RjFL8L6w==
+"@nestjs/platform-fastify@6.10.11":
+  version "6.10.11"
+  resolved "https://registry.yarnpkg.com/@nestjs/platform-fastify/-/platform-fastify-6.10.11.tgz#8c40308709f14bb9656d0a59492039ecaca8e726"
+  integrity sha512-ZVT/qkgOa09CXOAOwyk7A4UUKletrUqjfr4eUwQxfoLyQzf/qNJfQtEIGcQdXE8riakQWArv02Ks1U0zsLXQdw==
   dependencies:
     fastify "2.10.0"
-    fastify-cors "2.2.0"
+    fastify-cors "3.0.0"
     fastify-formbody "3.1.0"
     path-to-regexp "3.2.0"
 
-"@nestjs/terminus@6.5.3":
-  version "6.5.3"
-  resolved "https://registry.yarnpkg.com/@nestjs/terminus/-/terminus-6.5.3.tgz#ecfa093dfcd34f296760c1863917489210978581"
-  integrity sha512-/VMtXvbbvHeYjG7Tp5PngHniVAt+AeUELFjWfyh0LpcinwMsX6IcppI1mD9v5fGniQd4m97+NeJIT/uvcqtgjw==
+"@nestjs/terminus@6.5.5":
+  version "6.5.5"
+  resolved "https://registry.yarnpkg.com/@nestjs/terminus/-/terminus-6.5.5.tgz#9dc5c07d627b213ae8d21a5a66715672e3525cb0"
+  integrity sha512-sJQuJPtyxEGNkiTsLDelYgWsGp8lAe6UAg/J4JIfz0fKjIw4vXp/DKLgcjZQmIYSeBrl2qDa/aoxIEe6XCXuKg==
   dependencies:
     check-disk-space "2.1.0"
   optionalDependencies:
     "@grpc/proto-loader" "0.5.3"
-    "@nestjs/microservices" "6.10.1"
+    "@nestjs/microservices" "6.10.11"
     "@nestjs/mongoose" "6.1.2"
-    "@nestjs/platform-express" "6.10.1"
-    "@nestjs/platform-fastify" "6.10.1"
+    "@nestjs/platform-express" "6.10.11"
+    "@nestjs/platform-fastify" "6.10.11"
     "@nestjs/typeorm" "6.2.0"
-    amqp-connection-manager "3.0.0"
+    amqp-connection-manager "3.1.0"
     amqplib "0.5.5"
     grpc "1.24.2"
-    mongoose "5.7.11"
+    mongoose "5.8.1"
     mqtt "3.0.0"
     nats "1.3.2"
     redis "2.8.0"
-    typeorm "0.2.20"
+    typeorm "0.2.21"
 
 "@nestjs/testing@6.10.11":
   version "6.10.11"
@@ -1521,10 +1521,10 @@ ajv@^6.10.0, ajv@^6.10.2, ajv@^6.5.5, ajv@^6.8.1:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-amqp-connection-manager@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npmjs.org/amqp-connection-manager/-/amqp-connection-manager-3.0.0.tgz#9e273c616122033ca802f962b4d0e48895a5ff9a"
-  integrity sha512-a5MsUDsG+CqMjwk/WNFSTE0H4pAaWJXw7L24QFa3MeaB+KA05PXoBsppYlIzaIqc1XLWZwjO9J42AFHNrDsVFQ==
+amqp-connection-manager@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/amqp-connection-manager/-/amqp-connection-manager-3.1.0.tgz#2ee7e4ceed3df541a373507c8dcec028331672e1"
+  integrity sha512-RJAe2/QrQsPjVFH5DY7Wu1ZzDyLRAly2BzvPJYogZulQOIRWfdLj3lVOHV4e4MQyYSANie4k5hX1zIEe8aLmPg==
   dependencies:
     promise-breaker "^5.0.0"
 
@@ -1604,10 +1604,10 @@ anymatch@^2.0.0:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
 
-app-root-path@^2.0.1:
-  version "2.2.1"
-  resolved "https://registry.npmjs.org/app-root-path/-/app-root-path-2.2.1.tgz#d0df4a682ee408273583d43f6f79e9892624bc9a"
-  integrity sha512-91IFKeKk7FjfmezPKkwtaRvSpnUc4gDwPAjA1YZ9Gn0q0PPeW+vbeUsZuyDwjI7+QTHhcLen2v25fi/AmhvbJA==
+app-root-path@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/app-root-path/-/app-root-path-3.0.0.tgz#210b6f43873227e18a4b810a032283311555d5ad"
+  integrity sha512-qMcx+Gy2UZynHjOHOIXPNvpf+9cjvk3cWrBBK7zg4gH9+clobJRb9NGzcT7mQTcV/6Gm/1WelUtqxVXnNlrwcw==
 
 append-field@^1.0.0:
   version "1.0.0"
@@ -3624,10 +3624,10 @@ fast-safe-stringify@2.0.7, fast-safe-stringify@^2.0.7:
   resolved "https://registry.npmjs.org/fast-safe-stringify/-/fast-safe-stringify-2.0.7.tgz#124aa885899261f68aedb42a7c080de9da608743"
   integrity sha512-Utm6CdzT+6xsDk2m8S6uL8VHxNwI6Jub+e9NYTcAms28T84pTa25GJQV9j0CY0N1rM8hK4x6grpF2BQf+2qwVA==
 
-fastify-cors@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/fastify-cors/-/fastify-cors-2.2.0.tgz#700fca91b735999193699980cb005a25f85d91ce"
-  integrity sha512-xnZmYPWUxrIBEsv5x2JrsDlrskoFkOE0KAwedEe6dn8TCxpARwW6U+nofAKWZMDF+dXkEslRCgrd1ixdEIkB8w==
+fastify-cors@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/fastify-cors/-/fastify-cors-3.0.0.tgz#63b914d8256be6c6ae7d4cb90e33eaa56a1261c7"
+  integrity sha512-bLV7OIZ7ojvLaf0jOEsqAO4ShrBSc6412R6SVDIrFK6vIUAezTAVgk9MqcklZnc3ch/N/IC9kGPu5AfhqAIHkg==
   dependencies:
     fastify-plugin "^1.6.0"
     vary "^1.1.2"
@@ -6069,10 +6069,10 @@ modify-values@^1.0.0:
   resolved "https://registry.npmjs.org/modify-values/-/modify-values-1.0.1.tgz#b3939fa605546474e3e3e3c63d64bd43b4ee6022"
   integrity sha512-xV2bxeN6F7oYjZWTe/YPAy6MN2M+sL4u/Rlm2AHCIVGfo2p1yGmBHQ6vHehl4bRTZBdHu3TSkWdYgkwpYzAGSw==
 
-mongodb@3.3.4:
-  version "3.3.4"
-  resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-3.3.4.tgz#f52eec4a04005101e63715d4d1f67bf784fa0aef"
-  integrity sha512-6fmHu3FJTpeZxacJcfjUGIP3BSteG0l2cxLkSrf1nnnS1OrlnVGiP9P/wAC4aB6dM6H4vQ2io8YDjkuPkje7AA==
+mongodb@3.3.5:
+  version "3.3.5"
+  resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-3.3.5.tgz#38d531013afede92b0dd282e3b9f3c08c9bdff3b"
+  integrity sha512-6NAv5gTFdwRyVfCz+O+KDszvjpyxmZw+VlmqmqKR2GmpkeKrKFRv/ZslgTtZba2dc9JYixIf99T5Gih7TIWv7Q==
   dependencies:
     bson "^1.1.1"
     require_optional "^1.0.1"
@@ -6085,14 +6085,14 @@ mongoose-legacy-pluralize@1.0.2:
   resolved "https://registry.npmjs.org/mongoose-legacy-pluralize/-/mongoose-legacy-pluralize-1.0.2.tgz#3ba9f91fa507b5186d399fb40854bff18fb563e4"
   integrity sha512-Yo/7qQU4/EyIS8YDFSeenIvXxZN+ld7YdV9LqFVQJzTLye8unujAWPZ4NWKfFA+RNjh+wvTWKY9Z3E5XM6ZZiQ==
 
-mongoose@5.7.11:
-  version "5.7.11"
-  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.7.11.tgz#74a1293deb7a69d41abd447056f5d522e28bab64"
-  integrity sha512-KpXGBTXQTKfTlePpZMY+FBsk9wiyp2gzfph9AsLPfWleK1x2GJY+6xpKx2kKIgLustgNq16OOrqwlAOGUbv3kg==
+mongoose@5.8.1:
+  version "5.8.1"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.8.1.tgz#9a14a17a1e764d3d3397db95326b7ba03146b8eb"
+  integrity sha512-8Cffl52cMK2iBlpLipoRKW/RdrhkxvVzXsy+xVsfbKHQBCWkFiS0T0jU4smYzomTMP4gW0sReJoRA7Gu/7VVgQ==
   dependencies:
     bson "~1.1.1"
     kareem "2.3.1"
-    mongodb "3.3.4"
+    mongodb "3.3.5"
     mongoose-legacy-pluralize "1.0.2"
     mpath "0.6.0"
     mquery "3.2.2"
@@ -8664,12 +8664,12 @@ typedarray@^0.0.6:
   resolved "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeorm@0.2.20:
-  version "0.2.20"
-  resolved "https://registry.yarnpkg.com/typeorm/-/typeorm-0.2.20.tgz#efb60f2e55a7d08fc365f281ec2a71c87a9ebba5"
-  integrity sha512-VxB+9qH8D+PM19MIx18Zs3Fqv/ZINnnQvUGmBEiLYDrB9etdSdamgSTCIhWdFNndeJ6ldH4jbD0Z6HWsepMPlA==
+typeorm@0.2.21:
+  version "0.2.21"
+  resolved "https://registry.yarnpkg.com/typeorm/-/typeorm-0.2.21.tgz#d8d63bec783c128913b140b52f65e9fd76e44510"
+  integrity sha512-4abj5aFjwt4Y+Gs3VmykcjURUZwIezwPWYVMNl2swRk8/iluGZZ9Lbwd4tdzJ7ZdsgKyHsT8zf8zPZPL5jH+EQ==
   dependencies:
-    app-root-path "^2.0.1"
+    app-root-path "^3.0.0"
     buffer "^5.1.0"
     chalk "^2.4.2"
     cli-highlight "^2.0.0"
