@@ -37,7 +37,7 @@
     "@babel/preset-env": "7.7.7",
     "@babel/preset-typescript": "7.7.7",
     "@commitlint/cli": "8.2.0",
-    "@commitlint/config-conventional": "8.2.0",
+    "@commitlint/config-conventional": "8.3.3",
     "@godaddy/terminus": "4.3.1",
     "@nestjs/common": "6.10.13",
     "@nestjs/core": "6.10.13",
