@@ -34,7 +34,7 @@
   "devDependencies": {
     "@babel/core": "7.8.0",
     "@babel/plugin-proposal-decorators": "7.8.3",
-    "@babel/preset-env": "7.8.2",
+    "@babel/preset-env": "7.8.3",
     "@babel/preset-typescript": "7.8.3",
     "@commitlint/cli": "8.3.4",
     "@commitlint/config-conventional": "8.3.4",
