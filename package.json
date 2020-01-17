@@ -67,7 +67,7 @@
     "rxjs": "6.5.4",
     "sqlite3": "4.1.1",
     "standard-version": "7.0.1",
-    "typescript": "3.7.4"
+    "typescript": "3.7.5"
   },
   "keywords": [
     "database",
