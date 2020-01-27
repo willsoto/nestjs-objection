@@ -1202,12 +1202,13 @@
     redis "2.8.0"
     typeorm "0.2.21"
 
-"@nestjs/testing@6.10.14":
-  version "6.10.14"
-  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-6.10.14.tgz#f78b92821a35fc1f3acd96e734994856bb15a185"
-  integrity sha512-jKzT9eAIJ6xeYXd/Jxtr7lgcixqq6ArNFnzhlM7FeHe/24wFBfWLfTCHe1GJoUo381Y5tPYw3pDr4yELp/Vo9Q==
+"@nestjs/testing@6.11.1":
+  version "6.11.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/testing/-/testing-6.11.1.tgz#505ac160c1144889b72c5e974858ab3b5ff24b5b"
+  integrity sha512-Y4jgZONBbU07gML3pIVBC/dI5Am2uDVRQ1Gg6rPV9OFpmXJgSMNZTLsqOfrgUuIRV61PTuD7emzn6E91ussdxw==
   dependencies:
     optional "0.1.4"
+    tslib "1.10.0"
 
 "@nestjs/typeorm@6.2.0":
   version "6.2.0"
