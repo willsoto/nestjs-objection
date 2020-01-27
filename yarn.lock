@@ -1125,14 +1125,15 @@
     mkdirp "^0.5.1"
     rimraf "^2.5.2"
 
-"@nestjs/common@6.10.14":
-  version "6.10.14"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-6.10.14.tgz#559d513a7ad1765f8516abac9754af80674cfefc"
-  integrity sha512-3msjd03BAIVV0hIrAUrB1KZFHBXLQFEg1i7mAdFbXzMQDoKzI8s0gRvFwlHnEAcMLvk3fKdYenrVkYJKC2dMBg==
+"@nestjs/common@6.11.1":
+  version "6.11.1"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-6.11.1.tgz#8bce7d5849dc42b74196685ef09020312f1aca5e"
+  integrity sha512-ozraRypa0uA0I15lFkCuEC4BaJmruGetDW2VXuJ0hifSl98sHoj+XeZmW5QfNTl8ouPEJ46jc+HtBtyZ1IeR+A==
   dependencies:
-    axios "0.19.0"
+    axios "0.19.2"
     cli-color "2.0.0"
-    uuid "3.3.3"
+    tslib "1.10.0"
+    uuid "3.4.0"
 
 "@nestjs/core@6.11.1":
   version "6.11.1"
@@ -1853,13 +1854,12 @@ aws4@^1.8.0:
   resolved "https://registry.npmjs.org/aws4/-/aws4-1.8.0.tgz#f0e003d9ca9e7f59c7a508945d7b2ef9a04a542f"
   integrity sha512-ReZxvNHIOv88FlT7rxcXIIC0fPt4KZqZbOlivyWtXLt8ESx84zd3kMC6iK5jVeS2qt+g7ftS7ye4fi06X5rtRQ==
 
-axios@0.19.0:
-  version "0.19.0"
-  resolved "https://registry.npmjs.org/axios/-/axios-0.19.0.tgz#8e09bff3d9122e133f7b8101c8fbdd00ed3d2ab8"
-  integrity sha512-1uvKqKQta3KBxIz14F2v06AEHZ/dIoeKfbTRkK1E5oqjDnuEerLmYTgJB5AiQZHJcljpg1TuRzdjDR06qNk0DQ==
+axios@0.19.2:
+  version "0.19.2"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
+  integrity sha512-fjgm5MvRHLhx+osE2xoekY70AhARk3a6hkN+3Io1jc00jtquGvxYlKlsFUhmUET0V5te6CcZI7lcv2Ym61mjHA==
   dependencies:
     follow-redirects "1.5.10"
-    is-buffer "^2.0.2"
 
 babel-eslint@^10.0.1:
   version "10.0.3"
@@ -4720,11 +4720,6 @@ is-buffer@^1.1.5:
   version "1.1.6"
   resolved "https://registry.npmjs.org/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
   integrity sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
-
-is-buffer@^2.0.2:
-  version "2.0.4"
-  resolved "https://registry.npmjs.org/is-buffer/-/is-buffer-2.0.4.tgz#3e572f23c8411a5cfd9557c849e3665e0b290623"
-  integrity sha512-Kq1rokWXOPXWuaMAqZiJW4XxsmD9zGx9q4aePabbn3qCRGedtH7Cm+zV8WETitMfu1wdh+Rvd6w5egwSngUX2A==
 
 is-callable@^1.1.4:
   version "1.1.4"
