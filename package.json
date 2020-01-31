@@ -54,7 +54,7 @@
     "husky": "4.2.1",
     "jest": "25.1.0",
     "knex": "0.20.8",
-    "lint-staged": "10.0.5",
+    "lint-staged": "10.0.7",
     "objection": "2.1.2",
     "prettier": "1.19.1",
     "prettier-package-json": "2.1.3",
