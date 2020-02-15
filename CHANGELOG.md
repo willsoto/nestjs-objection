@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/willsoto/nestjs-objection/compare/v2.0.0...v2.1.0) (2020-02-15)
+
+
+### Features
+
+* deprecate forRoot and forRootAsync ([5b2db23](https://github.com/willsoto/nestjs-objection/commit/5b2db234efe9b456101cd8553a3eb88c75f09716))
+* **dependabot:** add dependabot config ([ca6225a](https://github.com/willsoto/nestjs-objection/commit/ca6225a2972d31f99ba582382f9e05ece160f906))
+* **package:** add prettier-package-json ([b1c8e93](https://github.com/willsoto/nestjs-objection/commit/b1c8e93a57f06af0b2cf42a9579b29ca5ad078c4))
+* **package:** upgrade all packages ([97eb451](https://github.com/willsoto/nestjs-objection/commit/97eb451f1307f7fb6e92834028b50250af7d6db9))
+* **package:** upgrade rollup and babel ([ae2b433](https://github.com/willsoto/nestjs-objection/commit/ae2b433dd693cabd61e43840803ae057b1092a9f))
+
+
+### Bug Fixes
+
+* **core:** better condition for useClass and useExisting ([da5dc49](https://github.com/willsoto/nestjs-objection/commit/da5dc49d24bf564e1fd759c51dda9704cac9e8f2))
+
 ## [2.0.0](https://github.com/willsoto/nestjs-objection/compare/v1.1.0...v2.0.0) (2019-06-07)
 
 

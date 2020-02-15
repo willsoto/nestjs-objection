@@ -3,7 +3,7 @@
   "description": "Objection module for NestJS",
   "license": "Apache-2.0",
   "author": "Will Soto <willsoto@users.noreply.github.com> (https://github.com/willsoto)",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "main": "dist/nestjs-objection.umd.js",
   "module": "dist/nestjs-objection.esm.js",
   "files": [
