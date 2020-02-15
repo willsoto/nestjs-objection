@@ -18,7 +18,7 @@
     "clean": "rimraf dist",
     "lint": "eslint lib --ext ts --fix",
     "prerelease": "yarn build",
-    "release": "standard-version --sign --message 'chore(release): %s [skip ci]'",
+    "release": "standard-version --sign --releaseCommitMessageFormat 'chore(release): %s [skip ci]'",
     "postrelease": "conventional-github-releaser -p angular",
     "test": "jest",
     "pretypings": "rimraf typings",
