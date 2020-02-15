@@ -9,8 +9,8 @@ describe("ObjectionModule", () => {
     client: "sqlite3",
     useNullAsDefault: true,
     connection: {
-      filename: "./testing.sqlite"
-    }
+      filename: "./testing.sqlite",
+    },
   };
 
   describe("#register", () => {
@@ -18,9 +18,9 @@ describe("ObjectionModule", () => {
       testingModule = await Test.createTestingModule({
         imports: [
           ObjectionModule.register({
-            config
-          })
-        ]
+            config,
+          }),
+        ],
       }).compile();
     });
 
@@ -44,11 +44,11 @@ describe("ObjectionModule", () => {
           ObjectionModule.registerAsync({
             useFactory() {
               return {
-                config
+                config,
               };
-            }
-          })
-        ]
+            },
+          }),
+        ],
       }).compile();
     });
 

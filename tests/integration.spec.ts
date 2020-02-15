@@ -10,7 +10,7 @@ describe("Integration", () => {
 
   beforeEach(async () => {
     const testingModule: TestingModule = await Test.createTestingModule({
-      imports: [ConnectionModule]
+      imports: [ConnectionModule],
     }).compile();
 
     connectionCheck = testingModule.get<ConnectionCheck>(ConnectionCheck);

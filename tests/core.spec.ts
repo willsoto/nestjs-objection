@@ -1,12 +1,12 @@
 import {
   KNEX_CONNECTION,
   OBJECTION_BASE_MODEL,
-  OBJECTION_MODULE_OPTIONS
+  OBJECTION_MODULE_OPTIONS,
 } from "@/constants";
 import { ObjectionCoreModule } from "@/core";
 import {
   ObjectionModuleOptions,
-  ObjectionModuleOptionsFactory
+  ObjectionModuleOptionsFactory,
 } from "@/interfaces";
 import { Injectable } from "@nestjs/common";
 import { Test, TestingModule } from "@nestjs/testing";
@@ -18,8 +18,8 @@ describe("ObjectionCoreModule", () => {
     client: "sqlite3",
     useNullAsDefault: true,
     connection: {
-      filename: "./testing.sqlite"
-    }
+      filename: "./testing.sqlite",
+    },
   };
 
   describe("#register", () => {
@@ -27,9 +27,9 @@ describe("ObjectionCoreModule", () => {
       testingModule = await Test.createTestingModule({
         imports: [
           ObjectionCoreModule.register({
-            config
-          })
-        ]
+            config,
+          }),
+        ],
       }).compile();
     });
 
@@ -53,11 +53,11 @@ describe("ObjectionCoreModule", () => {
           ObjectionCoreModule.registerAsync({
             useFactory() {
               return {
-                config
+                config,
               };
-            }
-          })
-        ]
+            },
+          }),
+        ],
       }).compile();
     });
 
@@ -78,7 +78,7 @@ describe("ObjectionCoreModule", () => {
     class ModuleOptionsFactory implements ObjectionModuleOptionsFactory {
       public createObjectionModuleOptions(): ObjectionModuleOptions {
         return {
-          config
+          config,
         };
       }
     }
@@ -91,49 +91,49 @@ describe("ObjectionCoreModule", () => {
 
     test("leverages useClass if provided", () => {
       const providers = ObjectionCoreModule.createAsyncProviders({
-        useClass: ModuleOptionsFactory
+        useClass: ModuleOptionsFactory,
       });
 
       expect(providers).toEqual([
         {
           inject: [ModuleOptionsFactory],
           useFactory: expect.any(Function),
-          provide: OBJECTION_MODULE_OPTIONS
+          provide: OBJECTION_MODULE_OPTIONS,
         },
         {
           useClass: ModuleOptionsFactory,
-          provide: ModuleOptionsFactory
-        }
+          provide: ModuleOptionsFactory,
+        },
       ]);
     });
 
     test("returns an array of providers when useExisting is passed", () => {
       const providers = ObjectionCoreModule.createAsyncProviders({
-        useExisting: ModuleOptionsFactory
+        useExisting: ModuleOptionsFactory,
       });
 
       expect(providers).toEqual([
         {
           inject: [ModuleOptionsFactory],
           useFactory: expect.any(Function),
-          provide: OBJECTION_MODULE_OPTIONS
-        }
+          provide: OBJECTION_MODULE_OPTIONS,
+        },
       ]);
     });
 
     test("returns an array of providers when useFactory is passed", () => {
       const providers = ObjectionCoreModule.createAsyncProviders({
         useFactory: () => ({
-          config
-        })
+          config,
+        }),
       });
 
       expect(providers).toEqual([
         {
           inject: [],
           useFactory: expect.any(Function),
-          provide: OBJECTION_MODULE_OPTIONS
-        }
+          provide: OBJECTION_MODULE_OPTIONS,
+        },
       ]);
     });
   });
@@ -144,7 +144,7 @@ describe("ObjectionCoreModule", () => {
     class ModuleOptionsFactory implements ObjectionModuleOptionsFactory {
       public createObjectionModuleOptions(): ObjectionModuleOptions {
         return {
-          config
+          config,
         };
       }
     }
@@ -152,45 +152,45 @@ describe("ObjectionCoreModule", () => {
     test("returns the appropriate provider when useFactory is passed", () => {
       const provider = ObjectionCoreModule.createAsyncOptionsProvider({
         useFactory: () => ({
-          config
-        })
+          config,
+        }),
       });
 
       expect(provider).toEqual({
         inject: [],
         provide: OBJECTION_MODULE_OPTIONS,
-        useFactory: expect.any(Function)
+        useFactory: expect.any(Function),
       });
     });
 
     test("returns the appropriate provider when useExisting is passed", () => {
       const provider = ObjectionCoreModule.createAsyncOptionsProvider({
-        useExisting: ModuleOptionsFactory
+        useExisting: ModuleOptionsFactory,
       });
 
       expect(provider).toEqual({
         inject: [ModuleOptionsFactory],
         provide: OBJECTION_MODULE_OPTIONS,
-        useFactory: expect.any(Function)
+        useFactory: expect.any(Function),
       });
     });
 
     test("returns an async factory function that calls createObjectionModuleOptions", async () => {
       jest.spyOn(
         ModuleOptionsFactory.prototype,
-        "createObjectionModuleOptions"
+        "createObjectionModuleOptions",
       );
 
       await Test.createTestingModule({
         imports: [
           ObjectionCoreModule.registerAsync({
-            useClass: ModuleOptionsFactory
-          })
-        ]
+            useClass: ModuleOptionsFactory,
+          }),
+        ],
       }).compile();
 
       expect(
-        ModuleOptionsFactory.prototype.createObjectionModuleOptions
+        ModuleOptionsFactory.prototype.createObjectionModuleOptions,
       ).toHaveBeenCalled();
     });
   });

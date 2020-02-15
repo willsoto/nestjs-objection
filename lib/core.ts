@@ -5,13 +5,13 @@ import { Model } from "objection";
 import {
   KNEX_CONNECTION,
   OBJECTION_BASE_MODEL,
-  OBJECTION_MODULE_OPTIONS
+  OBJECTION_MODULE_OPTIONS,
 } from "./constants";
 import {
   Connection,
   ObjectionModuleAsyncOptions,
   ObjectionModuleOptions,
-  ObjectionModuleOptionsFactory
+  ObjectionModuleOptionsFactory,
 } from "./interfaces";
 
 @Module({})
@@ -24,17 +24,17 @@ export class ObjectionCoreModule {
 
     const objectionModuleOptions: Provider = {
       provide: OBJECTION_MODULE_OPTIONS,
-      useValue: options
+      useValue: options,
     };
 
     const objectionBaseModelProvider: Provider = {
       provide: OBJECTION_BASE_MODEL,
-      useValue: BaseModel
+      useValue: BaseModel,
     };
 
     const knexConnectionProvider: Provider = {
       provide: KNEX_CONNECTION,
-      useValue: connection
+      useValue: connection,
     };
 
     return {
@@ -42,21 +42,21 @@ export class ObjectionCoreModule {
       providers: [
         objectionModuleOptions,
         objectionBaseModelProvider,
-        knexConnectionProvider
+        knexConnectionProvider,
       ],
-      exports: [objectionBaseModelProvider, knexConnectionProvider]
+      exports: [objectionBaseModelProvider, knexConnectionProvider],
     };
   }
 
   public static registerAsync(
-    options: ObjectionModuleAsyncOptions = {}
+    options: ObjectionModuleAsyncOptions = {},
   ): DynamicModule {
     const knexConnectionProvider: Provider = {
       provide: KNEX_CONNECTION,
       inject: [OBJECTION_MODULE_OPTIONS],
       useFactory(objectionModuleOptions: ObjectionModuleOptions): Knex {
         return Knex(objectionModuleOptions.config);
-      }
+      },
     };
 
     const objectionBaseModelProvider: Provider = {
@@ -64,14 +64,14 @@ export class ObjectionCoreModule {
       inject: [KNEX_CONNECTION, OBJECTION_MODULE_OPTIONS],
       useFactory(
         connection: Connection,
-        objectionModuleOptions: ObjectionModuleOptions
+        objectionModuleOptions: ObjectionModuleOptions,
       ): typeof Model {
         const BaseModel = objectionModuleOptions.Model || Model;
 
         BaseModel.knex(connection);
 
         return BaseModel;
-      }
+      },
     };
     const asyncProviders = this.createAsyncProviders(options);
 
@@ -81,14 +81,14 @@ export class ObjectionCoreModule {
       providers: [
         ...asyncProviders,
         knexConnectionProvider,
-        objectionBaseModelProvider
+        objectionBaseModelProvider,
       ],
-      exports: [objectionBaseModelProvider, knexConnectionProvider]
+      exports: [objectionBaseModelProvider, knexConnectionProvider],
     };
   }
 
   public static createAsyncProviders(
-    options: ObjectionModuleAsyncOptions
+    options: ObjectionModuleAsyncOptions,
   ): Provider[] {
     if (options.useExisting || options.useFactory) {
       return [this.createAsyncOptionsProvider(options)];
@@ -100,19 +100,19 @@ export class ObjectionCoreModule {
       this.createAsyncOptionsProvider(options),
       {
         provide: options.useClass,
-        useClass: options.useClass
-      }
+        useClass: options.useClass,
+      },
     ];
   }
 
   public static createAsyncOptionsProvider(
-    options: ObjectionModuleAsyncOptions
+    options: ObjectionModuleAsyncOptions,
   ): Provider {
     if (options.useFactory) {
       return {
         provide: OBJECTION_MODULE_OPTIONS,
         useFactory: options.useFactory,
-        inject: options.inject || []
+        inject: options.inject || [],
       };
     }
 
@@ -120,20 +120,20 @@ export class ObjectionCoreModule {
 
     if (!inject) {
       throw new Error(
-        "Invalid configuration. Must provide useFactory, useClass or useExisting"
+        "Invalid configuration. Must provide useFactory, useClass or useExisting",
       );
     }
 
     return {
       provide: OBJECTION_MODULE_OPTIONS,
       async useFactory(
-        optionsFactory: ObjectionModuleOptionsFactory
+        optionsFactory: ObjectionModuleOptionsFactory,
       ): Promise<ObjectionModuleOptions> {
         const opts = await optionsFactory.createObjectionModuleOptions();
 
         return opts;
       },
-      inject: [inject]
+      inject: [inject],
     };
   }
 }

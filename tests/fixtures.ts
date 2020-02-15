@@ -19,12 +19,12 @@ export class ConnectionCheck {
         client: "sqlite3",
         useNullAsDefault: true,
         connection: {
-          filename: "./testing.sqlite"
-        }
-      }
-    })
+          filename: "./testing.sqlite",
+        },
+      },
+    }),
   ],
   providers: [ConnectionCheck],
-  exports: [ConnectionCheck]
+  exports: [ConnectionCheck],
 })
 export class ConnectionModule {}
