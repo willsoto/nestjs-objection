@@ -14,7 +14,7 @@ export class ConnectionCheck {
 
 @Module({
   imports: [
-    ObjectionModule.forRoot({
+    ObjectionModule.register({
       config: {
         client: "sqlite3",
         useNullAsDefault: true,

@@ -16,7 +16,7 @@ import {
 
 @Module({})
 export class ObjectionCoreModule {
-  public static forRoot(options: ObjectionModuleOptions): DynamicModule {
+  public static register(options: ObjectionModuleOptions): DynamicModule {
     const BaseModel = options.Model || Model;
     const connection = Knex(options.config);
 
@@ -48,7 +48,7 @@ export class ObjectionCoreModule {
     };
   }
 
-  public static forRootAsync(
+  public static registerAsync(
     options: ObjectionModuleAsyncOptions = {}
   ): DynamicModule {
     const knexConnectionProvider: Provider = {

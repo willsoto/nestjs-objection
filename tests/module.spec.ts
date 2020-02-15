@@ -13,11 +13,11 @@ describe("ObjectionModule", () => {
     }
   };
 
-  describe("#forRoot", () => {
+  describe("#register", () => {
     beforeEach(async () => {
       testingModule = await Test.createTestingModule({
         imports: [
-          ObjectionModule.forRoot({
+          ObjectionModule.register({
             config
           })
         ]
@@ -37,11 +37,11 @@ describe("ObjectionModule", () => {
     });
   });
 
-  describe("#forRootAsync", () => {
+  describe("#registerAsync", () => {
     beforeEach(async () => {
       testingModule = await Test.createTestingModule({
         imports: [
-          ObjectionModule.forRootAsync({
+          ObjectionModule.registerAsync({
             useFactory() {
               return {
                 config
