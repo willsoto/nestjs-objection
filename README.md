@@ -31,7 +31,7 @@ yarn add knex objection
 
 ## API
 
-### `ObjectionModule.forRoot`
+### `ObjectionModule.register`
 
 ```typescript
 import { ObjectionModule } from "@willsoto/nestjs-objection";
@@ -43,7 +43,7 @@ import { BaseModel } from "./base";
 
 @Module({
   imports: [
-    ObjectionModule.forRoot({
+    ObjectionModule.register({
       // You can specify a custom BaseModel
       // If none is provided, the default Model will be used
       // https://vincit.github.io/objection.js/#models
@@ -52,17 +52,17 @@ import { BaseModel } from "./base";
         client: "sqlite3",
         useNullAsDefault: true,
         connection: {
-          filename: "./example.sqlite"
-        }
-      }
-    })
+          filename: "./example.sqlite",
+        },
+      },
+    }),
   ],
-  exports: [ObjectionModule]
+  exports: [ObjectionModule],
 })
 export class DatabaseModule {}
 ```
 
-### `ObjectionModule.forRootAsync`
+### `ObjectionModule.registerAsync`
 
 ```typescript
 import { ObjectionModule } from "@willsoto/nestjs-objection";
@@ -74,7 +74,7 @@ import { BaseModel } from "./base";
 
 @Module({
   imports: [
-    ObjectionModule.forRootAsync({
+    ObjectionModule.registerAsync({
       imports: [ConfigModule],
       inject: [ConfigService],
       useFactory(config: ConfigService) {
@@ -85,13 +85,13 @@ import { BaseModel } from "./base";
           Model: BaseModel,
           config: {
             ...config.get<knex.Config>("database"),
-            ...knexSnakeCaseMappers()
-          }
+            ...knexSnakeCaseMappers(),
+          },
         };
-      }
-    })
+      },
+    }),
   ],
-  exports: [ObjectionModule]
+  exports: [ObjectionModule],
 })
 export class DatabaseModule {}
 ```
