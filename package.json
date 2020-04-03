@@ -47,7 +47,7 @@
     "@typescript-eslint/eslint-plugin": "2.26.0",
     "@typescript-eslint/parser": "2.26.0",
     "@willsoto/eslint-config-base": "2.0.0",
-    "babel-jest": "25.2.4",
+    "babel-jest": "25.2.6",
     "conventional-github-releaser": "3.1.3",
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.10.1",
