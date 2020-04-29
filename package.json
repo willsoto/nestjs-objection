@@ -52,7 +52,7 @@
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.11.0",
     "husky": "4.2.5",
-    "jest": "25.4.0",
+    "jest": "25.5.0",
     "knex": "0.21.1",
     "lint-staged": "10.1.7",
     "objection": "2.1.3",
