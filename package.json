@@ -44,7 +44,7 @@
     "@nestjs/terminus": "6.5.6",
     "@nestjs/testing": "7.0.0",
     "@types/jest": "25.2.1",
-    "@typescript-eslint/eslint-plugin": "2.30.0",
+    "@typescript-eslint/eslint-plugin": "2.31.0",
     "@typescript-eslint/parser": "2.30.0",
     "@willsoto/eslint-config-base": "2.0.0",
     "babel-jest": "26.0.0",
