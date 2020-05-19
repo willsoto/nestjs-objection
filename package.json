@@ -45,7 +45,7 @@
     "@nestjs/testing": "7.0.0",
     "@types/jest": "25.2.2",
     "@typescript-eslint/eslint-plugin": "2.34.0",
-    "@typescript-eslint/parser": "2.33.0",
+    "@typescript-eslint/parser": "2.34.0",
     "@willsoto/eslint-config-base": "2.0.0",
     "babel-jest": "26.0.1",
     "conventional-github-releaser": "3.1.3",
