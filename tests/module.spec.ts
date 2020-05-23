@@ -2,6 +2,7 @@ import { KNEX_CONNECTION, OBJECTION_BASE_MODEL } from "@/constants";
 import { ObjectionModule } from "@/module";
 import { Test, TestingModule } from "@nestjs/testing";
 import knex from "knex";
+import { Model } from "objection";
 
 describe("ObjectionModule", () => {
   let testingModule: TestingModule;
@@ -61,6 +62,24 @@ describe("ObjectionModule", () => {
     test("provides a base model", () => {
       const model = testingModule.get("ObjectionBaseModel");
 
+      expect(model).toBeDefined();
+    });
+  });
+
+  describe("#forFeature", () => {
+    beforeEach(async () => {
+      testingModule = await Test.createTestingModule({
+        imports: [
+          ObjectionModule.register({
+            config,
+          }),
+          ObjectionModule.forFeature([Model]),
+        ],
+      }).compile();
+    });
+
+    test("provides a model", () => {
+      const model = testingModule.get(Model);
       expect(model).toBeDefined();
     });
   });
