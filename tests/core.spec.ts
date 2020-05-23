@@ -1,16 +1,16 @@
+import { Injectable } from "@nestjs/common";
+import { Test, TestingModule } from "@nestjs/testing";
+import knex from "knex";
 import {
   KNEX_CONNECTION,
   OBJECTION_BASE_MODEL,
   OBJECTION_MODULE_OPTIONS,
-} from "@/constants";
-import { ObjectionCoreModule } from "@/core";
+} from "../lib/constants";
+import { ObjectionCoreModule } from "../lib/core";
 import {
   ObjectionModuleOptions,
   ObjectionModuleOptionsFactory,
-} from "@/interfaces";
-import { Injectable } from "@nestjs/common";
-import { Test, TestingModule } from "@nestjs/testing";
-import knex from "knex";
+} from "../lib/interfaces";
 
 describe("ObjectionCoreModule", () => {
   let testingModule: TestingModule;

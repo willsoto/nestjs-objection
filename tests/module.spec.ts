@@ -1,7 +1,7 @@
-import { KNEX_CONNECTION, OBJECTION_BASE_MODEL } from "@/constants";
-import { ObjectionModule } from "@/module";
 import { Test, TestingModule } from "@nestjs/testing";
 import knex from "knex";
+import { KNEX_CONNECTION, OBJECTION_BASE_MODEL } from "../lib/constants";
+import { ObjectionModule } from "../lib/module";
 import { User } from "./fixtures";
 
 describe("ObjectionModule", () => {

@@ -1,4 +1,4 @@
-import * as constants from "@/constants";
+import * as constants from "../lib/constants";
 
 describe("Constants", () => {
   test("has 3", () => {
