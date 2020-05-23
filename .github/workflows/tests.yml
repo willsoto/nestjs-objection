@@ -14,7 +14,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node-version: [10, 12]
+        node-version: [10, 12, 14]
         os: [ubuntu-latest]
 
     steps:
@@ -22,10 +22,7 @@ jobs:
       - uses: volta-cli/action@v1
         with:
           node-version: ${{ matrix.node-version }}
-
-      - name: install, build and test
-        run: |
-          yarn install
-          yarn lint
-          yarn build
-          yarn test --coverage
+      - run: yarn install
+      - run: yarn lint
+      - run: yarn build
+      - run: yarn test --coverage

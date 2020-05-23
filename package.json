@@ -83,21 +83,15 @@
   },
   "lint-staged": {
     "*.{md,yaml,yml}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ],
     "*.ts": [
       "yarn lint",
-      "prettier --write",
-      "git add"
-    ],
-    "package.json": [
-      "prettier-package-json --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "volta": {
     "node": "12.12.0",
-    "yarn": "1.19.1"
+    "yarn": "1.22.4"
   }
 }
