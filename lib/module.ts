@@ -1,5 +1,6 @@
 /* eslint-disable new-cap */
-import { DynamicModule, Logger, Module } from "@nestjs/common";
+import { DynamicModule, Logger, Module, Provider } from "@nestjs/common";
+import { Model } from "objection";
 import { ObjectionCoreModule } from "./core";
 import {
   ObjectionModuleAsyncOptions,
@@ -40,6 +41,21 @@ export class ObjectionModule {
       module: ObjectionModule,
       imports: [ObjectionCoreModule.registerAsync(options)],
       exports: [ObjectionCoreModule],
+    };
+  }
+
+  public static forFeature(models: typeof Model[]): DynamicModule {
+    const modelProviders: Provider[] = models.map((model) => {
+      return {
+        useValue: model,
+        provide: model.name,
+      };
+    });
+
+    return {
+      module: ObjectionModule,
+      providers: modelProviders,
+      exports: modelProviders,
     };
   }
 }

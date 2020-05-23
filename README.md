@@ -56,6 +56,9 @@ import { BaseModel } from "./base";
         },
       },
     }),
+
+    //Register your objection models so it can be provided when needed.
+    ObjectionModule.forFeature([User]),
   ],
   exports: [ObjectionModule],
 })
@@ -90,6 +93,8 @@ import { BaseModel } from "./base";
         };
       },
     }),
+    //Register your objection models so it can be provided when needed.
+    ObjectionModule.forFeature([User]),
   ],
   exports: [ObjectionModule],
 })
@@ -125,6 +130,22 @@ export class PrimaryDatabaseHealthIndicator extends HealthIndicator {
       const status = super.getStatus(key, false, { message: error.message });
       throw new HealthCheckError("Unable to connect to database", status);
     }
+  }
+}
+```
+
+### Injecting an objection model
+
+```ts
+import { Injectable, Inject } from "@nestjs/common";
+import { User } from "./user.model";
+
+@Injectable()
+export class UserService {
+  constructor(@Inject(User) private readonly userModel: typeof User) {}
+
+  async getUsers(): Promise<User[]> {
+    return await this.userModel.query();
   }
 }
 ```
