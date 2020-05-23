@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/willsoto/nestjs-objection/compare/v2.1.0...v2.2.0) (2020-05-23)
+
+
+### Features
+
+* **lib:** register and inject objection models ([#637](https://github.com/willsoto/nestjs-objection/issues/637)) ([da8822f](https://github.com/willsoto/nestjs-objection/commit/da8822fb7fbb115d7f47b26fd89e26dd1dafa1ed))
+
 ## [2.1.0](https://github.com/willsoto/nestjs-objection/compare/v2.0.0...v2.1.0) (2020-02-15)
 
 
