@@ -4,14 +4,23 @@
 [![NPM downloads](https://img.shields.io/npm/dt/@willsoto/nestjs-objection.svg)](https://www.npmjs.com/package/@willsoto/nestjs-objection)
 ![](https://github.com/willsoto/nestjs-objection/workflows/tests/badge.svg)
 
-## Table of Contents
+<!-- prettier-ignore-start -->
+
+<!-- toc -->
 
 - [Description](#description)
 - [Installation](#installation)
 - [API](#api)
+  * [`ObjectionModule.register`](#objectionmoduleregister)
+  * [`ObjectionModule.registerAsync`](#objectionmoduleregisterasync)
 - [Configuration](#configuration)
 - [Examples](#examples)
-  - [Injecting the Connection](#injecting-the-connection)
+  * [Injecting the connection](#injecting-the-connection)
+  * [Injecting an objection model](#injecting-an-objection-model)
+
+<!-- tocstop -->
+
+<!-- prettier-ignore-end -->
 
 ## Description
 
