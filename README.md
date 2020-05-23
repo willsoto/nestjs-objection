@@ -140,7 +140,7 @@ export class PrimaryDatabaseHealthIndicator extends HealthIndicator {
 
 ```ts
 import { Injectable, Inject } from "@nestjs/common";
-import { User } from "./user.model";
+import { User } from "./user";
 
 @Injectable()
 export class UserService {
