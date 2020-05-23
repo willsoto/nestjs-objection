@@ -1,6 +1,7 @@
 /* eslint-disable no-useless-constructor, no-empty-function, new-cap */
 import { Inject, Injectable, Module } from "@nestjs/common";
 import Knex from "knex";
+import { Model } from "objection";
 import { Connection, KNEX_CONNECTION, ObjectionModule } from "../lib";
 
 @Injectable()
@@ -28,3 +29,7 @@ export class ConnectionCheck {
   exports: [ConnectionCheck],
 })
 export class ConnectionModule {}
+
+export class User extends Model {
+  static tableName = "users";
+}
