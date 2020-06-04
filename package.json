@@ -68,7 +68,7 @@
     "husky": "4.2.5",
     "jest": "26.0.1",
     "knex": "0.21.1",
-    "lint-staged": "10.2.7",
+    "lint-staged": "10.2.8",
     "markdown-toc": "~1.2.0",
     "objection": "2.1.5",
     "prettier": "2.0.5",
