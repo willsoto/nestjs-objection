@@ -80,7 +80,7 @@
     "rollup-plugin-eslint": "7.0.0",
     "rollup-plugin-filesize": "9.0.2",
     "rollup-plugin-typescript": "1.0.1",
-    "rxjs": "6.5.5",
+    "rxjs": "6.6.0",
     "sqlite3": "4.2.0",
     "standard-version": "8.0.0",
     "ts-jest": "~26.1.0",
