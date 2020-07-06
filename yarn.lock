@@ -2498,10 +2498,10 @@ conventional-commits-parser@^3.0.3:
     through2 "^3.0.0"
     trim-off-newlines "^1.0.0"
 
-conventional-github-releaser@3.1.4:
-  version "3.1.4"
-  resolved "https://registry.yarnpkg.com/conventional-github-releaser/-/conventional-github-releaser-3.1.4.tgz#f09a6d443855470e4849b8b07171103705537283"
-  integrity sha512-ffgWpTUSoSzQYmqhnXDuDExtgrFaE4dn1v4Z5xn0b1q8O3PbQwmEo2lp9MrsfEHlW8j9AaRMfHxz+u6HKcKIog==
+conventional-github-releaser@3.1.5:
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/conventional-github-releaser/-/conventional-github-releaser-3.1.5.tgz#d3dfe8b03c6dbfc5e84adce2c98cb87a78720ad3"
+  integrity sha512-VhPKbdN92b2ygnQLkuwHIfUaPAVrVfJVuQdxbmmVPkN927LDP98HthLWFVShh4pxqLK0nE66v78RERGJVeCzbg==
   dependencies:
     conventional-changelog "^2.0.0"
     dateformat "^3.0.0"
