@@ -7209,9 +7209,9 @@ prepend-http@^2.0.0:
   integrity sha1-6SQ0v6XqjBn0HN/UAddBo8gZ2Jc=
 
 prettier-plugin-organize-imports@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/prettier-plugin-organize-imports/-/prettier-plugin-organize-imports-1.1.0.tgz#92a4568c9952c7a2f266f607513405f3e108a070"
-  integrity sha512-FqEbM+NA/8kDUCQIB+avdkWxJPvg86Shg1GeQsaE8OCi8BQ+TwyPKRdF/6JUZJX0V7VoevG7MVLhPq21fYIG3A==
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/prettier-plugin-organize-imports/-/prettier-plugin-organize-imports-1.1.1.tgz#7f1ac1a13d4d1752dc16881894dde1c10ccbf3c0"
+  integrity sha512-rFA1lnek1FYkMGthm4xBKME41qUKItTovuo24bCGZu/Vu1n3gW71UPLAkIdwewwkZCe29gRVweSOPXvAdckFuw==
 
 prettier-plugin-packagejson@~2.2.3:
   version "2.2.5"
