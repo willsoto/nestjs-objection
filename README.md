@@ -189,7 +189,7 @@ Otherwise subsequent connections will override the previous ones.
         };
       },
     }),
-    ObjectionCoreModule.register({
+    ObjectionModule.register({
       // You must provide a name for the connection
       name: "connection2",
       Model: BaseModel2,
