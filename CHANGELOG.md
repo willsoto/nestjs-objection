@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/willsoto/nestjs-objection/compare/v2.2.0...v3.0.0) (2020-07-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* **module:** forRoot and forRootAsync methods no longer exist.
+Please start using register and registerAsync instead.
+
+### Features
+
+* support multiple connections ([b95c77f](https://github.com/willsoto/nestjs-objection/commit/b95c77f3c664adccf808557f7e90d73b0abbced6)), closes [#684](https://github.com/willsoto/nestjs-objection/issues/684)
+
+
+* **module:** remove deprecated forRoot and forRootAsync methods ([6bba6e1](https://github.com/willsoto/nestjs-objection/commit/6bba6e1f5e6592014dced985ae1050c697e80d42))
+
 ## [2.2.0](https://github.com/willsoto/nestjs-objection/compare/v2.1.0...v2.2.0) (2020-05-23)
 
 
