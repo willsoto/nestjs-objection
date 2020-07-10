@@ -1,6 +1,7 @@
 import { Injectable } from "@nestjs/common";
 import { Test, TestingModule } from "@nestjs/testing";
-import knex from "knex";
+import { Config } from "knex";
+import { Model } from "objection";
 import {
   KNEX_CONNECTION,
   OBJECTION_BASE_MODEL,
@@ -14,7 +15,7 @@ import {
 
 describe("ObjectionCoreModule", () => {
   let testingModule: TestingModule;
-  const config: knex.Config = {
+  const config: Config = {
     client: "sqlite3",
     useNullAsDefault: true,
     connection: {
@@ -40,14 +41,14 @@ describe("ObjectionCoreModule", () => {
     });
 
     test("provides a base model", () => {
-      const model = testingModule.get("ObjectionBaseModel");
+      const model = testingModule.get(Model);
 
-      expect(model).toBeDefined();
+      expect(model).toBe(Model);
     });
   });
 
   describe("#registerAsync", () => {
-    beforeEach(async () => {
+    beforeAll(async () => {
       testingModule = await Test.createTestingModule({
         imports: [
           ObjectionCoreModule.registerAsync({
@@ -61,6 +62,8 @@ describe("ObjectionCoreModule", () => {
       }).compile();
     });
 
+    afterAll(() => testingModule.close());
+
     test("provides a connection", () => {
       const connection = testingModule.get(KNEX_CONNECTION);
 
@@ -70,7 +73,7 @@ describe("ObjectionCoreModule", () => {
     test("provides a base model", () => {
       const model = testingModule.get(OBJECTION_BASE_MODEL);
 
-      expect(model).toBeDefined();
+      expect(model).toBe(Model);
     });
   });
 

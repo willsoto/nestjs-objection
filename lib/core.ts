@@ -1,5 +1,11 @@
 /* eslint-disable new-cap */
-import { DynamicModule, Module, Provider } from "@nestjs/common";
+import {
+  DynamicModule,
+  FactoryProvider,
+  Module,
+  Provider,
+  ValueProvider,
+} from "@nestjs/common";
 import Knex from "knex";
 import { Model } from "objection";
 import {
@@ -22,18 +28,18 @@ export class ObjectionCoreModule {
 
     BaseModel.knex(connection);
 
-    const objectionModuleOptions: Provider = {
+    const objectionModuleOptions: ValueProvider = {
       provide: OBJECTION_MODULE_OPTIONS,
       useValue: options,
     };
 
-    const objectionBaseModelProvider: Provider = {
-      provide: OBJECTION_BASE_MODEL,
+    const objectionBaseModelProvider: ValueProvider = {
+      provide: BaseModel.name,
       useValue: BaseModel,
     };
 
-    const knexConnectionProvider: Provider = {
-      provide: KNEX_CONNECTION,
+    const knexConnectionProvider: ValueProvider = {
+      provide: options.name || KNEX_CONNECTION,
       useValue: connection,
     };
 
@@ -51,17 +57,19 @@ export class ObjectionCoreModule {
   public static registerAsync(
     options: ObjectionModuleAsyncOptions = {},
   ): DynamicModule {
-    const knexConnectionProvider: Provider = {
-      provide: KNEX_CONNECTION,
+    const connectionToken = options.name || KNEX_CONNECTION;
+
+    const knexConnectionProvider: FactoryProvider = {
+      provide: connectionToken,
       inject: [OBJECTION_MODULE_OPTIONS],
       useFactory(objectionModuleOptions: ObjectionModuleOptions): Knex {
         return Knex(objectionModuleOptions.config);
       },
     };
 
-    const objectionBaseModelProvider: Provider = {
+    const objectionBaseModelProvider: FactoryProvider = {
       provide: OBJECTION_BASE_MODEL,
-      inject: [KNEX_CONNECTION, OBJECTION_MODULE_OPTIONS],
+      inject: [connectionToken, OBJECTION_MODULE_OPTIONS],
       useFactory(
         connection: Connection,
         objectionModuleOptions: ObjectionModuleOptions,

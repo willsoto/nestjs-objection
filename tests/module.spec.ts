@@ -1,6 +1,7 @@
 import { Test, TestingModule } from "@nestjs/testing";
 import knex from "knex";
-import { KNEX_CONNECTION, OBJECTION_BASE_MODEL } from "../lib/constants";
+import { Model } from "objection";
+import { KNEX_CONNECTION } from "../lib/constants";
 import { ObjectionModule } from "../lib/module";
 import { User } from "./fixtures";
 
@@ -32,7 +33,7 @@ describe("ObjectionModule", () => {
     });
 
     test("provides a base model", () => {
-      const model = testingModule.get(OBJECTION_BASE_MODEL);
+      const model = testingModule.get(Model);
 
       expect(model).toBeDefined();
     });

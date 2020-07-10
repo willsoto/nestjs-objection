@@ -1,9 +1,14 @@
 import { Type } from "@nestjs/common";
 import { ModuleMetadata } from "@nestjs/common/interfaces";
-import * as Knex from "knex";
+import Knex from "knex";
 import { Model } from "objection";
 
 export interface ObjectionModuleOptions {
+  /**
+   * The name for this connection if more than one database connection is required.
+   * This field is **required** if you use multiple connetions.
+   */
+  name?: string;
   Model?: typeof Model;
   config: Knex.Config;
 }
@@ -16,6 +21,11 @@ export interface ObjectionModuleOptionsFactory {
 
 export interface ObjectionModuleAsyncOptions
   extends Pick<ModuleMetadata, "imports"> {
+  /**
+   * The name for this connection if more than one database connection is required.
+   * This field is **required** if you use multiple connetions.
+   */
+  name?: ObjectionModuleOptions["name"];
   useExisting?: Type<ObjectionModuleOptionsFactory>;
   useClass?: Type<ObjectionModuleOptionsFactory>;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
