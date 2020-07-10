@@ -178,7 +178,7 @@ Otherwise subsequent connections will override the previous ones.
       inject: [ConfigService],
       useFactory(config: ConfigService) {
         return {
-          Model: BaseModel,
+          Model: BaseModel1,
           config: {
             client: "sqlite3",
             useNullAsDefault: true,
@@ -192,7 +192,7 @@ Otherwise subsequent connections will override the previous ones.
     ObjectionCoreModule.register({
       // You must provide a name for the connection
       name: "connection2",
-      Model: Book,
+      Model: BaseModel2,
       config: {
         client: "sqlite3",
         useNullAsDefault: true,
