@@ -11,12 +11,13 @@
 - [Description](#description)
 - [Installation](#installation)
 - [API](#api)
-  * [`ObjectionModule.register`](#objectionmoduleregister)
-  * [`ObjectionModule.registerAsync`](#objectionmoduleregisterasync)
+    + [`ObjectionModule.register`](#objectionmoduleregister)
+    + [`ObjectionModule.registerAsync`](#objectionmoduleregisterasync)
 - [Configuration](#configuration)
 - [Examples](#examples)
   * [Injecting the connection](#injecting-the-connection)
   * [Injecting an objection model](#injecting-an-objection-model)
+  * [Multiple connections](#multiple-connections)
 
 <!-- tocstop -->
 
@@ -40,7 +41,7 @@ yarn add knex objection
 
 ## API
 
-### `ObjectionModule.register`
+#### `ObjectionModule.register`
 
 ```typescript
 import { ObjectionModule } from "@willsoto/nestjs-objection";
@@ -75,7 +76,7 @@ import { BaseModel } from "./base";
 export class DatabaseModule {}
 ```
 
-### `ObjectionModule.registerAsync`
+#### `ObjectionModule.registerAsync`
 
 ```typescript
 import { ObjectionModule } from "@willsoto/nestjs-objection";
@@ -114,10 +115,11 @@ export class DatabaseModule {}
 
 ## Configuration
 
-| Name     | Type     | Required | Default           |
-| -------- | -------- | -------- | ----------------- |
-| `Model`  | `Object` | `false`  | `objection.Model` |
-| `config` | `Object` | `true`   |                   |
+| Name     | Type     | Required | Default                 | Notes                                                           |
+| -------- | -------- | -------- | ----------------------- | --------------------------------------------------------------- |
+| `name`   | `string` | `false`  | `KNEX_CONNECTION` token | This is **required** only if you are using multiple connections |
+| `Model`  | `Object` | `false`  | `objection.Model`       |                                                                 |
+| `config` | `Object` | `true`   |                         |                                                                 |
 
 ## Examples
 
@@ -159,4 +161,47 @@ export class UserService {
     return await this.userModel.query();
   }
 }
+```
+
+### Multiple connections
+
+When using multiple connections, you must **name** each connection when registering it.
+Otherwise subsequent connections will override the previous ones.
+
+```ts
+@Module({
+  imports: [
+    ObjectionModule.registerAsync({
+      // You must provide a name for the connection
+      name: "connection1",
+      imports: [ConfigModule],
+      inject: [ConfigService],
+      useFactory(config: ConfigService) {
+        return {
+          Model: BaseModel,
+          config: {
+            client: "sqlite3",
+            useNullAsDefault: true,
+            connection: {
+              filename: "./testing1.sqlite",
+            },
+          },
+        };
+      },
+    }),
+    ObjectionCoreModule.register({
+      // You must provide a name for the connection
+      name: "connection2",
+      Model: Book,
+      config: {
+        client: "sqlite3",
+        useNullAsDefault: true,
+        connection: {
+          filename: "./testing2.sqlite",
+        },
+      },
+    }),
+  ],
+})
+export class DatabaseModule {}
 ```
