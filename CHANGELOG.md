@@ -7,7 +7,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Features
 
-* **core:** add onApplicationShutdown hook ([64e5d50](https://github.com/willsoto/nestjs-objection/commit/64e5d50acac847200671892e8d1ddcbc1c2362a6))
+* **core:** add onApplicationShutdown hook ([668bc8e](https://github.com/willsoto/nestjs-objection/commit/668bc8e59457994808898213814ff5749f968ac9))
 
 ## [3.0.0](https://github.com/willsoto/nestjs-objection/compare/v2.2.0...v3.0.0) (2020-07-10)
 
