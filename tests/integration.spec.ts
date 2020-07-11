@@ -7,9 +7,10 @@ import { ConnectionCheck, ConnectionModule } from "./fixtures";
 describe("Integration", () => {
   let connectionCheck: ConnectionCheck;
   let connection: Knex;
+  let testingModule: TestingModule;
 
-  beforeEach(async () => {
-    const testingModule: TestingModule = await Test.createTestingModule({
+  beforeAll(async () => {
+    testingModule = await Test.createTestingModule({
       imports: [ConnectionModule],
     }).compile();
 
@@ -17,9 +18,7 @@ describe("Integration", () => {
     connection = testingModule.get<Knex>(KNEX_CONNECTION);
   });
 
-  afterEach(async () => {
-    await connection.destroy();
-  });
+  afterAll(() => testingModule.close());
 
   test("database works", () => {
     return expect(connection.raw("select 1")).resolves.toEqual([{ "1": 1 }]);

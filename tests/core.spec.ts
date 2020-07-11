@@ -24,7 +24,7 @@ describe("ObjectionCoreModule", () => {
   };
 
   describe("#register", () => {
-    beforeEach(async () => {
+    beforeAll(async () => {
       testingModule = await Test.createTestingModule({
         imports: [
           ObjectionCoreModule.register({
@@ -33,6 +33,8 @@ describe("ObjectionCoreModule", () => {
         ],
       }).compile();
     });
+
+    afterAll(() => testingModule.close());
 
     test("provides a connection", () => {
       const connection = testingModule.get("KnexConnection");
@@ -88,12 +90,12 @@ describe("ObjectionCoreModule", () => {
 
     test("throws an error if options.useClass, useExisting, useFactory are not provided", () => {
       expect(() => {
-        ObjectionCoreModule.createAsyncProviders({});
+        ObjectionCoreModule["createAsyncProviders"]({});
       }).toThrowError("Invalid configuration");
     });
 
     test("leverages useClass if provided", () => {
-      const providers = ObjectionCoreModule.createAsyncProviders({
+      const providers = ObjectionCoreModule["createAsyncProviders"]({
         useClass: ModuleOptionsFactory,
       });
 
@@ -111,7 +113,7 @@ describe("ObjectionCoreModule", () => {
     });
 
     test("returns an array of providers when useExisting is passed", () => {
-      const providers = ObjectionCoreModule.createAsyncProviders({
+      const providers = ObjectionCoreModule["createAsyncProviders"]({
         useExisting: ModuleOptionsFactory,
       });
 
@@ -125,7 +127,7 @@ describe("ObjectionCoreModule", () => {
     });
 
     test("returns an array of providers when useFactory is passed", () => {
-      const providers = ObjectionCoreModule.createAsyncProviders({
+      const providers = ObjectionCoreModule["createAsyncProviders"]({
         useFactory: () => ({
           config,
         }),
@@ -153,7 +155,7 @@ describe("ObjectionCoreModule", () => {
     }
 
     test("returns the appropriate provider when useFactory is passed", () => {
-      const provider = ObjectionCoreModule.createAsyncOptionsProvider({
+      const provider = ObjectionCoreModule["createAsyncOptionsProvider"]({
         useFactory: () => ({
           config,
         }),
@@ -167,7 +169,7 @@ describe("ObjectionCoreModule", () => {
     });
 
     test("returns the appropriate provider when useExisting is passed", () => {
-      const provider = ObjectionCoreModule.createAsyncOptionsProvider({
+      const provider = ObjectionCoreModule["createAsyncOptionsProvider"]({
         useExisting: ModuleOptionsFactory,
       });
 

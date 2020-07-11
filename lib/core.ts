@@ -1,11 +1,13 @@
-/* eslint-disable new-cap */
 import {
   DynamicModule,
   FactoryProvider,
+  Inject,
   Module,
+  OnApplicationShutdown,
   Provider,
   ValueProvider,
 } from "@nestjs/common";
+import { ModuleRef } from "@nestjs/core";
 import Knex from "knex";
 import { Model } from "objection";
 import {
@@ -21,7 +23,13 @@ import {
 } from "./interfaces";
 
 @Module({})
-export class ObjectionCoreModule {
+export class ObjectionCoreModule implements OnApplicationShutdown {
+  constructor(
+    @Inject(OBJECTION_MODULE_OPTIONS)
+    private options: ObjectionModuleOptions,
+    private moduleRef: ModuleRef,
+  ) {}
+
   public static register(options: ObjectionModuleOptions): DynamicModule {
     const BaseModel = options.Model || Model;
     const connection = Knex(options.config);
@@ -95,7 +103,7 @@ export class ObjectionCoreModule {
     };
   }
 
-  public static createAsyncProviders(
+  private static createAsyncProviders(
     options: ObjectionModuleAsyncOptions,
   ): Provider[] {
     if (options.useExisting || options.useFactory) {
@@ -113,7 +121,7 @@ export class ObjectionCoreModule {
     ];
   }
 
-  public static createAsyncOptionsProvider(
+  private static createAsyncOptionsProvider(
     options: ObjectionModuleAsyncOptions,
   ): Provider {
     if (options.useFactory) {
@@ -143,5 +151,17 @@ export class ObjectionCoreModule {
       },
       inject: [inject],
     };
+  }
+
+  async onApplicationShutdown(): Promise<void> {
+    await this.disconnect();
+  }
+
+  private async disconnect(): Promise<void> {
+    const connection = this.moduleRef.get<Connection>(
+      this.options.name || KNEX_CONNECTION,
+    );
+
+    await connection.destroy();
   }
 }

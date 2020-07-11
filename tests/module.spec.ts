@@ -16,7 +16,7 @@ describe("ObjectionModule", () => {
   };
 
   describe("#register", () => {
-    beforeEach(async () => {
+    beforeAll(async () => {
       testingModule = await Test.createTestingModule({
         imports: [
           ObjectionModule.register({
@@ -25,6 +25,8 @@ describe("ObjectionModule", () => {
         ],
       }).compile();
     });
+
+    afterAll(() => testingModule.close());
 
     test("provides a connection", () => {
       const connection = testingModule.get(KNEX_CONNECTION);
@@ -40,7 +42,7 @@ describe("ObjectionModule", () => {
   });
 
   describe("#registerAsync", () => {
-    beforeEach(async () => {
+    beforeAll(async () => {
       testingModule = await Test.createTestingModule({
         imports: [
           ObjectionModule.registerAsync({
@@ -53,6 +55,8 @@ describe("ObjectionModule", () => {
         ],
       }).compile();
     });
+
+    afterAll(() => testingModule.close());
 
     test("provides a connection", () => {
       const connection = testingModule.get("KnexConnection");
@@ -68,7 +72,7 @@ describe("ObjectionModule", () => {
   });
 
   describe("#forFeature", () => {
-    beforeEach(async () => {
+    beforeAll(async () => {
       testingModule = await Test.createTestingModule({
         imports: [
           ObjectionModule.register({
@@ -78,6 +82,8 @@ describe("ObjectionModule", () => {
         ],
       }).compile();
     });
+
+    afterAll(() => testingModule.close());
 
     test("provides a model by token", () => {
       const model = testingModule.get(User);
