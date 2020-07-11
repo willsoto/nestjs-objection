@@ -20,5 +20,9 @@
         "@typescript-eslint/explicit-function-return-type": "off"
       }
     }
-  ]
+  ],
+  "rules": {
+    "no-useless-constructor": "off",
+    "new-cap": "off"
+  }
 }
