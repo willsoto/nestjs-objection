@@ -84,7 +84,7 @@
     "sqlite3": "5.0.0",
     "standard-version": "8.0.0",
     "ts-jest": "~26.1.0",
-    "typescript": "3.9.6"
+    "typescript": "3.9.7"
   },
   "peerDependencies": {
     "@nestjs/common": ">=6.2.0",
