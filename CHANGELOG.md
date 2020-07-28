@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.2.0](https://github.com/willsoto/nestjs-objection/compare/v3.0.0...v3.2.0) (2020-07-28)
+
+
+### Features
+
+* **core:** add onApplicationShutdown hook ([668bc8e](https://github.com/willsoto/nestjs-objection/commit/668bc8e59457994808898213814ff5749f968ac9))
+* **core:** switch to BeforeApplicationShutdown hook ([214e620](https://github.com/willsoto/nestjs-objection/commit/214e6202fa6c857c0fd8c83334c1b3275caf5f39))
+
 ## [3.1.0](https://github.com/willsoto/nestjs-objection/compare/v3.0.0...v3.1.0) (2020-07-11)
 
 
