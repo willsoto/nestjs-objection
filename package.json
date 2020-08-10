@@ -67,7 +67,7 @@
     "eslint-config-prettier": "6.11.0",
     "husky": "4.2.5",
     "jest": "26.2.2",
-    "knex": "0.21.2",
+    "knex": "0.21.3",
     "lint-staged": "10.2.11",
     "markdown-toc": "~1.2.0",
     "objection": "2.2.2",
