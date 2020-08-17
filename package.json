@@ -70,7 +70,7 @@
     "knex": "0.21.4",
     "lint-staged": "10.2.11",
     "markdown-toc": "~1.2.0",
-    "objection": "2.2.2",
+    "objection": "2.2.3",
     "prettier": "2.0.5",
     "prettier-plugin-organize-imports": "~1.1.0",
     "prettier-plugin-packagejson": "~2.2.3",
