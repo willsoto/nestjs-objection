@@ -52,7 +52,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "9.1.2",
-    "@commitlint/config-conventional": "9.1.1",
+    "@commitlint/config-conventional": "9.1.2",
     "@godaddy/terminus": "4.4.1",
     "@nestjs/common": "6.11.11",
     "@nestjs/core": "6.11.11",
