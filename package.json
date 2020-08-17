@@ -82,7 +82,7 @@
     "rollup-plugin-typescript": "1.0.1",
     "rxjs": "6.6.2",
     "sqlite3": "5.0.0",
-    "standard-version": "8.0.2",
+    "standard-version": "9.0.0",
     "ts-jest": "~26.2.0",
     "typescript": "3.9.7"
   },
