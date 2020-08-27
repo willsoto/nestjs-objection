@@ -4,8 +4,8 @@
     "project": "./tsconfig.json"
   },
   "extends": [
+    "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "@willsoto/eslint-config-base/typescript",
     "prettier",
     "prettier/@typescript-eslint"
   ],

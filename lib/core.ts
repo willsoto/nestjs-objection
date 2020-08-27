@@ -2,6 +2,7 @@ import {
   BeforeApplicationShutdown,
   DynamicModule,
   FactoryProvider,
+  Global,
   Inject,
   Module,
   Provider,
@@ -22,6 +23,7 @@ import {
   ObjectionModuleOptionsFactory,
 } from "./interfaces";
 
+@Global()
 @Module({})
 export class ObjectionCoreModule implements BeforeApplicationShutdown {
   constructor(
