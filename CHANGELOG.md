@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [4.0.1](https://github.com/willsoto/nestjs-objection/compare/v4.0.0...v4.0.1) (2020-08-27)
+
+
+### Bug Fixes
+
+* **core:** switch to using onApplicationShutdown hook ([bdf4ea1](https://github.com/willsoto/nestjs-objection/commit/bdf4ea1bf770db8c9213cef837d0af7e99718bdd)), closes [/github.com/nestjs/typeorm/blob/9b67355a1f2d6d2bb44c240239d637e79c89b7f5/lib/typeorm-core.module.ts#L35](https://github.com/willsoto//github.com/nestjs/typeorm/blob/9b67355a1f2d6d2bb44c240239d637e79c89b7f5/lib/typeorm-core.module.ts/issues/L35)
+
 ## [4.0.0](https://github.com/willsoto/nestjs-objection/compare/v3.2.0...v4.0.0) (2020-08-27)
 
 
