@@ -1,10 +1,10 @@
 import {
-  BeforeApplicationShutdown,
   DynamicModule,
   FactoryProvider,
   Global,
   Inject,
   Module,
+  OnApplicationShutdown,
   Provider,
   ValueProvider,
 } from "@nestjs/common";
@@ -25,7 +25,7 @@ import {
 
 @Global()
 @Module({})
-export class ObjectionCoreModule implements BeforeApplicationShutdown {
+export class ObjectionCoreModule implements OnApplicationShutdown {
   constructor(
     @Inject(OBJECTION_MODULE_OPTIONS)
     private options: ObjectionModuleOptions,
@@ -155,7 +155,7 @@ export class ObjectionCoreModule implements BeforeApplicationShutdown {
     };
   }
 
-  async beforeApplicationShutdown(): Promise<void> {
+  async onApplicationShutdown(): Promise<void> {
     await this.disconnect();
   }
 
