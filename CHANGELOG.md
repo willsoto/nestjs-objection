@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.0.0](https://github.com/willsoto/nestjs-objection/compare/v3.2.0...v4.0.0) (2020-08-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove support for Nest v6 and Node <12
+
+* remove support for Nest v6 and Node <12 ([d7506e8](https://github.com/willsoto/nestjs-objection/commit/d7506e8aec84bd57c65b2ce3c0153d8c413e8b0f))
+
 ## [3.2.0](https://github.com/willsoto/nestjs-objection/compare/v3.0.0...v3.2.0) (2020-07-28)
 
 
