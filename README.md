@@ -178,6 +178,8 @@ Otherwise subsequent connections will override the previous ones.
       inject: [ConfigService],
       useFactory(config: ConfigService) {
         return {
+          // You must provide a name for the connection here as well...
+          name: "connection1",
           Model: BaseModel1,
           config: {
             client: "sqlite3",

@@ -14,9 +14,9 @@ export interface ObjectionModuleOptions {
 }
 
 export interface ObjectionModuleOptionsFactory {
-  createObjectionModuleOptions():
-    | Promise<ObjectionModuleOptions>
-    | ObjectionModuleOptions;
+  createObjectionModuleOptions(
+    connectionName?: string,
+  ): Promise<ObjectionModuleOptions> | ObjectionModuleOptions;
 }
 
 export interface ObjectionModuleAsyncOptions

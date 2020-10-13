@@ -1,8 +1,7 @@
-/* eslint-disable no-useless-constructor, no-empty-function, new-cap */
 import { Inject, Injectable, Module } from "@nestjs/common";
 import Knex from "knex";
 import { Model } from "objection";
-import { Connection, KNEX_CONNECTION, ObjectionModule } from "../lib";
+import { Connection, KNEX_CONNECTION, ObjectionModule } from "../src";
 
 @Injectable()
 export class ConnectionCheck {

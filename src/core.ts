@@ -129,6 +129,7 @@ export class ObjectionCoreModule implements OnApplicationShutdown {
     if (options.useFactory) {
       return {
         provide: OBJECTION_MODULE_OPTIONS,
+        // eslint-disable-next-line @typescript-eslint/unbound-method
         useFactory: options.useFactory,
         inject: options.inject || [],
       };
@@ -147,7 +148,9 @@ export class ObjectionCoreModule implements OnApplicationShutdown {
       async useFactory(
         optionsFactory: ObjectionModuleOptionsFactory,
       ): Promise<ObjectionModuleOptions> {
-        const opts = await optionsFactory.createObjectionModuleOptions();
+        const opts = await optionsFactory.createObjectionModuleOptions(
+          options.name,
+        );
 
         return opts;
       },
@@ -160,9 +163,8 @@ export class ObjectionCoreModule implements OnApplicationShutdown {
   }
 
   private async disconnect(): Promise<void> {
-    const connection = this.moduleRef.get<Connection>(
-      this.options.name || KNEX_CONNECTION,
-    );
+    const name = this.options.name || KNEX_CONNECTION;
+    const connection = this.moduleRef.get<Connection>(name);
 
     await connection.destroy();
   }
