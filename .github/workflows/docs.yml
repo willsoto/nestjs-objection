@@ -1,0 +1,23 @@
+name: docs
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: volta-cli/action@v1
+
+      - run: npm ci
+      - run: npm run docs
+
+      - name: Deploy to GitHub pages
+        uses: peaceiris/actions-gh-pages@v2.5.1
+        env:
+          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          PUBLISH_BRANCH: gh-pages # The branch the action should deploy to.
+          PUBLISH_DIR: ./docs # The folder the action should deploy.
