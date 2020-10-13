@@ -20,3 +20,4 @@ jobs:
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           publish_dir: ./docs # The folder the action should deploy.
+          enable_jekyll: true
