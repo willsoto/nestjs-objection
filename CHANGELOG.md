@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.0.0](https://github.com/willsoto/nestjs-objection/compare/v4.0.2...v5.0.0) (2021-03-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* esModuleInertop is no longer used. Depending on how this module
+is imported, it could be a breaking change
+
+Signed-off-by: Will Soto <willsoto@users.noreply.github.com>
+
+### Features
+
+* don't use esModuleInterop ([728df76](https://github.com/willsoto/nestjs-objection/commit/728df7629535741af0cb880dadb02049f23c5850))
+
 ### [4.0.2](https://github.com/willsoto/nestjs-objection/compare/v4.0.1...v4.0.2) (2020-08-27)
 
 
