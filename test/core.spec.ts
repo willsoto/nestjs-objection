@@ -1,9 +1,9 @@
 import { Injectable } from "@nestjs/common";
 import { Test, TestingModule } from "@nestjs/testing";
 import { expect } from "chai";
-import Knex, { Config } from "knex";
+import * as Knex from "knex";
 import { Model } from "objection";
-import sinon from "sinon";
+import * as sinon from "sinon";
 import {
   KNEX_CONNECTION,
   OBJECTION_BASE_MODEL,
@@ -18,7 +18,7 @@ import {
 describe("ObjectionCoreModule", function () {
   let testingModule: TestingModule;
 
-  const config: Config = {
+  const config: Knex.Config = {
     client: "sqlite3",
     useNullAsDefault: true,
     connection: {

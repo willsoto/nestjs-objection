@@ -1,6 +1,6 @@
 import { Test, TestingModule } from "@nestjs/testing";
 import { expect } from "chai";
-import { default as Knex, default as knex } from "knex";
+import * as Knex from "knex";
 import { Model } from "objection";
 import { KNEX_CONNECTION } from "../src/constants";
 import { ObjectionModule } from "../src/module";
@@ -8,7 +8,7 @@ import { User } from "./fixtures";
 
 describe("ObjectionModule", function () {
   let testingModule: TestingModule;
-  const config: knex.Config = {
+  const config: Knex.Config = {
     client: "sqlite3",
     useNullAsDefault: true,
     connection: {
