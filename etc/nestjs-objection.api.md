@@ -5,7 +5,7 @@
 ```ts
 
 import { DynamicModule } from '@nestjs/common';
-import Knex from 'knex';
+import * as Knex from 'knex';
 import { Model } from 'objection';
 import { ModuleMetadata } from '@nestjs/common/interfaces';
 import { Type } from '@nestjs/common';
