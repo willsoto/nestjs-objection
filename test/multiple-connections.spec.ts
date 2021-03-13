@@ -1,8 +1,9 @@
 import { Test, TestingModule } from "@nestjs/testing";
 import { expect } from "chai";
-import * as Knex from "knex";
+import { Knex } from "knex";
 import { Model } from "objection";
 import { ObjectionCoreModule } from "../src/core";
+
 describe("when registering multiple connections", function () {
   let testingModule: TestingModule;
   let connection1: Knex;

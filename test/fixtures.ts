@@ -1,5 +1,5 @@
 import { Inject, Injectable, Module } from "@nestjs/common";
-import * as Knex from "knex";
+import { Knex } from "knex";
 import { Model } from "objection";
 import { Connection, KNEX_CONNECTION, ObjectionModule } from "../src";
 @Injectable()
