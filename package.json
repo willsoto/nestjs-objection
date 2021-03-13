@@ -132,7 +132,7 @@
     "eslint-config-prettier": "~8.1.0",
     "eslint-plugin-mocha": "~8.1.0",
     "husky": "4",
-    "knex": "~0.21.5",
+    "knex": "~0.95.2",
     "lint-staged": "~10.5.4",
     "markdown-toc": "~1.2.0",
     "mocha": "~8.3.2",
