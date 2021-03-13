@@ -9,7 +9,7 @@ import {
   ValueProvider,
 } from "@nestjs/common";
 import { ModuleRef } from "@nestjs/core";
-import { knex, Knex } from "knex";
+import * as Knex from "knex";
 import { Model } from "objection";
 import {
   KNEX_CONNECTION,
@@ -34,7 +34,7 @@ export class ObjectionCoreModule implements OnApplicationShutdown {
 
   public static register(options: ObjectionModuleOptions): DynamicModule {
     const BaseModel = options.Model || Model;
-    const connection = knex(options.config);
+    const connection = Knex(options.config);
 
     BaseModel.knex(connection);
 
@@ -73,7 +73,7 @@ export class ObjectionCoreModule implements OnApplicationShutdown {
       provide: connectionToken,
       inject: [OBJECTION_MODULE_OPTIONS],
       useFactory(objectionModuleOptions: ObjectionModuleOptions): Knex {
-        return knex(objectionModuleOptions.config);
+        return Knex(objectionModuleOptions.config);
       },
     };
 
