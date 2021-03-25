@@ -31,3 +31,6 @@ jobs:
           MERGE_DELETE_BRANCH: true
           # 60 seconds between retries
           MERGE_RETRY_SLEEP: 600000
+          # Make people update branches themselves
+          # Dependabot will handle updates for its PRs
+          UPDATE_RETRIES: 0
