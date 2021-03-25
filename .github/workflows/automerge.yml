@@ -29,3 +29,5 @@ jobs:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           MERGE_METHOD: "rebase"
           MERGE_DELETE_BRANCH: true
+          # 60 seconds between retries
+          MERGE_RETRY_SLEEP: 600000
