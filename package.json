@@ -115,7 +115,7 @@
     "@commitlint/cli": "~12.1.1",
     "@commitlint/config-conventional": "~12.1.1",
     "@istanbuljs/nyc-config-typescript": "~1.0.1",
-    "@microsoft/api-documenter": "~7.12.14",
+    "@microsoft/api-documenter": "~7.13.0",
     "@microsoft/api-extractor": "~7.14.0",
     "@nestjs/common": "~7.6.1",
     "@nestjs/core": "~7.6.1",
