@@ -28,11 +28,17 @@ export class ObjectionModule {
   }
 
   public static forFeature(models: typeof Model[]): DynamicModule {
-    const modelProviders: Provider[] = models.map((model) => {
-      return {
-        useValue: model,
-        provide: model.name,
-      };
+    const modelProviders: Provider[] = models.flatMap((model) => {
+      return [
+        {
+          useValue: model,
+          provide: model,
+        },
+        {
+          useValue: model,
+          provide: model.name,
+        },
+      ];
     });
 
     return {

@@ -44,7 +44,7 @@ export class ObjectionCoreModule implements OnApplicationShutdown {
     };
 
     const objectionBaseModelProvider: ValueProvider = {
-      provide: BaseModel.name,
+      provide: BaseModel,
       useValue: BaseModel,
     };
 
