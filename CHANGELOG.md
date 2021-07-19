@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.1.0](https://github.com/willsoto/nestjs-objection/compare/v5.0.0...v5.1.0) (2021-07-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* **knex:** Knex typings have changed a lot, so probably breaking for people
+until they upgrade
+
+Signed-off-by: Will Soto <willsoto@users.noreply.github.com>
+
+### Features
+
+* upgrade to Nest 8.x ([0f8594c](https://github.com/willsoto/nestjs-objection/commit/0f8594c24c83adfc1dbbea4372f3ce91abb67843)), closes [#1140](https://github.com/willsoto/nestjs-objection/issues/1140)
+
+
+### Bug Fixes
+
+* **automerge:** make retry sleep 60 seconds ([af328fa](https://github.com/willsoto/nestjs-objection/commit/af328fad35bbecfcc55d94491037da5ce8484367))
+
+
+* **knex:** upgrade to v0.95.x of Knex ([c8dc357](https://github.com/willsoto/nestjs-objection/commit/c8dc357f349ce5e7cca19befee997b3adf2e99a3))
+
 ## [5.0.0](https://github.com/willsoto/nestjs-objection/compare/v4.0.2...v5.0.0) (2021-03-05)
 
 
