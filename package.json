@@ -111,12 +111,12 @@
     "eslint-config-prettier": "~8.3.0",
     "eslint-plugin-mocha": "~9.0.0",
     "husky": "~7.0.0",
-    "knex": "~0.21.5",
+    "knex": "~0.95.11",
     "lint-staged": "~11.2.0",
     "markdown-toc": "~1.2.0",
     "mocha": "~9.1.0",
     "nyc": "~15.1.0",
-    "objection": "~2.2.15",
+    "objection": "3.0.0-alpha.4",
     "prettier": "~2.4.0",
     "prettier-plugin-organize-imports": "~2.3.2",
     "prettier-plugin-packagejson": "~2.2.11",
@@ -134,12 +134,16 @@
   "peerDependencies": {
     "@nestjs/common": "^7.0.0 || ^8.0.0",
     "@nestjs/core": "^7.0.0 || ^8.0.0",
-    "knex": ">=0.16.0",
-    "objection": "^2.0.0"
+    "knex": "^0.95.0",
+    "objection": "^3.0.0"
   },
   "release": {
     "branches": [
-      "main"
+      "main",
+      {
+        "name": "next",
+        "prerelease": true
+      }
     ],
     "plugins": [
       "@semantic-release/commit-analyzer",
