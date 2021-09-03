@@ -1,6 +1,6 @@
 import { Type } from "@nestjs/common";
 import { ModuleMetadata } from "@nestjs/common/interfaces";
-import * as Knex from "knex";
+import { Knex } from "knex";
 import { Model } from "objection";
 export interface ObjectionModuleOptions {
   /**

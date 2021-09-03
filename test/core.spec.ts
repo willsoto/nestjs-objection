@@ -1,7 +1,7 @@
 import { Injectable } from "@nestjs/common";
 import { Test, TestingModule } from "@nestjs/testing";
 import { expect } from "chai";
-import * as Knex from "knex";
+import { Knex } from "knex";
 import { Model } from "objection";
 import * as sinon from "sinon";
 import {

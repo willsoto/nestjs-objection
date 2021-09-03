@@ -1,7 +1,7 @@
 /* eslint-disable new-cap */
 import { Test, TestingModule } from "@nestjs/testing";
 import { expect } from "chai";
-import * as Knex from "knex";
+import { Knex } from "knex";
 import { KNEX_CONNECTION } from "../src";
 import { ConnectionCheck, ConnectionModule } from "./fixtures";
 describe("Integration", function () {

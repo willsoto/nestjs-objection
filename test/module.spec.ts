@@ -1,6 +1,6 @@
 import { Test, TestingModule } from "@nestjs/testing";
 import { expect } from "chai";
-import * as Knex from "knex";
+import { Knex } from "knex";
 import { Model } from "objection";
 import { KNEX_CONNECTION } from "../src/constants";
 import { ObjectionModule } from "../src/module";
