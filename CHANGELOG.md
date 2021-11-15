@@ -1,3 +1,10 @@
+# [6.1.0](https://github.com/willsoto/nestjs-objection/compare/v6.0.0...v6.1.0) (2021-11-15)
+
+
+### Features
+
+* **releases:** generate and commit changelog ([e062b87](https://github.com/willsoto/nestjs-objection/commit/e062b87888e4a57a821954ef1ca9a59dc5dfe773))
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
