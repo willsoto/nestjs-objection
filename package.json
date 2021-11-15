@@ -59,6 +59,23 @@
     "singleQuote": false,
     "trailingComma": "all"
   },
+  "release": {
+    "branches": [
+      "main",
+      {
+        "name": "next",
+        "prerelease": true
+      }
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github",
+      "@semantic-release/npm",
+      "@semantic-release/changelog",
+      "@semantic-release/git"
+    ]
+  },
   "mocha": {
     "extension": [
       "ts"
@@ -100,6 +117,7 @@
     "@nestjs/core": "~8.2.0",
     "@nestjs/testing": "~8.2.0",
     "@semantic-release/changelog": "~6.0.0",
+    "@semantic-release/git": "~10.0.1",
     "@types/chai": "~4.2.22",
     "@types/chai-as-promised": "~7.1.4",
     "@types/mocha": "~9.0.0",
@@ -139,22 +157,6 @@
     "@nestjs/core": "^7.0.0 || ^8.0.0",
     "knex": "^0.95.0",
     "objection": "^3.0.0"
-  },
-  "release": {
-    "branches": [
-      "main",
-      {
-        "name": "next",
-        "prerelease": true
-      }
-    ],
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/github",
-      "@semantic-release/npm",
-      "@semantic-release/changelog"
-    ]
   },
   "volta": {
     "node": "16.13.0",
