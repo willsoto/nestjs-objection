@@ -1,3 +1,10 @@
+# [6.2.0](https://github.com/willsoto/nestjs-objection/compare/v6.1.0...v6.2.0) (2021-11-28)
+
+
+### Features
+
+* upgrade packages ([eacd0eb](https://github.com/willsoto/nestjs-objection/commit/eacd0eb97bdfca0642422541562171d14ba50304))
+
 # [6.1.0](https://github.com/willsoto/nestjs-objection/compare/v6.0.0...v6.1.0) (2021-11-15)
 
 
