@@ -1,3 +1,10 @@
+# [6.3.0](https://github.com/willsoto/nestjs-objection/compare/v6.2.0...v6.3.0) (2021-11-30)
+
+
+### Features
+
+* add node-tests reusable workflow ([96d4922](https://github.com/willsoto/nestjs-objection/commit/96d49224be8a43cc192a94271bafec75ee89a97b))
+
 # [6.2.0](https://github.com/willsoto/nestjs-objection/compare/v6.1.0...v6.2.0) (2021-11-28)
 
 
