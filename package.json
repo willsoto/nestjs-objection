@@ -125,7 +125,7 @@
     "@types/sinon": "~10.0.6",
     "@types/sinon-chai": "~3.2.6",
     "@typescript-eslint/eslint-plugin": "~5.11.0",
-    "@typescript-eslint/parser": "~5.10.0",
+    "@typescript-eslint/parser": "~5.11.0",
     "@vscode/sqlite3": "~5.0.7",
     "chai": "~4.3.4",
     "chai-as-promised": "~7.1.1",
