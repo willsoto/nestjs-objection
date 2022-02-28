@@ -1,3 +1,10 @@
+# [7.1.0](https://github.com/willsoto/nestjs-objection/compare/v7.0.0...v7.1.0) (2022-02-28)
+
+
+### Features
+
+* upgrade packages ([13e35a0](https://github.com/willsoto/nestjs-objection/commit/13e35a073ab6ffe5c0063a9dd05ebb84851ffa7d))
+
 # [7.0.0](https://github.com/willsoto/nestjs-objection/compare/v6.3.0...v7.0.0) (2022-01-17)
 
 
