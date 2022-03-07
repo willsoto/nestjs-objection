@@ -130,7 +130,7 @@
     "chai": "~4.3.6",
     "chai-as-promised": "~7.1.1",
     "eslint": "~8.10.0",
-    "eslint-config-prettier": "~8.4.0",
+    "eslint-config-prettier": "~8.5.0",
     "eslint-plugin-mocha": "~10.0.3",
     "husky": "~7.0.4",
     "knex": "~1.0.3",
