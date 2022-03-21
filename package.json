@@ -139,7 +139,7 @@
     "mocha": "~9.2.2",
     "nyc": "~15.1.0",
     "objection": "3.0.1",
-    "prettier": "~2.5.1",
+    "prettier": "~2.6.0",
     "prettier-plugin-organize-imports": "~2.3.4",
     "prettier-plugin-packagejson": "~2.2.16",
     "reflect-metadata": "~0.1.13",
