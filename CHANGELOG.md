@@ -1,3 +1,17 @@
+# [8.0.0](https://github.com/willsoto/nestjs-objection/compare/v7.2.0...v8.0.0) (2022-04-25)
+
+
+### Features
+
+* upgrade to Knex 2.0 ([d22ce9d](https://github.com/willsoto/nestjs-objection/commit/d22ce9da98c27a31891d2b525b47fb578a6fcf65))
+
+
+### BREAKING CHANGES
+
+* See Knex changelog for details https://github.com/knex/knex/releases/tag/2.0.0
+
+Signed-off-by: Will Soto <willsoto@users.noreply.github.com>
+
 # [7.2.0](https://github.com/willsoto/nestjs-objection/compare/v7.1.0...v7.2.0) (2022-03-14)
 
 
