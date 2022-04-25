@@ -126,14 +126,13 @@
     "@types/sinon-chai": "~3.2.8",
     "@typescript-eslint/eslint-plugin": "~5.20.0",
     "@typescript-eslint/parser": "~5.20.0",
-    "@vscode/sqlite3": "~5.0.7",
     "chai": "~4.3.6",
     "chai-as-promised": "~7.1.1",
     "eslint": "~8.14.0",
     "eslint-config-prettier": "~8.5.0",
     "eslint-plugin-mocha": "~10.0.3",
     "husky": "~7.0.4",
-    "knex": "~1.0.4",
+    "knex": "~2.0.0",
     "lint-staged": "~12.4.0",
     "markdown-toc": "~1.2.0",
     "mocha": "~9.2.2",
@@ -149,13 +148,14 @@
     "sinon": "~13.0.1",
     "sinon-chai": "~3.7.0",
     "source-map-support": "~0.5.21",
+    "sqlite3": "~5.0.5",
     "ts-node": "~10.7.0",
     "typescript": "~4.5.5"
   },
   "peerDependencies": {
     "@nestjs/common": "^7.0.0 || ^8.0.0",
     "@nestjs/core": "^7.0.0 || ^8.0.0",
-    "knex": "^1.0.0",
+    "knex": "^2.0.0",
     "objection": "^3.0.0"
   },
   "volta": {
