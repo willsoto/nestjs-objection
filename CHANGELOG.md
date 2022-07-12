@@ -1,3 +1,10 @@
+# [8.1.0](https://github.com/willsoto/nestjs-objection/compare/v8.0.0...v8.1.0) (2022-07-12)
+
+
+### Features
+
+* **nestjs:** support v9 ([77237bc](https://github.com/willsoto/nestjs-objection/commit/77237bca5953da54e2cc42f40b702f9f4f35cb22)), closes [#1549](https://github.com/willsoto/nestjs-objection/issues/1549)
+
 # [8.0.0](https://github.com/willsoto/nestjs-objection/compare/v7.2.0...v8.0.0) (2022-04-25)
 
 
