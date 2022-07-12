@@ -126,9 +126,8 @@ export class DatabaseModule {}
 ### Injecting the connection
 
 ```ts
-import { HealthCheckError } from "@godaddy/terminus";
 import { Inject, Injectable } from "@nestjs/common";
-import { HealthIndicatorResult, HealthIndicator } from "@nestjs/terminus";
+import { HealthIndicatorResult, HealthIndicator, HealthCheckError } from "@nestjs/terminus";
 import { Connection, KNEX_CONNECTION } from "@willsoto/nestjs-objection";
 
 @Injectable()
