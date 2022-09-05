@@ -104,7 +104,7 @@
     "statements": 90
   },
   "devDependencies": {
-    "@commitlint/cli": "17.1.1",
+    "@commitlint/cli": "17.1.2",
     "@commitlint/config-conventional": "17.1.0",
     "@istanbuljs/nyc-config-typescript": "1.0.2",
     "@nestjs/common": "9.0.11",
