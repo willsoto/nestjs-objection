@@ -23,7 +23,7 @@ specifiers:
   eslint-config-prettier: 8.5.0
   eslint-plugin-mocha: 10.1.0
   husky: 8.0.1
-  knex: 2.2.0
+  knex: 2.3.0
   lint-staged: 13.0.3
   markdown-toc: 1.2.0
   mocha: 10.0.0
@@ -66,12 +66,12 @@ devDependencies:
   eslint-config-prettier: 8.5.0_eslint@8.23.0
   eslint-plugin-mocha: 10.1.0_eslint@8.23.0
   husky: 8.0.1
-  knex: 2.2.0_sqlite3@5.0.11
+  knex: 2.3.0_sqlite3@5.0.11
   lint-staged: 13.0.3
   markdown-toc: 1.2.0
   mocha: 10.0.0
   nyc: 15.1.0
-  objection: 3.0.1_knex@2.2.0
+  objection: 3.0.1_knex@2.3.0
   prettier: 2.7.1
   prettier-plugin-organize-imports: 3.0.3_gd3y7r3s3evy6b2vthd7dmacga
   prettier-plugin-packagejson: 2.2.18_prettier@2.7.1
@@ -3259,8 +3259,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /knex/2.2.0_sqlite3@5.0.11:
-    resolution: {integrity: sha512-yhm1Qe9Ok0TeXBq3nNHqZYJPrQ4Iw2tq9k/HxjrZ/EWec2ifOjJlkNHr26v8cQrWtk5iG3iwfUazTIWy+VKG5g==}
+  /knex/2.3.0_sqlite3@5.0.11:
+    resolution: {integrity: sha512-WMizPaq9wRMkfnwKXKXgBZeZFOSHGdtoSz5SaLAVNs3WRDfawt9O89T4XyH52PETxjV8/kRk0Yf+8WBEP/zbYw==}
     engines: {node: '>=12'}
     hasBin: true
     peerDependencies:
@@ -4089,7 +4089,7 @@ packages:
       isobject: 3.0.1
     dev: true
 
-  /objection/3.0.1_knex@2.2.0:
+  /objection/3.0.1_knex@2.3.0:
     resolution: {integrity: sha512-rqNnyQE+C55UHjdpTOJEKQHJGZ/BGtBBtgxdUpKG4DQXRUmqxfmgS/MhPWxB9Pw0mLSVLEltr6soD4c0Sddy0Q==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -4097,7 +4097,7 @@ packages:
     dependencies:
       ajv: 8.11.0
       db-errors: 0.2.3
-      knex: 2.2.0_sqlite3@5.0.11
+      knex: 2.3.0_sqlite3@5.0.11
     dev: true
 
   /once/1.4.0:
