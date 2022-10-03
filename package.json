@@ -134,7 +134,7 @@
     "objection": "3.0.1",
     "prettier": "2.7.1",
     "prettier-plugin-organize-imports": "3.1.1",
-    "prettier-plugin-packagejson": "2.2.18",
+    "prettier-plugin-packagejson": "2.3.0",
     "reflect-metadata": "0.1.13",
     "rimraf": "3.0.2",
     "rxjs": "7.5.7",
