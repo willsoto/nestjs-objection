@@ -36,7 +36,7 @@ specifiers:
   rimraf: 3.0.2
   rxjs: 7.5.7
   semantic-release: 19.0.5
-  sinon: 14.0.0
+  sinon: 14.0.1
   sinon-chai: 3.7.0
   source-map-support: 0.5.21
   sqlite3: 5.1.1
@@ -79,8 +79,8 @@ devDependencies:
   rimraf: 3.0.2
   rxjs: 7.5.7
   semantic-release: 19.0.5
-  sinon: 14.0.0
-  sinon-chai: 3.7.0_chai@4.3.6+sinon@14.0.0
+  sinon: 14.0.1
+  sinon-chai: 3.7.0_chai@4.3.6+sinon@14.0.1
   source-map-support: 0.5.21
   sqlite3: 5.1.1
   ts-node: 10.9.1_f6w67sjx3imwytyzb2qhabnzqe
@@ -4795,18 +4795,18 @@ packages:
       pkg-conf: 2.1.0
     dev: true
 
-  /sinon-chai/3.7.0_chai@4.3.6+sinon@14.0.0:
+  /sinon-chai/3.7.0_chai@4.3.6+sinon@14.0.1:
     resolution: {integrity: sha512-mf5NURdUaSdnatJx3uhoBOrY9dtL19fiOtAdT1Azxg3+lNJFiuN0uzaU3xX1LeAfL17kHQhTAJgpsfhbMJMY2g==}
     peerDependencies:
       chai: ^4.0.0
       sinon: '>=4.0.0'
     dependencies:
       chai: 4.3.6
-      sinon: 14.0.0
+      sinon: 14.0.1
     dev: true
 
-  /sinon/14.0.0:
-    resolution: {integrity: sha512-ugA6BFmE+WrJdh0owRZHToLd32Uw3Lxq6E6LtNRU+xTVBefx632h03Q7apXWRsRdZAJ41LB8aUfn2+O4jsDNMw==}
+  /sinon/14.0.1:
+    resolution: {integrity: sha512-JhJ0jCiyBWVAHDS+YSjgEbDn7Wgz9iIjA1/RK+eseJN0vAAWIWiXBdrnb92ELPyjsfreCYntD1ORtLSfIrlvSQ==}
     dependencies:
       '@sinonjs/commons': 1.8.3
       '@sinonjs/fake-timers': 9.1.2
