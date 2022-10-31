@@ -12,6 +12,7 @@
     "removeComments": false,
     "sourceMap": true,
     "strict": true,
+    "skipLibCheck": true,
     "target": "es2018"
   },
   "exclude": ["node_modules", "dist"]
