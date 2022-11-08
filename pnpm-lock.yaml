@@ -9,7 +9,7 @@ specifiers:
   '@nestjs/testing': 9.2.0
   '@semantic-release/changelog': 6.0.1
   '@semantic-release/git': 10.0.1
-  '@types/chai': 4.3.3
+  '@types/chai': 4.3.4
   '@types/chai-as-promised': 7.1.5
   '@types/mocha': 10.0.0
   '@types/node': 18.11.9
@@ -17,7 +17,7 @@ specifiers:
   '@types/sinon-chai': 3.2.9
   '@typescript-eslint/eslint-plugin': 5.42.0
   '@typescript-eslint/parser': 5.42.0
-  chai: 4.3.6
+  chai: 4.3.7
   chai-as-promised: 7.1.1
   eslint: 8.27.0
   eslint-config-prettier: 8.5.0
@@ -52,7 +52,7 @@ devDependencies:
   '@nestjs/testing': 9.2.0_pf2fb646rsvo5szivgkaevcpvi
   '@semantic-release/changelog': 6.0.1_semantic-release@19.0.5
   '@semantic-release/git': 10.0.1_semantic-release@19.0.5
-  '@types/chai': 4.3.3
+  '@types/chai': 4.3.4
   '@types/chai-as-promised': 7.1.5
   '@types/mocha': 10.0.0
   '@types/node': 18.11.9
@@ -60,8 +60,8 @@ devDependencies:
   '@types/sinon-chai': 3.2.9
   '@typescript-eslint/eslint-plugin': 5.42.0_ofgjrzjuekeo7s3hdyz2yuzw34
   '@typescript-eslint/parser': 5.42.0_rmayb2veg2btbq6mbmnyivgasy
-  chai: 4.3.6
-  chai-as-promised: 7.1.1_chai@4.3.6
+  chai: 4.3.7
+  chai-as-promised: 7.1.1_chai@4.3.7
   eslint: 8.27.0
   eslint-config-prettier: 8.5.0_eslint@8.27.0
   eslint-plugin-mocha: 10.1.0_eslint@8.27.0
@@ -80,7 +80,7 @@ devDependencies:
   rxjs: 7.5.7
   semantic-release: 19.0.5
   sinon: 14.0.1
-  sinon-chai: 3.7.0_chai@4.3.6+sinon@14.0.1
+  sinon-chai: 3.7.0_chai@4.3.7+sinon@14.0.1
   source-map-support: 0.5.21
   sqlite3: 5.1.2
   ts-node: 10.9.1_cbe7ovvae6zqfnmtgctpgpys54
@@ -1013,11 +1013,11 @@ packages:
   /@types/chai-as-promised/7.1.5:
     resolution: {integrity: sha512-jStwss93SITGBwt/niYrkf2C+/1KTeZCZl1LaeezTlqppAKeoQC7jxyqYuP72sxBGKCIbw7oHgbYssIRzT5FCQ==}
     dependencies:
-      '@types/chai': 4.3.3
+      '@types/chai': 4.3.4
     dev: true
 
-  /@types/chai/4.3.3:
-    resolution: {integrity: sha512-hC7OMnszpxhZPduX+m+nrx+uFoLkWOMiR4oa/AZF3MuSETYTZmFfJAHqZEM8MVlvfG7BEUcgvtwoCTxBp6hm3g==}
+  /@types/chai/4.3.4:
+    resolution: {integrity: sha512-KnRanxnpfpjUTqTCXslZSEdLfXExwgNxYPdiO2WGUj8+HDjFi8R3k5RVKPeSCzLjCcshCAtVO2QBbVuAV4kTnw==}
     dev: true
 
   /@types/glob/7.2.0:
@@ -1070,7 +1070,7 @@ packages:
   /@types/sinon-chai/3.2.9:
     resolution: {integrity: sha512-/19t63pFYU0ikrdbXKBWj9PCdnKyTd0Qkz0X91Ta081cYsq90OxYdcWwK/dwEoDa6dtXgj2HJfmzgq+QZTHdmQ==}
     dependencies:
-      '@types/chai': 4.3.3
+      '@types/chai': 4.3.4
       '@types/sinon': 10.0.13
     dev: true
 
@@ -1576,22 +1576,22 @@ packages:
       redeyed: 2.1.1
     dev: true
 
-  /chai-as-promised/7.1.1_chai@4.3.6:
+  /chai-as-promised/7.1.1_chai@4.3.7:
     resolution: {integrity: sha512-azL6xMoi+uxu6z4rhWQ1jbdUhOMhis2PvscD/xjLqNMkv3BPPp2JyyuTHOrf9BOosGpNQ11v6BKv/g57RXbiaA==}
     peerDependencies:
       chai: '>= 2.1.2 < 5'
     dependencies:
-      chai: 4.3.6
+      chai: 4.3.7
       check-error: 1.0.2
     dev: true
 
-  /chai/4.3.6:
-    resolution: {integrity: sha512-bbcp3YfHCUzMOvKqsztczerVgBKSsEijCySNlHHbX3VG1nskvqjz5Rfso1gGwD6w6oOV3eI60pKuMOV5MV7p3Q==}
+  /chai/4.3.7:
+    resolution: {integrity: sha512-HLnAzZ2iupm25PlN0xFreAlBA5zaBSv3og0DdeGA4Ar6h6rJ3A0rolRUKJhSF2V10GZKDgWF/VmAEsNWjCRB+A==}
     engines: {node: '>=4'}
     dependencies:
       assertion-error: 1.1.0
       check-error: 1.0.2
-      deep-eql: 3.0.1
+      deep-eql: 4.1.2
       get-func-name: 2.0.0
       loupe: 2.3.4
       pathval: 1.1.1
@@ -1942,9 +1942,9 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /deep-eql/3.0.1:
-    resolution: {integrity: sha512-+QeIQyN5ZuO+3Uk5DYh6/1eKO0m0YmJFGNmFHGACpf1ClL1nmlV/p4gNgbl2pJGxgXb4faqo6UE+M5ACEMyVcw==}
-    engines: {node: '>=0.12'}
+  /deep-eql/4.1.2:
+    resolution: {integrity: sha512-gT18+YW4CcW/DBNTwAmqTtkJh7f9qqScu2qFVlx7kCoeY9tlBu9cUcr7+I+Z/noG8INehS3xQgLpTtd/QUTn4w==}
+    engines: {node: '>=6'}
     dependencies:
       type-detect: 4.0.8
     dev: true
@@ -4792,13 +4792,13 @@ packages:
       pkg-conf: 2.1.0
     dev: true
 
-  /sinon-chai/3.7.0_chai@4.3.6+sinon@14.0.1:
+  /sinon-chai/3.7.0_chai@4.3.7+sinon@14.0.1:
     resolution: {integrity: sha512-mf5NURdUaSdnatJx3uhoBOrY9dtL19fiOtAdT1Azxg3+lNJFiuN0uzaU3xX1LeAfL17kHQhTAJgpsfhbMJMY2g==}
     peerDependencies:
       chai: ^4.0.0
       sinon: '>=4.0.0'
     dependencies:
-      chai: 4.3.6
+      chai: 4.3.7
       sinon: 14.0.1
     dev: true
 
