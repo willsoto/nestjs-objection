@@ -22,7 +22,7 @@ specifiers:
   eslint: 8.27.0
   eslint-config-prettier: 8.5.0
   eslint-plugin-mocha: 10.1.0
-  husky: 8.0.1
+  husky: 8.0.2
   knex: 2.3.0
   lint-staged: 13.0.3
   markdown-toc: 1.2.0
@@ -65,7 +65,7 @@ devDependencies:
   eslint: 8.27.0
   eslint-config-prettier: 8.5.0_eslint@8.27.0
   eslint-plugin-mocha: 10.1.0_eslint@8.27.0
-  husky: 8.0.1
+  husky: 8.0.2
   knex: 2.3.0_sqlite3@5.1.2
   lint-staged: 13.0.3
   markdown-toc: 1.2.0
@@ -2836,8 +2836,8 @@ packages:
     dev: true
     optional: true
 
-  /husky/8.0.1:
-    resolution: {integrity: sha512-xs7/chUH/CKdOCs7Zy0Aev9e/dKOMZf3K1Az1nar3tzlv0jfqnYtu235bstsWTmXOR0EfINrPa97yy4Lz6RiKw==}
+  /husky/8.0.2:
+    resolution: {integrity: sha512-Tkv80jtvbnkK3mYWxPZePGFpQ/tT3HNSs/sasF9P2YfkMezDl3ON37YN6jUUI4eTg5LcyVynlb6r4eyvOmspvg==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
