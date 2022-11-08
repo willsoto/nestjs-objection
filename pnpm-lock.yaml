@@ -14,7 +14,7 @@ specifiers:
   '@types/mocha': 10.0.0
   '@types/node': 18.11.9
   '@types/sinon': 10.0.13
-  '@types/sinon-chai': 3.2.8
+  '@types/sinon-chai': 3.2.9
   '@typescript-eslint/eslint-plugin': 5.42.0
   '@typescript-eslint/parser': 5.42.0
   chai: 4.3.6
@@ -57,7 +57,7 @@ devDependencies:
   '@types/mocha': 10.0.0
   '@types/node': 18.11.9
   '@types/sinon': 10.0.13
-  '@types/sinon-chai': 3.2.8
+  '@types/sinon-chai': 3.2.9
   '@typescript-eslint/eslint-plugin': 5.42.0_ofgjrzjuekeo7s3hdyz2yuzw34
   '@typescript-eslint/parser': 5.42.0_rmayb2veg2btbq6mbmnyivgasy
   chai: 4.3.6
@@ -1067,8 +1067,8 @@ packages:
     resolution: {integrity: sha512-21cFJr9z3g5dW8B0CVI9g2O9beqaThGQ6ZFBqHfwhzLDKUxaqTIy3vnfah/UPkfOiF2pLq+tGz+W8RyCskuslw==}
     dev: true
 
-  /@types/sinon-chai/3.2.8:
-    resolution: {integrity: sha512-d4ImIQbT/rKMG8+AXpmcan5T2/PNeSjrYhvkwet6z0p8kzYtfgA32xzOBlbU0yqJfq+/0Ml805iFoODO0LP5/g==}
+  /@types/sinon-chai/3.2.9:
+    resolution: {integrity: sha512-/19t63pFYU0ikrdbXKBWj9PCdnKyTd0Qkz0X91Ta081cYsq90OxYdcWwK/dwEoDa6dtXgj2HJfmzgq+QZTHdmQ==}
     dependencies:
       '@types/chai': 4.3.3
       '@types/sinon': 10.0.13
