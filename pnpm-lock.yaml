@@ -26,7 +26,7 @@ specifiers:
   knex: 2.3.0
   lint-staged: 13.1.0
   markdown-toc: 1.2.0
-  mocha: 10.1.0
+  mocha: 10.2.0
   nyc: 15.1.0
   objection: 3.0.1
   prettier: 2.8.1
@@ -69,7 +69,7 @@ devDependencies:
   knex: 2.3.0_sqlite3@5.1.2
   lint-staged: 13.1.0
   markdown-toc: 1.2.0
-  mocha: 10.1.0
+  mocha: 10.2.0
   nyc: 15.1.0
   objection: 3.0.1_knex@2.3.0
   prettier: 2.8.1
@@ -3800,8 +3800,8 @@ packages:
     hasBin: true
     dev: true
 
-  /mocha/10.1.0:
-    resolution: {integrity: sha512-vUF7IYxEoN7XhQpFLxQAEMtE4W91acW4B6En9l97MwE9stL1A9gusXfoHZCLVHDUJ/7V5+lbCM6yMqzo5vNymg==}
+  /mocha/10.2.0:
+    resolution: {integrity: sha512-IDY7fl/BecMwFHzoqF2sg/SHHANeBoMMXFlS9r0OXKDssYE1M5O43wUY/9BVPeIvfH2zmEbBfseqN9gBQZzXkg==}
     engines: {node: '>= 14.0.0'}
     hasBin: true
     dependencies:

@@ -129,7 +129,7 @@
     "knex": "2.3.0",
     "lint-staged": "13.1.0",
     "markdown-toc": "1.2.0",
-    "mocha": "10.1.0",
+    "mocha": "10.2.0",
     "nyc": "15.1.0",
     "objection": "3.0.1",
     "prettier": "2.8.1",
