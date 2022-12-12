@@ -39,7 +39,7 @@ specifiers:
   sinon: 15.0.0
   sinon-chai: 3.7.0
   source-map-support: 0.5.21
-  sqlite3: 5.1.2
+  sqlite3: 5.1.3
   ts-node: 10.9.1
   typescript: 4.9.4
 
@@ -66,7 +66,7 @@ devDependencies:
   eslint-config-prettier: 8.5.0_eslint@8.29.0
   eslint-plugin-mocha: 10.1.0_eslint@8.29.0
   husky: 8.0.2
-  knex: 2.3.0_sqlite3@5.1.2
+  knex: 2.3.0_sqlite3@5.1.3
   lint-staged: 13.1.0
   markdown-toc: 1.2.0
   mocha: 10.2.0
@@ -82,7 +82,7 @@ devDependencies:
   sinon: 15.0.0
   sinon-chai: 3.7.0_chai@4.3.7+sinon@15.0.0
   source-map-support: 0.5.21
-  sqlite3: 5.1.2
+  sqlite3: 5.1.3
   ts-node: 10.9.1_73migmg77y47omm5253gettkxi
   typescript: 4.9.4
 
@@ -701,6 +701,7 @@ packages:
   /@npmcli/move-file/1.1.2:
     resolution: {integrity: sha512-1SUf/Cg2GzGDyaf15aR9St9TWlb+XvbZXWpDx8YKs7MLzMH/BCeopv+y9vzrzgkfykCGuWOlSu3mZhj2+FQcrg==}
     engines: {node: '>=10'}
+    deprecated: This functionality has been moved to @npmcli/fs
     dependencies:
       mkdirp: 1.0.4
       rimraf: 3.0.2
@@ -3275,7 +3276,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /knex/2.3.0_sqlite3@5.1.2:
+  /knex/2.3.0_sqlite3@5.1.3:
     resolution: {integrity: sha512-WMizPaq9wRMkfnwKXKXgBZeZFOSHGdtoSz5SaLAVNs3WRDfawt9O89T4XyH52PETxjV8/kRk0Yf+8WBEP/zbYw==}
     engines: {node: '>=12'}
     hasBin: true
@@ -3315,7 +3316,7 @@ packages:
       pg-connection-string: 2.5.0
       rechoir: 0.8.0
       resolve-from: 5.0.0
-      sqlite3: 5.1.2
+      sqlite3: 5.1.3
       tarn: 3.0.2
       tildify: 2.0.0
     transitivePeerDependencies:
@@ -4148,7 +4149,7 @@ packages:
     dependencies:
       ajv: 8.11.0
       db-errors: 0.2.3
-      knex: 2.3.0_sqlite3@5.1.2
+      knex: 2.3.0_sqlite3@5.1.3
     dev: true
 
   /once/1.4.0:
@@ -5011,8 +5012,8 @@ packages:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
     dev: true
 
-  /sqlite3/5.1.2:
-    resolution: {integrity: sha512-D0Reg6pRWAFXFUnZKsszCI67tthFD8fGPewRddDCX6w4cYwz3MbvuwRICbL+YQjBAh9zbw+lJ/V9oC8nG5j6eg==}
+  /sqlite3/5.1.3:
+    resolution: {integrity: sha512-z9sfEGGv/40WfvjhFxPkvTaK8ahYSW/chR735Eokrwz20tHbZEtQpRXQ20qDdCVNzOKAOQEy4B9L2bdwGoKtoQ==}
     requiresBuild: true
     peerDependenciesMeta:
       node-gyp:
