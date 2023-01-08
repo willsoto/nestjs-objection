@@ -23,7 +23,7 @@ specifiers:
   eslint-config-prettier: 8.6.0
   eslint-plugin-mocha: 10.1.0
   husky: 8.0.3
-  knex: 2.3.0
+  knex: 2.4.0
   lint-staged: 13.1.0
   markdown-toc: 1.2.0
   mocha: 10.2.0
@@ -66,12 +66,12 @@ devDependencies:
   eslint-config-prettier: 8.6.0_eslint@8.31.0
   eslint-plugin-mocha: 10.1.0_eslint@8.31.0
   husky: 8.0.3
-  knex: 2.3.0_sqlite3@5.1.4
+  knex: 2.4.0_sqlite3@5.1.4
   lint-staged: 13.1.0
   markdown-toc: 1.2.0
   mocha: 10.2.0
   nyc: 15.1.0
-  objection: 3.0.1_knex@2.3.0
+  objection: 3.0.1_knex@2.4.0
   prettier: 2.8.2
   prettier-plugin-organize-imports: 3.2.1_7zh76q2qrt7th5cvcxurl33jgy
   prettier-plugin-packagejson: 2.3.0_prettier@2.8.2
@@ -1745,11 +1745,6 @@ packages:
     resolution: {integrity: sha512-3tlv/dIP7FWvj3BsbHrGLJ6l/oKh1O3TcgBqMn+yyCagOxc23fyzDS6HypQbgxWbkpDnf52p1LuR4eWDQ/K9WQ==}
     dev: true
 
-  /commander/9.4.0:
-    resolution: {integrity: sha512-sRPT+umqkz90UA8M1yqYfnHlZA7fF6nSphDtxeywPZ49ysjxDQybzk13CL+mXekDRG92skbcqCLVovuCusNmFw==}
-    engines: {node: ^12.20.0 || >=14}
-    dev: true
-
   /commander/9.4.1:
     resolution: {integrity: sha512-5EEkTNyHNGFPD2H+c/dXXfQZYa/scCKasxWcXJaWnNJ99pnQN9Vnmqow+p+PlFPE63Q6mThaZws1T+HxfpgtPw==}
     engines: {node: ^12.20.0 || >=14}
@@ -3283,8 +3278,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /knex/2.3.0_sqlite3@5.1.4:
-    resolution: {integrity: sha512-WMizPaq9wRMkfnwKXKXgBZeZFOSHGdtoSz5SaLAVNs3WRDfawt9O89T4XyH52PETxjV8/kRk0Yf+8WBEP/zbYw==}
+  /knex/2.4.0_sqlite3@5.1.4:
+    resolution: {integrity: sha512-i0GWwqYp1Hs2yvc2rlDO6nzzkLhwdyOZKRdsMTB8ZxOs2IXQyL5rBjSbS1krowCh6V65T4X9CJaKtuIfkaPGSA==}
     engines: {node: '>=12'}
     hasBin: true
     peerDependencies:
@@ -3312,7 +3307,7 @@ packages:
         optional: true
     dependencies:
       colorette: 2.0.19
-      commander: 9.4.0
+      commander: 9.4.1
       debug: 4.3.4
       escalade: 3.1.1
       esm: 3.2.25
@@ -4148,7 +4143,7 @@ packages:
       isobject: 3.0.1
     dev: true
 
-  /objection/3.0.1_knex@2.3.0:
+  /objection/3.0.1_knex@2.4.0:
     resolution: {integrity: sha512-rqNnyQE+C55UHjdpTOJEKQHJGZ/BGtBBtgxdUpKG4DQXRUmqxfmgS/MhPWxB9Pw0mLSVLEltr6soD4c0Sddy0Q==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -4156,7 +4151,7 @@ packages:
     dependencies:
       ajv: 8.11.0
       db-errors: 0.2.3
-      knex: 2.3.0_sqlite3@5.1.4
+      knex: 2.4.0_sqlite3@5.1.4
     dev: true
 
   /once/1.4.0:
