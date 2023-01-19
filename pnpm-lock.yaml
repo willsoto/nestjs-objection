@@ -30,7 +30,7 @@ specifiers:
   nyc: 15.1.0
   objection: 3.0.1
   prettier: 2.8.3
-  prettier-plugin-organize-imports: 3.2.1
+  prettier-plugin-organize-imports: 3.2.2
   prettier-plugin-packagejson: 2.3.0
   reflect-metadata: 0.1.13
   rimraf: 3.0.2
@@ -73,7 +73,7 @@ devDependencies:
   nyc: 15.1.0
   objection: 3.0.1_knex@2.4.1
   prettier: 2.8.3
-  prettier-plugin-organize-imports: 3.2.1_uhxzhaxu465qzax2tftpee5s7i
+  prettier-plugin-organize-imports: 3.2.2_uhxzhaxu465qzax2tftpee5s7i
   prettier-plugin-packagejson: 2.3.0_prettier@2.8.3
   reflect-metadata: 0.1.13
   rimraf: 3.0.2
@@ -4413,8 +4413,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-organize-imports/3.2.1_uhxzhaxu465qzax2tftpee5s7i:
-    resolution: {integrity: sha512-bty7C2Ecard5EOXirtzeCAqj4FU4epeuWrQt/Z+sh8UVEpBlBZ3m3KNPz2kFu7KgRTQx/C9o4/TdquPD1jOqjQ==}
+  /prettier-plugin-organize-imports/3.2.2_uhxzhaxu465qzax2tftpee5s7i:
+    resolution: {integrity: sha512-e97lE6odGSiHonHJMTYC0q0iLXQyw0u5z/PJpvP/3vRy6/Zi9kLBwFAbEGjDzIowpjQv8b+J04PDamoUSQbzGA==}
     peerDependencies:
       '@volar/vue-language-plugin-pug': ^1.0.4
       '@volar/vue-typescript': ^1.0.4
