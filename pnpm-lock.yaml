@@ -4,9 +4,9 @@ specifiers:
   '@commitlint/cli': 17.4.2
   '@commitlint/config-conventional': 17.4.2
   '@istanbuljs/nyc-config-typescript': 1.0.2
-  '@nestjs/common': 9.2.1
-  '@nestjs/core': 9.2.1
-  '@nestjs/testing': 9.2.1
+  '@nestjs/common': 9.3.1
+  '@nestjs/core': 9.3.1
+  '@nestjs/testing': 9.3.1
   '@semantic-release/changelog': 6.0.2
   '@semantic-release/git': 10.0.1
   '@types/chai': 4.3.4
@@ -47,9 +47,9 @@ devDependencies:
   '@commitlint/cli': 17.4.2
   '@commitlint/config-conventional': 17.4.2
   '@istanbuljs/nyc-config-typescript': 1.0.2_nyc@15.1.0
-  '@nestjs/common': 9.2.1_mnr6j2del53muneqly5h4y27ai
-  '@nestjs/core': 9.2.1_b4pxbpa7chblgbyake5iz5rdmu
-  '@nestjs/testing': 9.2.1_hjcqpoaebdr7gdo5hgc22hthbe
+  '@nestjs/common': 9.3.1_mnr6j2del53muneqly5h4y27ai
+  '@nestjs/core': 9.3.1_fipbdz7qhdiauthzsrt4bq6tsq
+  '@nestjs/testing': 9.3.1_22j2lmearpmfr73ppsmjho62xq
   '@semantic-release/changelog': 6.0.2_semantic-release@19.0.5
   '@semantic-release/git': 10.0.1_semantic-release@19.0.5
   '@types/chai': 4.3.4
@@ -578,6 +578,11 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
+  /@lukeed/csprng/1.0.1:
+    resolution: {integrity: sha512-uSvJdwQU5nK+Vdf6zxcWAY2A8r7uqe+gePwLWzJ+fsQehq18pc0I2hJKwypZ2aLM90+Er9u1xn4iLJPZ+xlL4g==}
+    engines: {node: '>=8'}
+    dev: true
+
   /@mapbox/node-pre-gyp/1.0.9:
     resolution: {integrity: sha512-aDF3S3rK9Q2gey/WAttUlISduDItz5BU3306M9Eyv6/oS40aMprnopshtlKTykxRNIBEZuRMaZAnbrQ4QtKGyw==}
     hasBin: true
@@ -596,8 +601,8 @@ packages:
       - supports-color
     dev: true
 
-  /@nestjs/common/9.2.1_mnr6j2del53muneqly5h4y27ai:
-    resolution: {integrity: sha512-nZuo3oDsSSlC5mti/M2aCWTEIfHPGDXmBwWgPeCpRbrNz3IWd109rkajll+yxgidVjznAdBS9y00JkAVJblNYw==}
+  /@nestjs/common/9.3.1_mnr6j2del53muneqly5h4y27ai:
+    resolution: {integrity: sha512-T14G3xjIXmEkxMcHcwh/eJwodF2owhYIT0ZA8u6UCNCEQg+391TXA7xTynUuR5Fl2EJPYTKF0g89XSFOW7NS2Q==}
     peerDependencies:
       cache-manager: <=5
       class-transformer: '*'
@@ -616,11 +621,11 @@ packages:
       reflect-metadata: 0.1.13
       rxjs: 7.8.0
       tslib: 2.4.1
-      uuid: 9.0.0
+      uid: 2.0.1
     dev: true
 
-  /@nestjs/core/9.2.1_b4pxbpa7chblgbyake5iz5rdmu:
-    resolution: {integrity: sha512-a9GkXuu8uXgNgCVW+17iI8kLCltO+HwHpU2IhR+32JKnN2WEQ1YEWU4t3GJ2MNq44YkjIw9zrKvFkjJBlYrNbQ==}
+  /@nestjs/core/9.3.1_fipbdz7qhdiauthzsrt4bq6tsq:
+    resolution: {integrity: sha512-hLVfImzHu1vdcViEhIRnm7x3EBk+YiV7XVTJNz6n2Ly8a6t7IFBoJkGrZkE8ZTytnfbJZO0Vtp54ZBllxx3MwA==}
     requiresBuild: true
     peerDependencies:
       '@nestjs/common': ^9.0.0
@@ -637,7 +642,7 @@ packages:
       '@nestjs/websockets':
         optional: true
     dependencies:
-      '@nestjs/common': 9.2.1_mnr6j2del53muneqly5h4y27ai
+      '@nestjs/common': 9.3.1_mnr6j2del53muneqly5h4y27ai
       '@nuxtjs/opencollective': 0.3.2
       fast-safe-stringify: 2.1.1
       iterare: 1.2.1
@@ -651,8 +656,8 @@ packages:
       - encoding
     dev: true
 
-  /@nestjs/testing/9.2.1_hjcqpoaebdr7gdo5hgc22hthbe:
-    resolution: {integrity: sha512-lemXZdRSuqoZ87l0orCrS/c7gqwxeduIFOd21g9g2RUeQ4qlWPegbQDKASzbfC28klPyrgJLW4MNq7uv2JwV8w==}
+  /@nestjs/testing/9.3.1_22j2lmearpmfr73ppsmjho62xq:
+    resolution: {integrity: sha512-jjsmfd9h0E8bWTSWMm+QD1P8T8ElHufTJ2tDbi0q9U8JR5QoJ9KLcVTYZVPciXpwPxIiZ+qFEjrY1/irvPHDug==}
     peerDependencies:
       '@nestjs/common': ^9.0.0
       '@nestjs/core': ^9.0.0
@@ -664,8 +669,8 @@ packages:
       '@nestjs/platform-express':
         optional: true
     dependencies:
-      '@nestjs/common': 9.2.1_mnr6j2del53muneqly5h4y27ai
-      '@nestjs/core': 9.2.1_b4pxbpa7chblgbyake5iz5rdmu
+      '@nestjs/common': 9.3.1_mnr6j2del53muneqly5h4y27ai
+      '@nestjs/core': 9.3.1_fipbdz7qhdiauthzsrt4bq6tsq
       tslib: 2.4.1
     dev: true
 
@@ -5470,6 +5475,13 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /uid/2.0.1:
+    resolution: {integrity: sha512-PF+1AnZgycpAIEmNtjxGBVmKbZAQguaa4pBUq6KNaGEcpzZ2klCNZLM34tsjp76maN00TttiiUf6zkIBpJQm2A==}
+    engines: {node: '>=8'}
+    dependencies:
+      '@lukeed/csprng': 1.0.1
+    dev: true
 
   /unique-filename/1.1.1:
     resolution: {integrity: sha512-Vmp0jIp2ln35UTXuryvjzkjGdRyf9b2lTXuSYUiPmzRcl3FDtYqAwOnTJkAngD9SWhnoJzDbTKwaOrZ+STtxNQ==}
