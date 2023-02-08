@@ -33,7 +33,7 @@ specifiers:
   prettier-plugin-organize-imports: 3.2.2
   prettier-plugin-packagejson: 2.4.2
   reflect-metadata: 0.1.13
-  rimraf: 3.0.2
+  rimraf: 4.1.2
   rxjs: 7.8.0
   semantic-release: 19.0.5
   sinon: 15.0.1
@@ -76,7 +76,7 @@ devDependencies:
   prettier-plugin-organize-imports: 3.2.2_silln3pw57har7jydmecgzoypa
   prettier-plugin-packagejson: 2.4.2_prettier@2.8.4
   reflect-metadata: 0.1.13
-  rimraf: 3.0.2
+  rimraf: 4.1.2
   rxjs: 7.8.0
   semantic-release: 19.0.5
   sinon: 15.0.1
@@ -4884,6 +4884,12 @@ packages:
     hasBin: true
     dependencies:
       glob: 7.2.3
+    dev: true
+
+  /rimraf/4.1.2:
+    resolution: {integrity: sha512-BlIbgFryTbw3Dz6hyoWFhKk+unCcHMSkZGrTFVAx2WmttdBSonsdtRlwiuTbDqTKr+UlXIUqJVS4QT5tUzGENQ==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
   /run-parallel/1.2.0:
