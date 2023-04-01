@@ -4,9 +4,9 @@ specifiers:
   '@commitlint/cli': 17.4.4
   '@commitlint/config-conventional': 17.4.4
   '@istanbuljs/nyc-config-typescript': 1.0.2
-  '@nestjs/common': 9.3.10
-  '@nestjs/core': 9.3.10
-  '@nestjs/testing': 9.3.10
+  '@nestjs/common': 9.3.12
+  '@nestjs/core': 9.3.12
+  '@nestjs/testing': 9.3.12
   '@semantic-release/changelog': 6.0.3
   '@semantic-release/git': 10.0.1
   '@types/chai': 4.3.4
@@ -47,9 +47,9 @@ devDependencies:
   '@commitlint/cli': 17.4.4
   '@commitlint/config-conventional': 17.4.4
   '@istanbuljs/nyc-config-typescript': 1.0.2_nyc@15.1.0
-  '@nestjs/common': 9.3.10_mnr6j2del53muneqly5h4y27ai
-  '@nestjs/core': 9.3.10_z7yklwa5kpd33rbhggxjjac2ei
-  '@nestjs/testing': 9.3.10_7ftkheainf6elxr73aabueoaxm
+  '@nestjs/common': 9.3.12_mnr6j2del53muneqly5h4y27ai
+  '@nestjs/core': 9.3.12_jy37pi22pqa22ux5geb72eebiu
+  '@nestjs/testing': 9.3.12_ge4qplnzbmfyi5znl534zhtkn4
   '@semantic-release/changelog': 6.0.3_semantic-release@19.0.5
   '@semantic-release/git': 10.0.1_semantic-release@19.0.5
   '@types/chai': 4.3.4
@@ -621,8 +621,8 @@ packages:
       - supports-color
     dev: true
 
-  /@nestjs/common/9.3.10_mnr6j2del53muneqly5h4y27ai:
-    resolution: {integrity: sha512-wj2bM9TXBlAvzgznkID0s7bN/niVn90sZIDtRFDnvaB1qagEpkWA0Bt39qilIuqdReluIaCjeEW106U0oyz+mQ==}
+  /@nestjs/common/9.3.12_mnr6j2del53muneqly5h4y27ai:
+    resolution: {integrity: sha512-NtrUG2VgCbhmZEO1yRt/Utq16uFRV+xeHAOtdYIsfHGG0ssAV2lVLlvFFAQYh0SQ+KuYY1Gsxd3GK2JFoJCNqQ==}
     peerDependencies:
       cache-manager: <=5
       class-transformer: '*'
@@ -644,8 +644,8 @@ packages:
       uid: 2.0.1
     dev: true
 
-  /@nestjs/core/9.3.10_z7yklwa5kpd33rbhggxjjac2ei:
-    resolution: {integrity: sha512-9QuE5jHtRnqKZULUhQoB0pNU26mwJ4hYNwAQ7lc/nFU2/4Ci+wTTRrXhLZeirgaF6TLCgLQB7/wLHImcfoXUog==}
+  /@nestjs/core/9.3.12_jy37pi22pqa22ux5geb72eebiu:
+    resolution: {integrity: sha512-Qe0ZjJo7bOlfudn7KHLppYrt5i4k1nR1+9d5ppYat2bb5knCIT4kIqblj666n+22/2zvsHRiTo015cLyLKsLRQ==}
     requiresBuild: true
     peerDependencies:
       '@nestjs/common': ^9.0.0
@@ -662,7 +662,7 @@ packages:
       '@nestjs/websockets':
         optional: true
     dependencies:
-      '@nestjs/common': 9.3.10_mnr6j2del53muneqly5h4y27ai
+      '@nestjs/common': 9.3.12_mnr6j2del53muneqly5h4y27ai
       '@nuxtjs/opencollective': 0.3.2
       fast-safe-stringify: 2.1.1
       iterare: 1.2.1
@@ -675,8 +675,8 @@ packages:
       - encoding
     dev: true
 
-  /@nestjs/testing/9.3.10_7ftkheainf6elxr73aabueoaxm:
-    resolution: {integrity: sha512-TGspJkzDx1YmJzlmNG5WrhFa7IGgXbCVt4UXvBVqEk2QRPmJFZnqd0T9waKZ+SxwH4gY5sdw2niTFvOgqGVfJw==}
+  /@nestjs/testing/9.3.12_ge4qplnzbmfyi5znl534zhtkn4:
+    resolution: {integrity: sha512-nH274IXEqU4hr4bcb71POe58hYLONt9RcfKKM5ZvOS7wYMnybMpKKR8DkC1WcfE1P2k2GQmQoHeSH5emPtYrBA==}
     peerDependencies:
       '@nestjs/common': ^9.0.0
       '@nestjs/core': ^9.0.0
@@ -688,8 +688,8 @@ packages:
       '@nestjs/platform-express':
         optional: true
     dependencies:
-      '@nestjs/common': 9.3.10_mnr6j2del53muneqly5h4y27ai
-      '@nestjs/core': 9.3.10_z7yklwa5kpd33rbhggxjjac2ei
+      '@nestjs/common': 9.3.12_mnr6j2del53muneqly5h4y27ai
+      '@nestjs/core': 9.3.12_jy37pi22pqa22ux5geb72eebiu
       tslib: 2.5.0
     dev: true
 
