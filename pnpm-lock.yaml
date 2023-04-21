@@ -13,7 +13,7 @@ specifiers:
   '@types/chai-as-promised': 7.1.5
   '@types/mocha': 10.0.1
   '@types/node': 18.15.13
-  '@types/sinon': 10.0.13
+  '@types/sinon': 10.0.14
   '@types/sinon-chai': 3.2.9
   '@typescript-eslint/eslint-plugin': 5.50.0
   '@typescript-eslint/parser': 5.50.0
@@ -56,7 +56,7 @@ devDependencies:
   '@types/chai-as-promised': 7.1.5
   '@types/mocha': 10.0.1
   '@types/node': 18.15.13
-  '@types/sinon': 10.0.13
+  '@types/sinon': 10.0.14
   '@types/sinon-chai': 3.2.9
   '@typescript-eslint/eslint-plugin': 5.50.0_rxlw7wyscqat455scd35k4xwry
   '@typescript-eslint/parser': 5.50.0_ze6bmax3gcsfve3yrzu6npguhe
@@ -1105,11 +1105,11 @@ packages:
     resolution: {integrity: sha512-/19t63pFYU0ikrdbXKBWj9PCdnKyTd0Qkz0X91Ta081cYsq90OxYdcWwK/dwEoDa6dtXgj2HJfmzgq+QZTHdmQ==}
     dependencies:
       '@types/chai': 4.3.4
-      '@types/sinon': 10.0.13
+      '@types/sinon': 10.0.14
     dev: true
 
-  /@types/sinon/10.0.13:
-    resolution: {integrity: sha512-UVjDqJblVNQYvVNUsj0PuYYw0ELRmgt1Nt5Vk0pT5f16ROGfcKJY8o1HVuMOJOpD727RrGB9EGvoaTQE5tgxZQ==}
+  /@types/sinon/10.0.14:
+    resolution: {integrity: sha512-mn72up6cjaMyMuaPaa/AwKf6WtsSRysQC7wxFkCm1XcOKXPM1z+5Y4H5wjIVBz4gdAkjvZxVVfjA6ba1nHr5WQ==}
     dependencies:
       '@types/sinonjs__fake-timers': 8.1.2
     dev: true
