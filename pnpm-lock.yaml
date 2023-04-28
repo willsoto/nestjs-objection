@@ -34,7 +34,7 @@ specifiers:
   prettier-plugin-packagejson: 2.4.3
   reflect-metadata: 0.1.13
   rimraf: 4.4.1
-  rxjs: 7.8.0
+  rxjs: 7.8.1
   semantic-release: 19.0.5
   sinon: 15.0.4
   sinon-chai: 3.7.0
@@ -47,8 +47,8 @@ devDependencies:
   '@commitlint/cli': 17.6.1
   '@commitlint/config-conventional': 17.6.1
   '@istanbuljs/nyc-config-typescript': 1.0.2_nyc@15.1.0
-  '@nestjs/common': 9.4.0_mnr6j2del53muneqly5h4y27ai
-  '@nestjs/core': 9.4.0_ojtg6vwerx6d3743ed2mz2c5uy
+  '@nestjs/common': 9.4.0_atc7tu2sld2m3nk4hmwkqn6qde
+  '@nestjs/core': 9.4.0_4k3epc74gc2u2qkv5yznawsx6m
   '@nestjs/testing': 9.4.0_gqkob5jndcfeb3wjw72wbdwyne
   '@semantic-release/changelog': 6.0.3_semantic-release@19.0.5
   '@semantic-release/git': 10.0.1_semantic-release@19.0.5
@@ -77,7 +77,7 @@ devDependencies:
   prettier-plugin-packagejson: 2.4.3_prettier@2.8.8
   reflect-metadata: 0.1.13
   rimraf: 4.4.1
-  rxjs: 7.8.0
+  rxjs: 7.8.1
   semantic-release: 19.0.5
   sinon: 15.0.4
   sinon-chai: 3.7.0_chai@4.3.7+sinon@15.0.4
@@ -621,7 +621,7 @@ packages:
       - supports-color
     dev: true
 
-  /@nestjs/common/9.4.0_mnr6j2del53muneqly5h4y27ai:
+  /@nestjs/common/9.4.0_atc7tu2sld2m3nk4hmwkqn6qde:
     resolution: {integrity: sha512-RUcVAQsEF4WPrmzFXEOUfZnPwrLTe1UVlzXTlSyfqfqbdWDPKDGlIPVelBLfc5/+RRUQ0I5iE4+CQvpCmkqldw==}
     peerDependencies:
       cache-manager: <=5
@@ -639,12 +639,12 @@ packages:
     dependencies:
       iterare: 1.2.1
       reflect-metadata: 0.1.13
-      rxjs: 7.8.0
+      rxjs: 7.8.1
       tslib: 2.5.0
       uid: 2.0.2
     dev: true
 
-  /@nestjs/core/9.4.0_ojtg6vwerx6d3743ed2mz2c5uy:
+  /@nestjs/core/9.4.0_4k3epc74gc2u2qkv5yznawsx6m:
     resolution: {integrity: sha512-yTLryCgFD0462wPe4HIzhyTcDgibt8Stfwb5YzcX7Ma0NM4m8uBIpcPG109KBubp8ZmV85e5mw4rl20qLQQVsQ==}
     requiresBuild: true
     peerDependencies:
@@ -662,13 +662,13 @@ packages:
       '@nestjs/websockets':
         optional: true
     dependencies:
-      '@nestjs/common': 9.4.0_mnr6j2del53muneqly5h4y27ai
+      '@nestjs/common': 9.4.0_atc7tu2sld2m3nk4hmwkqn6qde
       '@nuxtjs/opencollective': 0.3.2
       fast-safe-stringify: 2.1.1
       iterare: 1.2.1
       path-to-regexp: 3.2.0
       reflect-metadata: 0.1.13
-      rxjs: 7.8.0
+      rxjs: 7.8.1
       tslib: 2.5.0
       uid: 2.0.2
     transitivePeerDependencies:
@@ -688,8 +688,8 @@ packages:
       '@nestjs/platform-express':
         optional: true
     dependencies:
-      '@nestjs/common': 9.4.0_mnr6j2del53muneqly5h4y27ai
-      '@nestjs/core': 9.4.0_ojtg6vwerx6d3743ed2mz2c5uy
+      '@nestjs/common': 9.4.0_atc7tu2sld2m3nk4hmwkqn6qde
+      '@nestjs/core': 9.4.0_4k3epc74gc2u2qkv5yznawsx6m
       tslib: 2.5.0
     dev: true
 
@@ -3459,7 +3459,7 @@ packages:
       log-update: 4.0.0
       p-map: 4.0.0
       rfdc: 1.3.0
-      rxjs: 7.8.0
+      rxjs: 7.8.1
       through: 2.3.8
       wrap-ansi: 7.0.0
     dev: true
@@ -4819,10 +4819,10 @@ packages:
       queue-microtask: 1.2.3
     dev: true
 
-  /rxjs/7.8.0:
-    resolution: {integrity: sha512-F2+gxDshqmIub1KdvZkaEfGDwLNpPvk9Fs6LD/MyQxNgMds/WH9OdDDXOmxUZpME+iSK3rQCctkL0DYyytUqMg==}
+  /rxjs/7.8.1:
+    resolution: {integrity: sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==}
     dependencies:
-      tslib: 2.4.1
+      tslib: 2.5.0
     dev: true
 
   /safe-buffer/5.1.2:
@@ -5443,10 +5443,6 @@ packages:
 
   /tslib/1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
-    dev: true
-
-  /tslib/2.4.1:
-    resolution: {integrity: sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==}
     dev: true
 
   /tslib/2.5.0:
