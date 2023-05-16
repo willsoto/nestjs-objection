@@ -12,7 +12,7 @@ specifiers:
   '@types/chai': 4.3.5
   '@types/chai-as-promised': 7.1.5
   '@types/mocha': 10.0.1
-  '@types/node': 18.16.9
+  '@types/node': 18.16.10
   '@types/sinon': 10.0.15
   '@types/sinon-chai': 3.2.9
   '@typescript-eslint/eslint-plugin': 5.59.6
@@ -55,7 +55,7 @@ devDependencies:
   '@types/chai': 4.3.5
   '@types/chai-as-promised': 7.1.5
   '@types/mocha': 10.0.1
-  '@types/node': 18.16.9
+  '@types/node': 18.16.10
   '@types/sinon': 10.0.15
   '@types/sinon-chai': 3.2.9
   '@typescript-eslint/eslint-plugin': 5.59.6_hrzo544y7ygaq2nap7kmpxcgnm
@@ -83,7 +83,7 @@ devDependencies:
   sinon-chai: 3.7.0_chai@4.3.7+sinon@15.0.4
   source-map-support: 0.5.21
   sqlite3: 5.1.6
-  ts-node: 10.9.1_muj5t77bbjctp3qmyavyfuekei
+  ts-node: 10.9.1_u5ax4hcaao6h6ctrp2v254guiq
   typescript: 5.0.4
 
 packages:
@@ -376,15 +376,15 @@ packages:
       '@commitlint/execute-rule': 17.4.0
       '@commitlint/resolve-extends': 17.4.4
       '@commitlint/types': 17.4.4
-      '@types/node': 18.16.9
+      '@types/node': 18.16.10
       chalk: 4.1.2
       cosmiconfig: 8.0.0
-      cosmiconfig-typescript-loader: 4.0.0_alipsuhwdi2h7t5hoivnqtespi
+      cosmiconfig-typescript-loader: 4.0.0_qmpap542iylkfielxeg5epgfni
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
       resolve-from: 5.0.0
-      ts-node: 10.9.1_muj5t77bbjctp3qmyavyfuekei
+      ts-node: 10.9.1_u5ax4hcaao6h6ctrp2v254guiq
       typescript: 5.0.4
     transitivePeerDependencies:
       - '@swc/core'
@@ -1109,8 +1109,8 @@ packages:
     resolution: {integrity: sha512-/fvYntiO1GeICvqbQ3doGDIP97vWmvFt83GKguJ6prmQM2iXZfFcq6YE8KteFyRtX2/h5Hf91BYvPodJKFYv5Q==}
     dev: true
 
-  /@types/node/18.16.9:
-    resolution: {integrity: sha512-IeB32oIV4oGArLrd7znD2rkHQ6EDCM+2Sr76dJnrHwv9OHBTTM6nuDLK9bmikXzPa0ZlWMWtRGo/Uw4mrzQedA==}
+  /@types/node/18.16.10:
+    resolution: {integrity: sha512-sMo3EngB6QkMBlB9rBe1lFdKSLqljyWPPWv6/FzSxh/IDlyVWSzE9RiF4eAuerQHybrWdqBgAGb03PM89qOasA==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -1923,7 +1923,7 @@ packages:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
     dev: true
 
-  /cosmiconfig-typescript-loader/4.0.0_alipsuhwdi2h7t5hoivnqtespi:
+  /cosmiconfig-typescript-loader/4.0.0_qmpap542iylkfielxeg5epgfni:
     resolution: {integrity: sha512-cVpucSc2Tf+VPwCCR7SZzmQTQkPbkk4O01yXsYqXBIbjE1bhwqSyAgYQkRK1un4i0OPziTleqFhdkmOc4RQ/9g==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
@@ -1932,9 +1932,9 @@ packages:
       ts-node: '>=10'
       typescript: '>=3'
     dependencies:
-      '@types/node': 18.16.9
+      '@types/node': 18.16.10
       cosmiconfig: 8.0.0
-      ts-node: 10.9.1_muj5t77bbjctp3qmyavyfuekei
+      ts-node: 10.9.1_u5ax4hcaao6h6ctrp2v254guiq
       typescript: 5.0.4
     dev: true
 
@@ -5575,7 +5575,7 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /ts-node/10.9.1_muj5t77bbjctp3qmyavyfuekei:
+  /ts-node/10.9.1_u5ax4hcaao6h6ctrp2v254guiq:
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -5594,7 +5594,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.3
-      '@types/node': 18.16.9
+      '@types/node': 18.16.10
       acorn: 8.8.0
       acorn-walk: 8.2.0
       arg: 4.1.3
