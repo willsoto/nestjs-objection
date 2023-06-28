@@ -127,7 +127,7 @@
     "eslint-plugin-mocha": "10.1.0",
     "husky": "8.0.3",
     "knex": "2.4.2",
-    "lint-staged": "13.2.2",
+    "lint-staged": "13.2.3",
     "markdown-toc": "1.2.0",
     "mocha": "10.2.0",
     "nyc": "15.1.0",
