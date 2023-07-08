@@ -72,8 +72,8 @@ devDependencies:
     specifier: 8.0.3
     version: 8.0.3
   knex:
-    specifier: 2.4.2
-    version: 2.4.2(sqlite3@5.1.6)
+    specifier: 2.5.0
+    version: 2.5.0(sqlite3@5.1.6)
   lint-staged:
     specifier: 13.2.3
     version: 13.2.3
@@ -88,7 +88,7 @@ devDependencies:
     version: 15.1.0
   objection:
     specifier: 3.0.4
-    version: 3.0.4(knex@2.4.2)
+    version: 3.0.4(knex@2.5.0)
   prettier:
     specifier: 2.8.8
     version: 2.8.8
@@ -1866,11 +1866,6 @@ packages:
     engines: {node: '>=14'}
     dev: true
 
-  /commander@9.4.1:
-    resolution: {integrity: sha512-5EEkTNyHNGFPD2H+c/dXXfQZYa/scCKasxWcXJaWnNJ99pnQN9Vnmqow+p+PlFPE63Q6mThaZws1T+HxfpgtPw==}
-    engines: {node: ^12.20.0 || >=14}
-    dev: true
-
   /commondir@1.0.1:
     resolution: {integrity: sha512-W9pAhw0ja1Edb5GVdIF1mjZw/ASI0AlShXM83UUGe2DVr5TdAPEA1OA8m/g8zWp9x6On7gqufY+FatDbC3MDQg==}
     dev: true
@@ -3459,8 +3454,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /knex@2.4.2(sqlite3@5.1.6):
-    resolution: {integrity: sha512-tMI1M7a+xwHhPxjbl/H9K1kHX+VncEYcvCx5K00M16bWvpYPKAZd6QrCu68PtHAdIZNQPWZn0GVhqVBEthGWCg==}
+  /knex@2.5.0(sqlite3@5.1.6):
+    resolution: {integrity: sha512-h6Ru3PJmZjCDUEqLgwQ/RJUu06Bz7MTzY6sD90udLIa9qwtC7Rnicr7TBiWSaswZmDqk4EZ8xysdg1fkvhYM6w==}
     engines: {node: '>=12'}
     hasBin: true
     peerDependencies:
@@ -3488,7 +3483,7 @@ packages:
         optional: true
     dependencies:
       colorette: 2.0.19
-      commander: 9.4.1
+      commander: 10.0.0
       debug: 4.3.4(supports-color@8.1.1)
       escalade: 3.1.1
       esm: 3.2.25
@@ -3496,7 +3491,7 @@ packages:
       getopts: 2.3.0
       interpret: 2.2.0
       lodash: 4.17.21
-      pg-connection-string: 2.5.0
+      pg-connection-string: 2.6.1
       rechoir: 0.8.0
       resolve-from: 5.0.0
       sqlite3: 5.1.6
@@ -4362,7 +4357,7 @@ packages:
       isobject: 3.0.1
     dev: true
 
-  /objection@3.0.4(knex@2.4.2):
+  /objection@3.0.4(knex@2.5.0):
     resolution: {integrity: sha512-0XaStHtOBcux4nlffUj8gOpxUsAPE+sLDZPml6n79WQhInYLBvjctU/uv2kEUPPybAJK8YL6ETkLtft9UOj7nQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -4370,7 +4365,7 @@ packages:
     dependencies:
       ajv: 8.11.0
       db-errors: 0.2.3
-      knex: 2.4.2(sqlite3@5.1.6)
+      knex: 2.5.0(sqlite3@5.1.6)
     dev: true
 
   /once@1.4.0:
@@ -4635,8 +4630,8 @@ packages:
     resolution: {integrity: sha512-Dp6zGqpTdETdR63lehJYPeIOqpiNBNtc7BpWSLrOje7UaIsE5aY92r/AunQA7rsXvet3lrJ3JnZX29UPTKXyKQ==}
     dev: true
 
-  /pg-connection-string@2.5.0:
-    resolution: {integrity: sha512-r5o/V/ORTA6TmUnyWZR9nCj1klXCO2CEKNRlVuJptZe85QuhFayC7WeMic7ndayT5IRIR0S0xFxFi2ousartlQ==}
+  /pg-connection-string@2.6.1:
+    resolution: {integrity: sha512-w6ZzNu6oMmIzEAYVw+RLK0+nqHPt8K3ZnknKi+g48Ak2pr3dtljJW3o+D/n2zzCG07Zoe9VOX3aiKpj+BN0pjg==}
     dev: true
 
   /picocolors@1.0.0:
