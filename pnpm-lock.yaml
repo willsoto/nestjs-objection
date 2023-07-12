@@ -72,8 +72,8 @@ devDependencies:
     specifier: 8.0.3
     version: 8.0.3
   knex:
-    specifier: 2.5.0
-    version: 2.5.0(sqlite3@5.1.6)
+    specifier: 2.5.1
+    version: 2.5.1(sqlite3@5.1.6)
   lint-staged:
     specifier: 13.2.3
     version: 13.2.3
@@ -88,7 +88,7 @@ devDependencies:
     version: 15.1.0
   objection:
     specifier: 3.0.4
-    version: 3.0.4(knex@2.5.0)
+    version: 3.0.4(knex@2.5.1)
   prettier:
     specifier: 3.0.0
     version: 3.0.0
@@ -3472,8 +3472,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /knex@2.5.0(sqlite3@5.1.6):
-    resolution: {integrity: sha512-h6Ru3PJmZjCDUEqLgwQ/RJUu06Bz7MTzY6sD90udLIa9qwtC7Rnicr7TBiWSaswZmDqk4EZ8xysdg1fkvhYM6w==}
+  /knex@2.5.1(sqlite3@5.1.6):
+    resolution: {integrity: sha512-z78DgGKUr4SE/6cm7ku+jHvFT0X97aERh/f0MUKAKgFnwCYBEW4TFBqtHWFYiJFid7fMrtpZ/gxJthvz5mEByA==}
     engines: {node: '>=12'}
     hasBin: true
     peerDependencies:
@@ -4375,7 +4375,7 @@ packages:
       isobject: 3.0.1
     dev: true
 
-  /objection@3.0.4(knex@2.5.0):
+  /objection@3.0.4(knex@2.5.1):
     resolution: {integrity: sha512-0XaStHtOBcux4nlffUj8gOpxUsAPE+sLDZPml6n79WQhInYLBvjctU/uv2kEUPPybAJK8YL6ETkLtft9UOj7nQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -4383,7 +4383,7 @@ packages:
     dependencies:
       ajv: 8.11.0
       db-errors: 0.2.3
-      knex: 2.5.0(sqlite3@5.1.6)
+      knex: 2.5.1(sqlite3@5.1.6)
     dev: true
 
   /once@1.4.0:
