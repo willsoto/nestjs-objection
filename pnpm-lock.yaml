@@ -15,14 +15,14 @@ devDependencies:
     specifier: 1.0.2
     version: 1.0.2(nyc@15.1.0)
   '@nestjs/common':
-    specifier: 10.0.5
-    version: 10.0.5(reflect-metadata@0.1.13)(rxjs@7.8.1)
+    specifier: 10.1.0
+    version: 10.1.0(reflect-metadata@0.1.13)(rxjs@7.8.1)
   '@nestjs/core':
-    specifier: 10.0.5
-    version: 10.0.5(@nestjs/common@10.0.5)(reflect-metadata@0.1.13)(rxjs@7.8.1)
+    specifier: 10.1.0
+    version: 10.1.0(@nestjs/common@10.1.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
   '@nestjs/testing':
-    specifier: 10.0.5
-    version: 10.0.5(@nestjs/common@10.0.5)(@nestjs/core@10.0.5)
+    specifier: 10.1.0
+    version: 10.1.0(@nestjs/common@10.1.0)(@nestjs/core@10.1.0)
   '@semantic-release/changelog':
     specifier: 6.0.3
     version: 6.0.3(semantic-release@21.0.7)
@@ -669,8 +669,8 @@ packages:
       - supports-color
     dev: true
 
-  /@nestjs/common@10.0.5(reflect-metadata@0.1.13)(rxjs@7.8.1):
-    resolution: {integrity: sha512-0E+SBI+SKswXbFG+Nwtnctrei5dvdFJ7b9/fQDL6KzDBtZwsglJpD86S3ooxnc7ek4vRG57oN2iLmMTjrcesMg==}
+  /@nestjs/common@10.1.0(reflect-metadata@0.1.13)(rxjs@7.8.1):
+    resolution: {integrity: sha512-3GNOuDjeAqEVt5Zjia3ZSK55Jg80hIIkq52BOzU+LkCjFgbuEhDot80lCKu05WyntAMAq5wREoDRGEGlSVxENw==}
     peerDependencies:
       class-transformer: '*'
       class-validator: '*'
@@ -689,8 +689,8 @@ packages:
       uid: 2.0.2
     dev: true
 
-  /@nestjs/core@10.0.5(@nestjs/common@10.0.5)(reflect-metadata@0.1.13)(rxjs@7.8.1):
-    resolution: {integrity: sha512-9A8nixBfE33TWAmmWvNoxdmHrRmHJY0oO3O4Iue0FVkawWJc0YOhSqdNs87McwvKE4InJMI7GVv01NYMEROdPA==}
+  /@nestjs/core@10.1.0(@nestjs/common@10.1.0)(reflect-metadata@0.1.13)(rxjs@7.8.1):
+    resolution: {integrity: sha512-3ogHxrRAktQZNBSV709QxhNJQPsVInZRqxAK2fV7JDnfoBMu1lM3xI7cO498iViqq5xme3o/46+AdfjW9W2E2A==}
     requiresBuild: true
     peerDependencies:
       '@nestjs/common': ^10.0.0
@@ -707,7 +707,7 @@ packages:
       '@nestjs/websockets':
         optional: true
     dependencies:
-      '@nestjs/common': 10.0.5(reflect-metadata@0.1.13)(rxjs@7.8.1)
+      '@nestjs/common': 10.1.0(reflect-metadata@0.1.13)(rxjs@7.8.1)
       '@nuxtjs/opencollective': 0.3.2
       fast-safe-stringify: 2.1.1
       iterare: 1.2.1
@@ -720,8 +720,8 @@ packages:
       - encoding
     dev: true
 
-  /@nestjs/testing@10.0.5(@nestjs/common@10.0.5)(@nestjs/core@10.0.5):
-    resolution: {integrity: sha512-TQcFOxR+kIibMbYg71yajic3289/Iw7B5LliYiZ4Pz36BZvU0TRMYqpxaGAlX/Srk0BCpP99ZHoofm8dqZKmxw==}
+  /@nestjs/testing@10.1.0(@nestjs/common@10.1.0)(@nestjs/core@10.1.0):
+    resolution: {integrity: sha512-TqV/21PuU5GJ543oqLTrmQhWUiWwB7DDRcj5cknUdaOst+Kkwp0Sad3/5svcWgOB+QfFbwYlvIDeCkKJshZzPg==}
     peerDependencies:
       '@nestjs/common': ^10.0.0
       '@nestjs/core': ^10.0.0
@@ -733,8 +733,8 @@ packages:
       '@nestjs/platform-express':
         optional: true
     dependencies:
-      '@nestjs/common': 10.0.5(reflect-metadata@0.1.13)(rxjs@7.8.1)
-      '@nestjs/core': 10.0.5(@nestjs/common@10.0.5)(reflect-metadata@0.1.13)(rxjs@7.8.1)
+      '@nestjs/common': 10.1.0(reflect-metadata@0.1.13)(rxjs@7.8.1)
+      '@nestjs/core': 10.1.0(@nestjs/common@10.1.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
       tslib: 2.6.0
     dev: true
 
