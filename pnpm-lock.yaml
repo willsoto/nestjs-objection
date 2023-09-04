@@ -33,8 +33,8 @@ devDependencies:
     specifier: 4.3.6
     version: 4.3.6
   '@types/chai-as-promised':
-    specifier: 7.1.5
-    version: 7.1.5
+    specifier: 7.1.6
+    version: 7.1.6
   '@types/mocha':
     specifier: 10.0.1
     version: 10.0.1
@@ -1138,8 +1138,8 @@ packages:
     resolution: {integrity: sha512-yOlFc+7UtL/89t2ZhjPvvB/DeAr3r+Dq58IgzsFkOAvVC6NMJXmCGjbptdXdR9qsX7pKcTL+s87FtYREi2dEEQ==}
     dev: true
 
-  /@types/chai-as-promised@7.1.5:
-    resolution: {integrity: sha512-jStwss93SITGBwt/niYrkf2C+/1KTeZCZl1LaeezTlqppAKeoQC7jxyqYuP72sxBGKCIbw7oHgbYssIRzT5FCQ==}
+  /@types/chai-as-promised@7.1.6:
+    resolution: {integrity: sha512-cQLhk8fFarRVZAXUQV1xEnZgMoPxqKojBvRkqPCKPQCzEhpbbSKl1Uu75kDng7k5Ln6LQLUmNBjLlFthCgm1NA==}
     dependencies:
       '@types/chai': 4.3.6
     dev: true
