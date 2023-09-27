@@ -136,7 +136,7 @@
     "prettier-plugin-organize-imports": "3.2.3",
     "prettier-plugin-packagejson": "2.4.5",
     "reflect-metadata": "0.1.13",
-    "rimraf": "5.0.4",
+    "rimraf": "5.0.5",
     "rxjs": "7.8.1",
     "semantic-release": "22.0.5",
     "sinon": "16.0.0",
