@@ -1,3 +1,10 @@
+## [8.1.1](https://github.com/willsoto/nestjs-objection/compare/v8.1.0...v8.1.1) (2023-09-29)
+
+
+### Bug Fixes
+
+* **readme:** update installation commands ([67e0138](https://github.com/willsoto/nestjs-objection/commit/67e0138152ef38e799066997e4263faa70df5c81)), closes [#1925](https://github.com/willsoto/nestjs-objection/issues/1925)
+
 # [8.1.0](https://github.com/willsoto/nestjs-objection/compare/v8.0.0...v8.1.0) (2022-07-12)
 
 
