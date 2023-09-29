@@ -1,6 +1,6 @@
 {
   "name": "@willsoto/nestjs-objection",
-  "version": "8.1.1",
+  "version": "8.1.2",
   "description": "Objection module for NestJS",
   "keywords": [
     "database",

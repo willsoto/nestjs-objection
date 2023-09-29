@@ -1,3 +1,10 @@
+## [8.1.2](https://github.com/willsoto/nestjs-objection/compare/v8.1.1...v8.1.2) (2023-09-29)
+
+
+### Bug Fixes
+
+* **semantic-release:** deal with rate limiting ([fa84978](https://github.com/willsoto/nestjs-objection/commit/fa84978873d2852a59496373a69f274431f1d693))
+
 ## [8.1.1](https://github.com/willsoto/nestjs-objection/compare/v8.1.0...v8.1.1) (2023-09-29)
 
 
