@@ -27,7 +27,7 @@ export class ObjectionModule {
     };
   }
 
-  public static forFeature(models: typeof Model[]): DynamicModule {
+  public static forFeature(models: (typeof Model)[]): DynamicModule {
     const modelProviders: Provider[] = models.flatMap((model) => {
       return [
         {

@@ -44,13 +44,10 @@ pnpm add knex objection
 #### `ObjectionModule.register`
 
 ```typescript
-import { ObjectionModule } from "@willsoto/nestjs-objection";
 import { Module } from "@nestjs/common";
-import knex from "knex";
-import { knexSnakeCaseMappers } from "objection";
-import { ConfigModule, ConfigService } from "../config";
-import { User } from "./user";
+import { ObjectionModule } from "@willsoto/nestjs-objection";
 import { BaseModel } from "./base";
+import { User } from "./user";
 
 @Module({
   imports: [
@@ -79,13 +76,13 @@ export class DatabaseModule {}
 #### `ObjectionModule.registerAsync`
 
 ```typescript
-import { ObjectionModule } from "@willsoto/nestjs-objection";
 import { Module } from "@nestjs/common";
+import { ObjectionModule } from "@willsoto/nestjs-objection";
 import knex from "knex";
 import { knexSnakeCaseMappers } from "objection";
 import { ConfigModule, ConfigService } from "../config";
-import { User } from "./user";
 import { BaseModel } from "./base";
+import { User } from "./user";
 
 @Module({
   imports: [
@@ -127,7 +124,11 @@ export class DatabaseModule {}
 
 ```ts
 import { Inject, Injectable } from "@nestjs/common";
-import { HealthIndicatorResult, HealthIndicator, HealthCheckError } from "@nestjs/terminus";
+import {
+  HealthCheckError,
+  HealthIndicator,
+  HealthIndicatorResult,
+} from "@nestjs/terminus";
 import { Connection, KNEX_CONNECTION } from "@willsoto/nestjs-objection";
 
 @Injectable()
@@ -149,7 +150,7 @@ export class PrimaryDatabaseHealthIndicator extends HealthIndicator {
 ### Injecting an objection model
 
 ```ts
-import { Injectable, Inject } from "@nestjs/common";
+import { Inject, Injectable } from "@nestjs/common";
 import { User } from "./user";
 
 @Injectable()

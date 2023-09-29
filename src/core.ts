@@ -9,7 +9,7 @@ import {
   ValueProvider,
 } from "@nestjs/common";
 import { ModuleRef } from "@nestjs/core";
-import { knex, Knex } from "knex";
+import { Knex, knex } from "knex";
 import { Model } from "objection";
 import {
   KNEX_CONNECTION,
