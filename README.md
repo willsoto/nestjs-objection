@@ -30,13 +30,13 @@ Integrates [Objection.js](https://vincit.github.io/objection.js/) and [Knex](htt
 ## Installation
 
 ```bash
-yarn add @willsoto/nestjs-objection
+pnpm add @willsoto/nestjs-objection
 ```
 
 _Note that Knex and Objection are `peerDependencies` to make version management easier, so those must be installed separately_
 
 ```bash
-yarn add knex objection
+pnpm add knex objection
 ```
 
 ## API
