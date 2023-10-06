@@ -72,8 +72,8 @@ devDependencies:
     specifier: 8.0.3
     version: 8.0.3
   knex:
-    specifier: 2.5.1
-    version: 2.5.1(sqlite3@5.1.6)
+    specifier: 3.0.1
+    version: 3.0.1(sqlite3@5.1.6)
   lint-staged:
     specifier: 14.0.1
     version: 14.0.1
@@ -88,7 +88,7 @@ devDependencies:
     version: 15.1.0
   objection:
     specifier: 3.1.2
-    version: 3.1.2(knex@2.5.1)
+    version: 3.1.2(knex@3.0.1)
   prettier:
     specifier: 3.0.3
     version: 3.0.3
@@ -3559,9 +3559,9 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /knex@2.5.1(sqlite3@5.1.6):
-    resolution: {integrity: sha512-z78DgGKUr4SE/6cm7ku+jHvFT0X97aERh/f0MUKAKgFnwCYBEW4TFBqtHWFYiJFid7fMrtpZ/gxJthvz5mEByA==}
-    engines: {node: '>=12'}
+  /knex@3.0.1(sqlite3@5.1.6):
+    resolution: {integrity: sha512-ruASxC6xPyDklRdrcDy6a9iqK+R9cGK214aiQa+D9gX2ZnHZKv6o6JC9ZfgxILxVAul4bZ13c3tgOAHSuQ7/9g==}
+    engines: {node: '>=16'}
     hasBin: true
     peerDependencies:
       better-sqlite3: '*'
@@ -4459,7 +4459,7 @@ packages:
       isobject: 3.0.1
     dev: true
 
-  /objection@3.1.2(knex@2.5.1):
+  /objection@3.1.2(knex@3.0.1):
     resolution: {integrity: sha512-V8YwRWz+DFbB9JS/m7TBLhRPVAFK/VX7yV3ZDAMkfUG9qYHLRyG/K4ZS0acKtGPWtRdVrCuN4qM1VkH3PuJ5Lg==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -4468,7 +4468,7 @@ packages:
       ajv: 8.11.0
       ajv-formats: 2.1.1(ajv@8.11.0)
       db-errors: 0.2.3
-      knex: 2.5.1(sqlite3@5.1.6)
+      knex: 3.0.1(sqlite3@5.1.6)
     dev: true
 
   /once@1.4.0:
