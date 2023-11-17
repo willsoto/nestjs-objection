@@ -128,7 +128,7 @@
     "@typescript-eslint/parser": "6.11.0",
     "chai": "4.3.10",
     "chai-as-promised": "7.1.1",
-    "eslint": "8.53.0",
+    "eslint": "8.54.0",
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-mocha": "10.2.0",
     "husky": "8.0.3",
