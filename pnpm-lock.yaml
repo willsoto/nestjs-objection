@@ -72,8 +72,8 @@ devDependencies:
     specifier: 8.0.3
     version: 8.0.3
   knex:
-    specifier: 3.0.1
-    version: 3.0.1(sqlite3@5.1.6)
+    specifier: 3.1.0
+    version: 3.1.0(sqlite3@5.1.6)
   lint-staged:
     specifier: 15.2.0
     version: 15.2.0
@@ -88,7 +88,7 @@ devDependencies:
     version: 15.1.0
   objection:
     specifier: 3.1.3
-    version: 3.1.3(knex@3.0.1)
+    version: 3.1.3(knex@3.1.0)
   prettier:
     specifier: 3.1.0
     version: 3.1.0
@@ -3701,8 +3701,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /knex@3.0.1(sqlite3@5.1.6):
-    resolution: {integrity: sha512-ruASxC6xPyDklRdrcDy6a9iqK+R9cGK214aiQa+D9gX2ZnHZKv6o6JC9ZfgxILxVAul4bZ13c3tgOAHSuQ7/9g==}
+  /knex@3.1.0(sqlite3@5.1.6):
+    resolution: {integrity: sha512-GLoII6hR0c4ti243gMs5/1Rb3B+AjwMOfjYm97pu0FOQa7JH56hgBxYf5WK2525ceSbBY1cjeZ9yk99GPMB6Kw==}
     engines: {node: '>=16'}
     hasBin: true
     peerDependencies:
@@ -3738,7 +3738,7 @@ packages:
       getopts: 2.3.0
       interpret: 2.2.0
       lodash: 4.17.21
-      pg-connection-string: 2.6.1
+      pg-connection-string: 2.6.2
       rechoir: 0.8.0
       resolve-from: 5.0.0
       sqlite3: 5.1.6
@@ -4605,7 +4605,7 @@ packages:
       isobject: 3.0.1
     dev: true
 
-  /objection@3.1.3(knex@3.0.1):
+  /objection@3.1.3(knex@3.1.0):
     resolution: {integrity: sha512-X4DH8/xKBS34bwWOSLAPyceg0JgLhLiUuz+cEEyDA8iDFoT1UM9UbtwBpwHV11hYskAKxOgVlNHeveFQiOPDXA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -4614,7 +4614,7 @@ packages:
       ajv: 8.12.0
       ajv-formats: 2.1.1(ajv@8.12.0)
       db-errors: 0.2.3
-      knex: 3.0.1(sqlite3@5.1.6)
+      knex: 3.1.0(sqlite3@5.1.6)
     dev: true
 
   /once@1.4.0:
@@ -4892,8 +4892,8 @@ packages:
     resolution: {integrity: sha512-Dp6zGqpTdETdR63lehJYPeIOqpiNBNtc7BpWSLrOje7UaIsE5aY92r/AunQA7rsXvet3lrJ3JnZX29UPTKXyKQ==}
     dev: true
 
-  /pg-connection-string@2.6.1:
-    resolution: {integrity: sha512-w6ZzNu6oMmIzEAYVw+RLK0+nqHPt8K3ZnknKi+g48Ak2pr3dtljJW3o+D/n2zzCG07Zoe9VOX3aiKpj+BN0pjg==}
+  /pg-connection-string@2.6.2:
+    resolution: {integrity: sha512-ch6OwaeaPYcova4kKZ15sbJ2hKb/VP48ZD2gE7i1J+L4MspCtBMAx8nMgz7bksc7IojCIIWuEhHibSMFH8m8oA==}
     dev: true
 
   /picocolors@1.0.0:
