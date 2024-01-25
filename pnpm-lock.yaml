@@ -69,8 +69,8 @@ devDependencies:
     specifier: 10.2.0
     version: 10.2.0(eslint@8.56.0)
   husky:
-    specifier: 9.0.1
-    version: 9.0.1
+    specifier: 9.0.2
+    version: 9.0.2
   knex:
     specifier: 3.1.0
     version: 3.1.0(sqlite3@5.1.7)
@@ -3138,8 +3138,8 @@ packages:
     dev: true
     optional: true
 
-  /husky@9.0.1:
-    resolution: {integrity: sha512-rXCT8yF2v3awSG03AG6IgICDhJ+m8o3jL1ROwsT4nQZ6urEyKSj0IWFDIh5YC2zgZeAxWksNMbN6rYY4BE1Zrw==}
+  /husky@9.0.2:
+    resolution: {integrity: sha512-0yR5R3OPjl8bYApi6T4QMOAwhtLhBjdYIVg5S6zSzIO8DIvQMh/b7Q8jW3WLbHLHtzpwiyMLBNB4R0Eb6x5+AA==}
     engines: {node: '>=18'}
     hasBin: true
     dev: true
