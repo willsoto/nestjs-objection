@@ -87,8 +87,8 @@ devDependencies:
     specifier: 15.1.0
     version: 15.1.0
   objection:
-    specifier: 3.1.3
-    version: 3.1.3(knex@3.1.0)
+    specifier: 3.1.4
+    version: 3.1.4(knex@3.1.0)
   prettier:
     specifier: 3.2.5
     version: 3.2.5
@@ -4551,8 +4551,8 @@ packages:
       isobject: 3.0.1
     dev: true
 
-  /objection@3.1.3(knex@3.1.0):
-    resolution: {integrity: sha512-X4DH8/xKBS34bwWOSLAPyceg0JgLhLiUuz+cEEyDA8iDFoT1UM9UbtwBpwHV11hYskAKxOgVlNHeveFQiOPDXA==}
+  /objection@3.1.4(knex@3.1.0):
+    resolution: {integrity: sha512-BI1YQ18JicfoODgCdKxmw4W8f24/e9hCEQpOTux0xmyd8hOidOzDd1WopOMxqxo7FA+Jfw8XTfZIUaqDnS7r0g==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       knex: '>=1.0.1'
