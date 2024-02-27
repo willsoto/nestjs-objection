@@ -110,8 +110,8 @@
     "statements": 90
   },
   "devDependencies": {
-    "@commitlint/cli": "18.6.1",
-    "@commitlint/config-conventional": "18.6.2",
+    "@commitlint/cli": "19.0.0",
+    "@commitlint/config-conventional": "19.0.0",
     "@istanbuljs/nyc-config-typescript": "1.0.2",
     "@nestjs/common": "10.3.3",
     "@nestjs/core": "10.3.3",
