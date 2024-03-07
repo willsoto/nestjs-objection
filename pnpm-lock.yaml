@@ -66,8 +66,8 @@ devDependencies:
     specifier: 9.1.0
     version: 9.1.0(eslint@8.57.0)
   eslint-plugin-mocha:
-    specifier: 10.3.0
-    version: 10.3.0(eslint@8.57.0)
+    specifier: 10.4.0
+    version: 10.4.0(eslint@8.57.0)
   husky:
     specifier: 9.0.11
     version: 9.0.11
@@ -2355,14 +2355,15 @@ packages:
       eslint: 8.57.0
     dev: true
 
-  /eslint-plugin-mocha@10.3.0(eslint@8.57.0):
-    resolution: {integrity: sha512-IWzbg2K6B1Q7h37Ih4zMyW+nhmw1JvUlHlbCUUUu6PfOOAUGCB0gxmvv7/U+TQQ6e8yHUv+q7KMdIIum4bx+PA==}
+  /eslint-plugin-mocha@10.4.0(eslint@8.57.0):
+    resolution: {integrity: sha512-L1JdiKc9UE9S1i55MciDXAuyC39/OMWwjeDg0nBOOc2dXPCd2iaboyu1Qlykek78jo/BM96KFsgY6cmKDR2UYg==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       eslint: '>=7.0.0'
     dependencies:
       eslint: 8.57.0
       eslint-utils: 3.0.0(eslint@8.57.0)
+      globals: 14.0.0
       rambda: 7.5.0
     dev: true
 
@@ -2918,6 +2919,11 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       type-fest: 0.20.2
+    dev: true
+
+  /globals@14.0.0:
+    resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
+    engines: {node: '>=18'}
     dev: true
 
   /globby@11.1.0:
