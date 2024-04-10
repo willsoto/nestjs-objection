@@ -66,8 +66,8 @@ devDependencies:
     specifier: 9.1.0
     version: 9.1.0(eslint@8.57.0)
   eslint-plugin-mocha:
-    specifier: 10.4.1
-    version: 10.4.1(eslint@8.57.0)
+    specifier: 10.4.2
+    version: 10.4.2(eslint@8.57.0)
   husky:
     specifier: 9.0.11
     version: 9.0.11
@@ -589,7 +589,7 @@ packages:
       ajv: 6.12.6
       debug: 4.3.4(supports-color@8.1.1)
       espree: 9.6.1
-      globals: 13.19.0
+      globals: 13.24.0
       ignore: 5.2.4
       import-fresh: 3.3.0
       js-yaml: 4.1.0
@@ -2308,8 +2308,8 @@ packages:
       eslint: 8.57.0
     dev: true
 
-  /eslint-plugin-mocha@10.4.1(eslint@8.57.0):
-    resolution: {integrity: sha512-G85ALUgKaLzuEuHhoW3HVRgPTmia6njQC3qCG6CEvA8/Ja9PDZnRZOuzekMki+HaViEQXINuYsmhp5WR5/4MfA==}
+  /eslint-plugin-mocha@10.4.2(eslint@8.57.0):
+    resolution: {integrity: sha512-cur4dVYnSEWTBwdqIBQFxa/9siAhesu0TX+lbJ4ClE9j0eNMNe6BSx3vkFFNz6tGoveyMyELFXa30f3fvuAVDg==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       eslint: '>=7.0.0'
