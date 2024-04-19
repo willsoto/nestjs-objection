@@ -69,8 +69,8 @@ importers:
         specifier: 9.1.0
         version: 9.1.0(eslint@8.57.0)
       eslint-plugin-mocha:
-        specifier: 10.4.2
-        version: 10.4.2(eslint@8.57.0)
+        specifier: 10.4.3
+        version: 10.4.3(eslint@8.57.0)
       husky:
         specifier: 9.0.11
         version: 9.0.11
@@ -1277,8 +1277,8 @@ packages:
     peerDependencies:
       eslint: '>=7.0.0'
 
-  eslint-plugin-mocha@10.4.2:
-    resolution: {integrity: sha512-cur4dVYnSEWTBwdqIBQFxa/9siAhesu0TX+lbJ4ClE9j0eNMNe6BSx3vkFFNz6tGoveyMyELFXa30f3fvuAVDg==}
+  eslint-plugin-mocha@10.4.3:
+    resolution: {integrity: sha512-emc4TVjq5Ht0/upR+psftuz6IBG5q279p+1dSRDeHf+NS9aaerBi3lXKo1SEzwC29hFIW21gO89CEWSvRsi8IQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       eslint: '>=7.0.0'
@@ -4685,7 +4685,7 @@ snapshots:
     dependencies:
       eslint: 8.57.0
 
-  eslint-plugin-mocha@10.4.2(eslint@8.57.0):
+  eslint-plugin-mocha@10.4.3(eslint@8.57.0):
     dependencies:
       eslint: 8.57.0
       eslint-utils: 3.0.0(eslint@8.57.0)
