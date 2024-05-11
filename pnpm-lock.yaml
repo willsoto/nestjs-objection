@@ -60,8 +60,8 @@ importers:
         specifier: 4.4.1
         version: 4.4.1
       chai-as-promised:
-        specifier: 7.1.1
-        version: 7.1.1(chai@4.4.1)
+        specifier: 7.1.2
+        version: 7.1.2(chai@4.4.1)
       eslint:
         specifier: 8.57.0
         version: 8.57.0
@@ -936,10 +936,10 @@ packages:
   caniuse-lite@1.0.30001370:
     resolution: {integrity: sha512-3PDmaP56wz/qz7G508xzjx8C+MC2qEm4SYhSEzC9IBROo+dGXFWRuaXkWti0A9tuI00g+toiriVqxtWMgl350g==}
 
-  chai-as-promised@7.1.1:
-    resolution: {integrity: sha512-azL6xMoi+uxu6z4rhWQ1jbdUhOMhis2PvscD/xjLqNMkv3BPPp2JyyuTHOrf9BOosGpNQ11v6BKv/g57RXbiaA==}
+  chai-as-promised@7.1.2:
+    resolution: {integrity: sha512-aBDHZxRzYnUYuIAIPBH2s511DjlKPzXNlXSGFC8CwmroWQLfrW0LtE1nK3MAwwNhJPa9raEjNCmRoFpG0Hurdw==}
     peerDependencies:
-      chai: '>= 2.1.2 < 5'
+      chai: '>= 2.1.2 < 6'
 
   chai@4.4.1:
     resolution: {integrity: sha512-13sOfMv2+DWduEU+/xbun3LScLoqN17nBeTLUsmDfKdoiC1fr0n9PU4guu4AhRcOVFk/sW8LyZWHuhWtQZiF+g==}
@@ -960,9 +960,6 @@ packages:
   char-regex@1.0.2:
     resolution: {integrity: sha512-kWWXztvZ5SBQV+eRgKFeh8q5sLuZY2+8WUIzlxWVTg+oGwY14qylx1KbKzHd8P6ZYkAg0xyIDU9JMHhyJMZ1jw==}
     engines: {node: '>=10'}
-
-  check-error@1.0.2:
-    resolution: {integrity: sha512-BrgHpW9NURQgzoNyjfq0Wu6VFO6D7IZEmJNdtgNqpzGG8RuNFHt2jQxWlAs4HMe119chBnv+34syEZtc6IhLtA==}
 
   check-error@1.0.3:
     resolution: {integrity: sha512-iKEoDYaRmd1mxM90a2OEfWhjsjPpYPuQ+lMYsoxB126+t8fw7ySEO48nmDg5COTjxDI65/Y2OWpeEHk3ZOe8zg==}
@@ -4404,10 +4401,10 @@ snapshots:
 
   caniuse-lite@1.0.30001370: {}
 
-  chai-as-promised@7.1.1(chai@4.4.1):
+  chai-as-promised@7.1.2(chai@4.4.1):
     dependencies:
       chai: 4.4.1
-      check-error: 1.0.2
+      check-error: 1.0.3
 
   chai@4.4.1:
     dependencies:
@@ -4433,8 +4430,6 @@ snapshots:
   chalk@5.3.0: {}
 
   char-regex@1.0.2: {}
-
-  check-error@1.0.2: {}
 
   check-error@1.0.3:
     dependencies:
