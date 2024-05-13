@@ -158,9 +158,9 @@
     "knex": "^2.0.0 || ^3.0.0",
     "objection": "^3.0.0"
   },
-  "packageManager": "pnpm@9.1.0",
+  "packageManager": "pnpm@9.1.1",
   "volta": {
     "node": "20.13.1",
-    "pnpm": "9.1.0"
+    "pnpm": "9.1.1"
   }
 }
