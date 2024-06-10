@@ -136,7 +136,7 @@
     "lint-staged": "15.2.5",
     "markdown-toc": "1.2.0",
     "mocha": "10.4.0",
-    "nyc": "15.1.0",
+    "nyc": "17.0.0",
     "objection": "3.1.4",
     "prettier": "3.3.1",
     "prettier-plugin-organize-imports": "3.2.4",
