@@ -60,8 +60,8 @@ importers:
         specifier: 4.4.1
         version: 4.4.1
       chai-as-promised:
-        specifier: 7.1.2
-        version: 7.1.2(chai@4.4.1)
+        specifier: 8.0.0
+        version: 8.0.0(chai@4.4.1)
       eslint:
         specifier: 8.57.0
         version: 8.57.0
@@ -942,8 +942,8 @@ packages:
   caniuse-lite@1.0.30001629:
     resolution: {integrity: sha512-c3dl911slnQhmxUIT4HhYzT7wnBK/XYpGnYLOj4nJBaRiw52Ibe7YxlDaAeRECvA786zCuExhxIUJ2K7nHMrBw==}
 
-  chai-as-promised@7.1.2:
-    resolution: {integrity: sha512-aBDHZxRzYnUYuIAIPBH2s511DjlKPzXNlXSGFC8CwmroWQLfrW0LtE1nK3MAwwNhJPa9raEjNCmRoFpG0Hurdw==}
+  chai-as-promised@8.0.0:
+    resolution: {integrity: sha512-sMsGXTrS3FunP/wbqh/KxM8Kj/aLPXQGkNtvE5wPfSToq8wkkvBpTZo1LIiEVmC4BwkKpag+l5h/20lBMk6nUg==}
     peerDependencies:
       chai: '>= 2.1.2 < 6'
 
@@ -969,6 +969,10 @@ packages:
 
   check-error@1.0.3:
     resolution: {integrity: sha512-iKEoDYaRmd1mxM90a2OEfWhjsjPpYPuQ+lMYsoxB126+t8fw7ySEO48nmDg5COTjxDI65/Y2OWpeEHk3ZOe8zg==}
+
+  check-error@2.1.1:
+    resolution: {integrity: sha512-OAlb+T7V4Op9OwdkjmguYRqncdlx5JiofwOAUkmTF+jNdHwzTaTs4sRAGpzLF3oOz5xAyDGrPgeIDFQmDOTiJw==}
+    engines: {node: '>= 16'}
 
   chokidar@3.5.3:
     resolution: {integrity: sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==}
@@ -4451,10 +4455,10 @@ snapshots:
 
   caniuse-lite@1.0.30001629: {}
 
-  chai-as-promised@7.1.2(chai@4.4.1):
+  chai-as-promised@8.0.0(chai@4.4.1):
     dependencies:
       chai: 4.4.1
-      check-error: 1.0.3
+      check-error: 2.1.1
 
   chai@4.4.1:
     dependencies:
@@ -4484,6 +4488,8 @@ snapshots:
   check-error@1.0.3:
     dependencies:
       get-func-name: 2.0.2
+
+  check-error@2.1.1: {}
 
   chokidar@3.5.3:
     dependencies:
