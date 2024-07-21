@@ -26,7 +26,7 @@
     "clean": "rimraf dist coverage .nyc_output",
     "format": "prettier . --write",
     "lint": "eslint . --fix",
-    "prepare": "husky install",
+    "prepare": "husky",
     "prerelease": "npm run build",
     "release": "semantic-release",
     "test": "mocha",
