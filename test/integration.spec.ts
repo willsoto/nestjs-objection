@@ -1,4 +1,3 @@
-/* eslint-disable new-cap */
 import { Test, TestingModule } from "@nestjs/testing";
 import { expect } from "chai";
 import { Knex } from "knex";

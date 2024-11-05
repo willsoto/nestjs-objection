@@ -1,4 +1,3 @@
-/* eslint-disable new-cap */
 import { DynamicModule, Module, Provider } from "@nestjs/common";
 import { Model } from "objection";
 import { ObjectionCoreModule } from "./core";
