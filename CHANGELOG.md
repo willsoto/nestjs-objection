@@ -1,3 +1,15 @@
+# [9.0.0](https://github.com/willsoto/nestjs-objection/compare/v8.1.2...v9.0.0) (2025-04-07)
+
+
+### Features
+
+* support Nest 11 ([1764ee5](https://github.com/willsoto/nestjs-objection/commit/1764ee58855b536b20c80bc1f0a6491ebae48533))
+
+
+### BREAKING CHANGES
+
+* Drop support for Nest v7
+
 ## [8.1.2](https://github.com/willsoto/nestjs-objection/compare/v8.1.1...v8.1.2) (2023-09-29)
 
 
