@@ -123,11 +123,11 @@
     "@types/chai": "5.2.2",
     "@types/chai-as-promised": "7.1.8",
     "@types/mocha": "10.0.10",
-    "@types/node": "22.15.31",
+    "@types/node": "22.15.32",
     "@types/sinon": "17.0.4",
     "@types/sinon-chai": "3.2.12",
-    "@typescript-eslint/eslint-plugin": "8.34.0",
-    "@typescript-eslint/parser": "8.34.0",
+    "@typescript-eslint/eslint-plugin": "8.34.1",
+    "@typescript-eslint/parser": "8.34.1",
     "chai": "4.4.1",
     "chai-as-promised": "7.1.2",
     "eslint": "9.29.0",
@@ -138,10 +138,10 @@
     "knex": "3.1.0",
     "lint-staged": "16.1.2",
     "markdown-toc": "1.2.0",
-    "mocha": "11.6.0",
+    "mocha": "11.7.0",
     "nyc": "17.1.0",
     "objection": "3.1.5",
-    "prettier": "3.5.3",
+    "prettier": "3.6.0",
     "prettier-plugin-organize-imports": "4.1.0",
     "prettier-plugin-packagejson": "2.5.15",
     "reflect-metadata": "0.2.2",
@@ -161,10 +161,10 @@
     "knex": "^2.0.0 || ^3.0.0",
     "objection": "^3.0.0"
   },
-  "packageManager": "pnpm@10.12.1",
+  "packageManager": "pnpm@10.12.2",
   "volta": {
     "node": "22.16.0",
-    "pnpm": "10.12.1"
+    "pnpm": "10.12.2"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
