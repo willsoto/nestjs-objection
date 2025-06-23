@@ -3,6 +3,7 @@ import { FlatCompat } from "@eslint/eslintrc";
 import js from "@eslint/js";
 import typescriptEslint from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
+import mochaPlugin from "eslint-plugin-mocha";
 import globals from "globals";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -45,11 +46,8 @@ export default [
       },
     },
   },
-  ...compat.extends("plugin:mocha/recommended").map((config) => ({
-    ...config,
-    files: ["test/**/*.ts"],
-  })),
   {
+    ...mochaPlugin.configs.recommended,
     files: ["test/**/*.ts"],
 
     languageOptions: {

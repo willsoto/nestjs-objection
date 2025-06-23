@@ -154,7 +154,6 @@ describe("ObjectionCoreModule", function () {
   });
 
   describe("#createAsyncOptionsProvider", function () {
-    // eslint-disable-next-line mocha/no-setup-in-describe
     @Injectable()
     class ModuleOptionsFactory implements ObjectionModuleOptionsFactory {
       public createObjectionModuleOptions(): ObjectionModuleOptions {
