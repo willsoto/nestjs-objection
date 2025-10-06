@@ -126,8 +126,8 @@
     "@types/node": "22.18.6",
     "@types/sinon": "17.0.4",
     "@types/sinon-chai": "3.2.12",
-    "@typescript-eslint/eslint-plugin": "8.44.0",
-    "@typescript-eslint/parser": "8.44.0",
+    "@typescript-eslint/eslint-plugin": "8.44.1",
+    "@typescript-eslint/parser": "8.44.1",
     "chai": "4.4.1",
     "chai-as-promised": "7.1.2",
     "eslint": "9.36.0",
@@ -136,7 +136,7 @@
     "globals": "^16.0.0",
     "husky": "9.1.7",
     "knex": "3.1.0",
-    "lint-staged": "16.1.6",
+    "lint-staged": "16.2.3",
     "markdown-toc": "1.2.0",
     "mocha": "11.7.2",
     "nyc": "17.1.0",
@@ -161,10 +161,10 @@
     "knex": "^2.0.0 || ^3.0.0",
     "objection": "^3.0.0"
   },
-  "packageManager": "pnpm@10.17.0",
+  "packageManager": "pnpm@10.17.1",
   "volta": {
-    "node": "22.19.0",
-    "pnpm": "10.17.0"
+    "node": "22.20.0",
+    "pnpm": "10.17.1"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
