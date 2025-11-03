@@ -115,19 +115,19 @@
     "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.14.0",
     "@istanbuljs/nyc-config-typescript": "1.0.2",
-    "@nestjs/common": "11.1.6",
-    "@nestjs/core": "11.1.6",
-    "@nestjs/testing": "11.1.6",
+    "@nestjs/common": "11.1.7",
+    "@nestjs/core": "11.1.7",
+    "@nestjs/testing": "11.1.7",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "@types/chai": "5.2.2",
+    "@types/chai": "5.2.3",
     "@types/chai-as-promised": "7.1.8",
     "@types/mocha": "10.0.10",
-    "@types/node": "22.18.11",
+    "@types/node": "22.18.12",
     "@types/sinon": "17.0.4",
     "@types/sinon-chai": "3.2.12",
-    "@typescript-eslint/eslint-plugin": "8.46.1",
-    "@typescript-eslint/parser": "8.46.1",
+    "@typescript-eslint/eslint-plugin": "8.46.2",
+    "@typescript-eslint/parser": "8.46.2",
     "chai": "4.4.1",
     "chai-as-promised": "7.1.2",
     "eslint": "9.38.0",
@@ -136,7 +136,7 @@
     "globals": "^16.0.0",
     "husky": "9.1.7",
     "knex": "3.1.0",
-    "lint-staged": "16.2.4",
+    "lint-staged": "16.2.6",
     "markdown-toc": "1.2.0",
     "mocha": "11.7.4",
     "nyc": "17.1.0",
@@ -161,10 +161,10 @@
     "knex": "^2.0.0 || ^3.0.0",
     "objection": "^3.0.0"
   },
-  "packageManager": "pnpm@10.18.3",
+  "packageManager": "pnpm@10.19.0",
   "volta": {
     "node": "22.21.0",
-    "pnpm": "10.18.3"
+    "pnpm": "10.19.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
