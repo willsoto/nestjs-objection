@@ -126,8 +126,8 @@
     "@types/node": "24.10.4",
     "@types/sinon": "21.0.0",
     "@types/sinon-chai": "3.2.12",
-    "@typescript-eslint/eslint-plugin": "8.49.0",
-    "@typescript-eslint/parser": "8.49.0",
+    "@typescript-eslint/eslint-plugin": "8.50.0",
+    "@typescript-eslint/parser": "8.50.0",
     "chai": "4.4.1",
     "chai-as-promised": "7.1.2",
     "eslint": "9.39.2",
@@ -148,7 +148,7 @@
     "rimraf": "6.1.2",
     "rxjs": "7.8.2",
     "semantic-release": "25.0.2",
-    "sinon": "21.0.0",
+    "sinon": "21.0.1",
     "sinon-chai": "3.7.0",
     "source-map-support": "0.5.21",
     "sqlite3": "5.1.7",
@@ -161,10 +161,10 @@
     "knex": "^2.0.0 || ^3.0.0",
     "objection": "^3.0.0"
   },
-  "packageManager": "pnpm@10.25.0",
+  "packageManager": "pnpm@10.26.1",
   "volta": {
     "node": "24.12.0",
-    "pnpm": "10.25.0"
+    "pnpm": "10.26.1"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
