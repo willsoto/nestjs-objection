@@ -1,14 +1,15 @@
 import { Test, TestingModule } from "@nestjs/testing";
-import { expect } from "chai";
 import { Knex } from "knex";
+import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import { KNEX_CONNECTION } from "../src";
 import { ConnectionCheck, ConnectionModule } from "./fixtures";
+
 describe("Integration", function () {
   let connectionCheck: ConnectionCheck;
   let connection: Knex;
   let testingModule: TestingModule;
 
-  before(async function () {
+  beforeAll(async function () {
     testingModule = await Test.createTestingModule({
       imports: [ConnectionModule],
     }).compile();
@@ -17,23 +18,23 @@ describe("Integration", function () {
     connection = testingModule.get<Knex>(KNEX_CONNECTION);
   });
 
-  after(function () {
+  afterAll(function () {
     return testingModule.close();
   });
 
-  it("database works", function () {
-    return expect(connection.raw("select 1")).to.eventually.eql([{ "1": 1 }]);
+  it("database works", async function () {
+    await expect(connection.raw("select 1")).resolves.toEqual([{ "1": 1 }]);
   });
 
   it("the service is correctly initialized", function () {
-    expect(connectionCheck).to.be.ok;
+    expect(connectionCheck).toBeTruthy();
   });
 
   it.skip("the connection correctly initialized", function () {
-    expect(connectionCheck.connection).to.be.ok;
+    expect(connectionCheck.connection).toBeTruthy();
   });
 
-  it.skip("#pingCheck", function () {
-    return expect(connectionCheck.pingCheck()).to.eventually.eql([{ "1": 1 }]);
+  it.skip("#pingCheck", async function () {
+    await expect(connectionCheck.pingCheck()).resolves.toEqual([{ "1": 1 }]);
   });
 });

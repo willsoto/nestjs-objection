@@ -1,7 +1,7 @@
 import { Test, TestingModule } from "@nestjs/testing";
-import { expect } from "chai";
 import { Knex } from "knex";
 import { Model } from "objection";
+import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import { KNEX_CONNECTION } from "../src/constants";
 import { ObjectionModule } from "../src/module";
 import { User } from "./fixtures";
@@ -17,7 +17,7 @@ describe("ObjectionModule", function () {
   };
 
   describe("#register", function () {
-    before(async function () {
+    beforeAll(async function () {
       testingModule = await Test.createTestingModule({
         imports: [
           ObjectionModule.register({
@@ -27,25 +27,25 @@ describe("ObjectionModule", function () {
       }).compile();
     });
 
-    after(function () {
+    afterAll(function () {
       return testingModule.close();
     });
 
     it("provides a connection", function () {
       const connection = testingModule.get<Knex>(KNEX_CONNECTION);
 
-      expect(connection).to.be.ok;
+      expect(connection).toBeTruthy();
     });
 
     it("provides a base model", function () {
       const model = testingModule.get(Model);
 
-      expect(model).to.be.ok;
+      expect(model).toBeTruthy();
     });
   });
 
   describe("#registerAsync", function () {
-    before(async function () {
+    beforeAll(async function () {
       testingModule = await Test.createTestingModule({
         imports: [
           ObjectionModule.registerAsync({
@@ -59,25 +59,25 @@ describe("ObjectionModule", function () {
       }).compile();
     });
 
-    after(function () {
+    afterAll(function () {
       return testingModule.close();
     });
 
     it("provides a connection", function () {
       const connection = testingModule.get<Knex>("KnexConnection");
 
-      expect(connection).to.be.ok;
+      expect(connection).toBeTruthy();
     });
 
     it("provides a base model", function () {
       const model = testingModule.get<Model>("ObjectionBaseModel");
 
-      expect(model).to.eq(Model);
+      expect(model).toBe(Model);
     });
   });
 
   describe("#forFeature", function () {
-    before(async function () {
+    beforeAll(async function () {
       testingModule = await Test.createTestingModule({
         imports: [
           ObjectionModule.register({
@@ -88,20 +88,20 @@ describe("ObjectionModule", function () {
       }).compile();
     });
 
-    after(function () {
+    afterAll(function () {
       return testingModule.close();
     });
 
     it("provides a model by token", function () {
       const model = testingModule.get(User);
 
-      expect(model).to.eql(User);
+      expect(model).toEqual(User);
     });
 
     it("provides a model by string name", function () {
       const model = testingModule.get<User>("User");
 
-      expect(model).to.eql(User);
+      expect(model).toEqual(User);
     });
   });
 });

@@ -1,9 +1,8 @@
 import { Injectable } from "@nestjs/common";
 import { Test, TestingModule } from "@nestjs/testing";
-import { expect } from "chai";
 import { Knex } from "knex";
 import { Model } from "objection";
-import * as sinon from "sinon";
+import { afterAll, beforeAll, describe, expect, it, vi } from "vitest";
 import {
   KNEX_CONNECTION,
   OBJECTION_BASE_MODEL,
@@ -27,7 +26,7 @@ describe("ObjectionCoreModule", function () {
   };
 
   describe("#register", function () {
-    before(async function () {
+    beforeAll(async function () {
       testingModule = await Test.createTestingModule({
         imports: [
           ObjectionCoreModule.register({
@@ -37,25 +36,25 @@ describe("ObjectionCoreModule", function () {
       }).compile();
     });
 
-    after(function () {
+    afterAll(function () {
       return testingModule.close();
     });
 
     it("provides a connection", function () {
       const connection = testingModule.get<Knex>("KnexConnection");
 
-      expect(connection).to.be.ok;
+      expect(connection).toBeTruthy();
     });
 
     it("provides a base model", function () {
       const model = testingModule.get(Model);
 
-      expect(model).to.eq(Model);
+      expect(model).toBe(Model);
     });
   });
 
   describe("#registerAsync", function () {
-    before(async function () {
+    beforeAll(async function () {
       testingModule = await Test.createTestingModule({
         imports: [
           ObjectionCoreModule.registerAsync({
@@ -69,20 +68,20 @@ describe("ObjectionCoreModule", function () {
       }).compile();
     });
 
-    after(function () {
+    afterAll(function () {
       return testingModule.close();
     });
 
     it("provides a connection", function () {
       const connection = testingModule.get<Knex>(KNEX_CONNECTION);
 
-      expect(connection).to.be.ok;
+      expect(connection).toBeTruthy();
     });
 
     it("provides a base model", function () {
       const model = testingModule.get<Model>(OBJECTION_BASE_MODEL);
 
-      expect(model).to.eq(Model);
+      expect(model).toBe(Model);
     });
   });
 
@@ -98,7 +97,7 @@ describe("ObjectionCoreModule", function () {
     it("throws an error if options.useClass, useExisting, useFactory are not provided", function () {
       expect(() => {
         ObjectionCoreModule["createAsyncProviders"]({});
-      }).to.throw("Invalid configuration");
+      }).toThrow("Invalid configuration");
     });
 
     it("leverages useClass if provided", function () {
@@ -106,18 +105,14 @@ describe("ObjectionCoreModule", function () {
         useClass: ModuleOptionsFactory,
       });
 
-      expect(providers).to.be.an("array").with.lengthOf(2);
+      expect(providers).toBeInstanceOf(Array);
+      expect(providers).toHaveLength(2);
 
-      expect(providers[0])
-        .to.have.property("inject")
-        .deep.equal([ModuleOptionsFactory]);
-      expect(providers[0]).to.have.property(
-        "provide",
-        OBJECTION_MODULE_OPTIONS,
-      );
+      expect(providers[0]).toHaveProperty("inject", [ModuleOptionsFactory]);
+      expect(providers[0]).toHaveProperty("provide", OBJECTION_MODULE_OPTIONS);
 
-      expect(providers[1]).to.have.property("useClass", ModuleOptionsFactory);
-      expect(providers[1]).to.have.property("provide", ModuleOptionsFactory);
+      expect(providers[1]).toHaveProperty("useClass", ModuleOptionsFactory);
+      expect(providers[1]).toHaveProperty("provide", ModuleOptionsFactory);
     });
 
     it("returns an array of providers when useExisting is passed", function () {
@@ -125,15 +120,11 @@ describe("ObjectionCoreModule", function () {
         useExisting: ModuleOptionsFactory,
       });
 
-      expect(providers).to.be.an("array").with.lengthOf(1);
+      expect(providers).toBeInstanceOf(Array);
+      expect(providers).toHaveLength(1);
 
-      expect(providers[0])
-        .to.have.property("inject")
-        .deep.equal([ModuleOptionsFactory]);
-      expect(providers[0]).to.have.property(
-        "provide",
-        OBJECTION_MODULE_OPTIONS,
-      );
+      expect(providers[0]).toHaveProperty("inject", [ModuleOptionsFactory]);
+      expect(providers[0]).toHaveProperty("provide", OBJECTION_MODULE_OPTIONS);
     });
 
     it("returns an array of providers when useFactory is passed", function () {
@@ -143,13 +134,11 @@ describe("ObjectionCoreModule", function () {
         }),
       });
 
-      expect(providers).to.be.an("array").with.lengthOf(1);
+      expect(providers).toBeInstanceOf(Array);
+      expect(providers).toHaveLength(1);
 
-      expect(providers[0]).to.have.property("inject").deep.equal([]);
-      expect(providers[0]).to.have.property(
-        "provide",
-        OBJECTION_MODULE_OPTIONS,
-      );
+      expect(providers[0]).toHaveProperty("inject", []);
+      expect(providers[0]).toHaveProperty("provide", OBJECTION_MODULE_OPTIONS);
     });
   });
 
@@ -170,8 +159,8 @@ describe("ObjectionCoreModule", function () {
         }),
       });
 
-      expect(provider).to.have.property("inject").deep.equal([]);
-      expect(provider).to.have.property("provide", OBJECTION_MODULE_OPTIONS);
+      expect(provider).toHaveProperty("inject", []);
+      expect(provider).toHaveProperty("provide", OBJECTION_MODULE_OPTIONS);
     });
 
     it("returns the appropriate provider when useExisting is passed", function () {
@@ -179,14 +168,12 @@ describe("ObjectionCoreModule", function () {
         useExisting: ModuleOptionsFactory,
       });
 
-      expect(provider)
-        .to.have.property("inject")
-        .deep.equal([ModuleOptionsFactory]);
-      expect(provider).to.have.property("provide", OBJECTION_MODULE_OPTIONS);
+      expect(provider).toHaveProperty("inject", [ModuleOptionsFactory]);
+      expect(provider).toHaveProperty("provide", OBJECTION_MODULE_OPTIONS);
     });
 
     it("returns an async factory function that calls createObjectionModuleOptions", async function () {
-      sinon.spy(ModuleOptionsFactory.prototype, "createObjectionModuleOptions");
+      vi.spyOn(ModuleOptionsFactory.prototype, "createObjectionModuleOptions");
 
       await Test.createTestingModule({
         imports: [
@@ -196,8 +183,9 @@ describe("ObjectionCoreModule", function () {
         ],
       }).compile();
 
-      expect(ModuleOptionsFactory.prototype.createObjectionModuleOptions).to
-        .have.been.called;
+      expect(
+        ModuleOptionsFactory.prototype.createObjectionModuleOptions,
+      ).toHaveBeenCalled();
     });
   });
 });
