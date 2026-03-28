@@ -1,7 +1,7 @@
 import { Test, TestingModule } from "@nestjs/testing";
-import { expect } from "chai";
 import { Knex } from "knex";
 import { Model } from "objection";
+import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import { ObjectionCoreModule } from "../src/core";
 
 describe("when registering multiple connections", function () {
@@ -18,7 +18,7 @@ describe("when registering multiple connections", function () {
   }
 
   describe("#register", function () {
-    before(async function () {
+    beforeAll(async function () {
       testingModule = await Test.createTestingModule({
         imports: [
           ObjectionCoreModule.register({
@@ -64,35 +64,35 @@ describe("when registering multiple connections", function () {
       }
     });
 
-    after(function () {
+    afterAll(function () {
       return testingModule.close();
     });
 
     it("uses the given token for each connection", function () {
-      expect(connection1).to.be.ok;
-      expect(connection2).to.be.ok;
+      expect(connection1).toBeTruthy();
+      expect(connection2).toBeTruthy();
     });
 
     it("queries using the correct connection", async function () {
-      expect(Author.knex()).to.eql(connection1);
-      expect(Book.knex()).to.eql(connection2);
+      expect(Author.knex()).toEqual(connection1);
+      expect(Book.knex()).toEqual(connection2);
 
-      await expect(Author.query()).to.eventually.eql([]);
-      await expect(Book.query()).to.eventually.eql([]);
+      await expect(Author.query()).resolves.toEqual([]);
+      await expect(Book.query()).resolves.toEqual([]);
     });
 
     it("created tables", async function () {
       await expect(
         connection1.schema.hasTable(Book.tableName),
-      ).to.eventually.eql(false);
+      ).resolves.toEqual(false);
       await expect(
         connection2.schema.hasTable(Author.tableName),
-      ).to.eventually.eql(false);
+      ).resolves.toEqual(false);
     });
   });
 
   describe("#registerAsync", function () {
-    before(async function () {
+    beforeAll(async function () {
       testingModule = await Test.createTestingModule({
         imports: [
           ObjectionCoreModule.registerAsync({
@@ -148,30 +148,30 @@ describe("when registering multiple connections", function () {
       }
     });
 
-    after(function () {
+    afterAll(function () {
       return testingModule.close();
     });
 
     it("uses the given token for each connection", function () {
-      expect(connection1).to.be.ok;
-      expect(connection2).to.be.ok;
+      expect(connection1).toBeTruthy();
+      expect(connection2).toBeTruthy();
     });
 
     it("queries using the correct connection", async function () {
-      expect(Author.knex()).to.eql(connection1);
-      expect(Book.knex()).to.eql(connection2);
+      expect(Author.knex()).toEqual(connection1);
+      expect(Book.knex()).toEqual(connection2);
 
-      await expect(Author.query()).to.eventually.eql([]);
-      await expect(Book.query()).to.eventually.eql([]);
+      await expect(Author.query()).resolves.toEqual([]);
+      await expect(Book.query()).resolves.toEqual([]);
     });
 
     it("created tables", async function () {
       await expect(
         connection1.schema.hasTable(Book.tableName),
-      ).to.eventually.eql(false);
+      ).resolves.toEqual(false);
       await expect(
         connection2.schema.hasTable(Author.tableName),
-      ).to.eventually.eql(false);
+      ).resolves.toEqual(false);
     });
   });
 });
