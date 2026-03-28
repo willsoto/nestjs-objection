@@ -26,7 +26,7 @@
     "clean": "rimraf dist coverage .nyc_output",
     "format": "prettier . --write",
     "lint": "eslint . --fix",
-    "prepare": "husky",
+    "prepare": "lefthook install",
     "prerelease": "npm run build",
     "release": "semantic-release",
     "test": "mocha",
@@ -38,19 +38,6 @@
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
-    ]
-  },
-  "lint-staged": {
-    "*.ts": [
-      "npm run lint",
-      "prettier --write"
-    ],
-    "*.{md,yaml,yml}": [
-      "prettier --write"
-    ],
-    "README.md": [
-      "markdown-toc -i",
-      "prettier --write"
     ]
   },
   "release": {
@@ -134,9 +121,8 @@
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-mocha": "11.2.0",
     "globals": "^17.0.0",
-    "husky": "9.1.7",
     "knex": "3.1.0",
-    "lint-staged": "16.2.7",
+    "lefthook": "^2.1.4",
     "markdown-toc": "1.2.0",
     "mocha": "11.7.5",
     "nyc": "17.1.0",
@@ -169,6 +155,7 @@
   "pnpm": {
     "onlyBuiltDependencies": [
       "@nestjs/core",
+      "lefthook",
       "sqlite3"
     ]
   }
