@@ -1,0 +1,23 @@
+pre-commit:
+  commands:
+    lint-ts:
+      glob: "*.ts"
+      stage_fixed: true
+      run: pnpm exec eslint --fix {staged_files}
+    format-ts:
+      glob: "*.ts"
+      stage_fixed: true
+      run: pnpm exec prettier --write {staged_files}
+    format-md-yaml:
+      glob: "*.{md,yaml,yml}"
+      stage_fixed: true
+      run: pnpm exec prettier --write {staged_files}
+    readme-toc:
+      glob: "README.md"
+      stage_fixed: true
+      run: pnpm exec markdown-toc -i {staged_files} && pnpm exec prettier --write {staged_files}
+
+commit-msg:
+  commands:
+    commitlint:
+      run: pnpm exec commitlint --edit {1}
