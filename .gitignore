@@ -25,6 +25,7 @@ lerna-debug.log*
 *.launch
 .settings/
 *.sublime-workspace
+.vscode/
 
 /typings
 /docs
