@@ -73,13 +73,13 @@
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "@types/node": "24.12.0",
-    "@typescript-eslint/eslint-plugin": "8.57.1",
-    "@typescript-eslint/parser": "8.57.1",
+    "@typescript-eslint/eslint-plugin": "8.57.2",
+    "@typescript-eslint/parser": "8.57.2",
     "@vitest/coverage-v8": "^4.1.2",
     "eslint": "9.39.4",
     "eslint-config-prettier": "10.1.8",
     "globals": "^17.0.0",
-    "knex": "3.2.3",
+    "knex": "3.2.7",
     "lefthook": "^2.1.4",
     "markdown-toc": "1.2.0",
     "objection": "3.1.5",
@@ -100,10 +100,10 @@
     "knex": "^2.0.0 || ^3.0.0",
     "objection": "^3.0.0"
   },
-  "packageManager": "pnpm@10.32.1",
+  "packageManager": "pnpm@10.33.0",
   "volta": {
-    "node": "24.14.0",
-    "pnpm": "10.32.1"
+    "node": "24.14.1",
+    "pnpm": "10.33.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
