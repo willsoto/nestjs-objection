@@ -73,8 +73,8 @@
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "@types/node": "24.12.2",
-    "@typescript-eslint/eslint-plugin": "8.58.0",
-    "@typescript-eslint/parser": "8.58.0",
+    "@typescript-eslint/eslint-plugin": "8.58.1",
+    "@typescript-eslint/parser": "8.58.1",
     "@vitest/coverage-v8": "^4.1.2",
     "eslint": "10.2.0",
     "eslint-config-prettier": "10.1.8",
@@ -83,7 +83,7 @@
     "lefthook": "^2.1.4",
     "markdown-toc": "1.2.0",
     "objection": "3.1.5",
-    "prettier": "3.8.1",
+    "prettier": "3.8.2",
     "prettier-plugin-organize-imports": "4.3.0",
     "prettier-plugin-packagejson": "3.0.2",
     "reflect-metadata": "0.2.2",
@@ -92,7 +92,7 @@
     "semantic-release": "25.0.3",
     "sqlite3": "6.0.1",
     "typescript": "5.9.3",
-    "vitest": "4.1.2"
+    "vitest": "4.1.4"
   },
   "peerDependencies": {
     "@nestjs/common": "^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0",
