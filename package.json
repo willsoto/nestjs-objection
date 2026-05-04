@@ -63,7 +63,7 @@
     ]
   },
   "devDependencies": {
-    "@commitlint/cli": "20.5.0",
+    "@commitlint/cli": "20.5.2",
     "@commitlint/config-conventional": "20.5.0",
     "@eslint/eslintrc": "3.3.5",
     "@eslint/js": "10.0.1",
@@ -73,8 +73,8 @@
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "@types/node": "24.12.2",
-    "@typescript-eslint/eslint-plugin": "8.58.2",
-    "@typescript-eslint/parser": "8.58.2",
+    "@typescript-eslint/eslint-plugin": "8.59.0",
+    "@typescript-eslint/parser": "8.59.0",
     "@vitest/coverage-v8": "^4.1.2",
     "eslint": "10.2.1",
     "eslint-config-prettier": "10.1.8",
@@ -92,7 +92,7 @@
     "semantic-release": "25.0.3",
     "sqlite3": "6.0.1",
     "typescript": "6.0.3",
-    "vitest": "4.1.4"
+    "vitest": "4.1.5"
   },
   "peerDependencies": {
     "@nestjs/common": "^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0",
@@ -100,10 +100,10 @@
     "knex": "^2.0.0 || ^3.0.0",
     "objection": "^3.0.0"
   },
-  "packageManager": "pnpm@10.33.0",
+  "packageManager": "pnpm@10.33.2",
   "volta": {
     "node": "24.15.0",
-    "pnpm": "10.33.0"
+    "pnpm": "10.33.2"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
