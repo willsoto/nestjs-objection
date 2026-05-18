@@ -72,9 +72,9 @@
     "@nestjs/testing": "11.1.19",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "@types/node": "24.12.2",
-    "@typescript-eslint/eslint-plugin": "8.59.1",
-    "@typescript-eslint/parser": "8.59.1",
+    "@types/node": "24.12.3",
+    "@typescript-eslint/eslint-plugin": "8.59.2",
+    "@typescript-eslint/parser": "8.59.2",
     "@vitest/coverage-v8": "^4.1.2",
     "eslint": "10.3.0",
     "eslint-config-prettier": "10.1.8",
@@ -100,10 +100,10 @@
     "knex": "^2.0.0 || ^3.0.0",
     "objection": "^3.0.0"
   },
-  "packageManager": "pnpm@10.33.2",
+  "packageManager": "pnpm@10.33.4",
   "volta": {
     "node": "24.15.0",
-    "pnpm": "10.33.2"
+    "pnpm": "10.33.4"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
