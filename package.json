@@ -63,20 +63,20 @@
     ]
   },
   "devDependencies": {
-    "@commitlint/cli": "21.0.1",
-    "@commitlint/config-conventional": "21.0.1",
+    "@commitlint/cli": "21.0.2",
+    "@commitlint/config-conventional": "21.0.2",
     "@eslint/eslintrc": "3.3.5",
     "@eslint/js": "10.0.1",
-    "@nestjs/common": "11.1.23",
-    "@nestjs/core": "11.1.23",
-    "@nestjs/testing": "11.1.23",
+    "@nestjs/common": "11.1.24",
+    "@nestjs/core": "11.1.24",
+    "@nestjs/testing": "11.1.24",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "@types/node": "24.12.4",
-    "@typescript-eslint/eslint-plugin": "8.59.4",
-    "@typescript-eslint/parser": "8.59.4",
+    "@typescript-eslint/eslint-plugin": "8.60.0",
+    "@typescript-eslint/parser": "8.60.0",
     "@vitest/coverage-v8": "^4.1.2",
-    "eslint": "10.4.0",
+    "eslint": "10.4.1",
     "eslint-config-prettier": "10.1.8",
     "globals": "^17.0.0",
     "knex": "3.2.10",
@@ -100,10 +100,10 @@
     "knex": "^2.0.0 || ^3.0.0",
     "objection": "^3.0.0"
   },
-  "packageManager": "pnpm@10.33.4",
+  "packageManager": "pnpm@10.34.1",
   "volta": {
     "node": "24.16.0",
-    "pnpm": "10.33.4"
+    "pnpm": "10.34.1"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
