@@ -100,10 +100,10 @@
     "knex": "^2.0.0 || ^3.0.0",
     "objection": "^3.0.0"
   },
-  "packageManager": "pnpm@10.34.1",
+  "packageManager": "pnpm@11.5.2",
   "volta": {
     "node": "24.16.0",
-    "pnpm": "10.34.1"
+    "pnpm": "11.5.2"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
