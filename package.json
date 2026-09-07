@@ -67,9 +67,9 @@
     "@commitlint/config-conventional": "21.2.2",
     "@eslint/eslintrc": "3.3.6",
     "@eslint/js": "10.0.1",
-    "@nestjs/common": "11.2.3",
-    "@nestjs/core": "11.2.3",
-    "@nestjs/testing": "11.2.3",
+    "@nestjs/common": "12.0.1",
+    "@nestjs/core": "12.0.1",
+    "@nestjs/testing": "12.0.1",
     "@semantic-release/changelog": "7.0.0",
     "@semantic-release/git": "11.0.1",
     "@types/node": "24.13.3",
@@ -95,8 +95,8 @@
     "vitest": "4.1.11"
   },
   "peerDependencies": {
-    "@nestjs/common": "^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0",
-    "@nestjs/core": "^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0",
+    "@nestjs/common": "^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0",
+    "@nestjs/core": "^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0",
     "knex": "^2.0.0 || ^3.0.0",
     "objection": "^3.0.0"
   },
