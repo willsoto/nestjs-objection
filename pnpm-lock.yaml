@@ -66,8 +66,8 @@ importers:
         specifier: 1.2.0
         version: 1.2.0
       objection:
-        specifier: 3.9.1
-        version: 3.9.1(knex@3.3.0(sqlite3@6.0.1))
+        specifier: 4.2.0
+        version: 4.2.0(knex@3.3.0(sqlite3@6.0.1))(typescript@6.0.3)
       prettier:
         specifier: 3.9.10
         version: 3.9.10
@@ -1037,9 +1037,6 @@ packages:
   crypto-random-string@4.0.0:
     resolution: {integrity: sha512-x8dy3RnvYdlUcPOjkEHqozhiwzKNSq7GcPuXFbnyMOCHxX8V3OgIg/pYuabl2sbUPfIJaeAQB7PMOK8DFIdoRA==}
     engines: {node: '>=12'}
-
-  db-errors@0.2.3:
-    resolution: {integrity: sha512-OOgqgDuCavHXjYSJoV2yGhv6SeG8nk42aoCSoyXLZUH7VwFG27rxbavU1z+VrZbZjphw5UkDQwUlD21MwZpUng==}
 
   debug@4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
@@ -2192,11 +2189,15 @@ packages:
     resolution: {integrity: sha512-tqa/UMy/CCoYmj+H5qc07qvSL9dqcs/WZENZ1JbtWBlATP+iVOe778gE6MSijnyCnORzDuX6hU+LA4SZ09YjFQ==}
     engines: {node: '>=0.10.0'}
 
-  objection@3.9.1:
-    resolution: {integrity: sha512-A8+Wt4ShQeaemtd/K3pZMd0AvUoZGjlMWUc0R/DCZeH/4sV6WrcF3fpFUVExIkWAoEJlVGcy9Oto8/hj2aCb0w==}
-    engines: {node: '>=14.0.0'}
+  objection@4.2.0:
+    resolution: {integrity: sha512-oPif7LtnZHYwDJb77EbFd3KggGrwH7ss/rQaYRrRGhMWiNLL2vimJJ3zUm/HOQ5wMWVXFv8qXcE1dN54oYit6A==}
+    engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
-      knex: '>=2.3.0 <4'
+      knex: ^3.3.0
+      typescript: '>=5.8'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   obug@3.0.0:
     resolution: {integrity: sha512-5vvB5+W7ePv+p3uqxi+RcW1XAzLW0/hxt3/4X4Lc4qHudzOhmBiBwOY6DRob4WnanAEGvNcLjF+KNOufrUoEQw==}
@@ -4034,8 +4035,6 @@ snapshots:
     dependencies:
       type-fest: 1.4.0
 
-  db-errors@0.2.3: {}
-
   debug@4.3.4:
     dependencies:
       ms: 2.1.2
@@ -5049,12 +5048,13 @@ snapshots:
     dependencies:
       isobject: 3.0.1
 
-  objection@3.9.1(knex@3.3.0(sqlite3@6.0.1)):
+  objection@4.2.0(knex@3.3.0(sqlite3@6.0.1))(typescript@6.0.3):
     dependencies:
       ajv: 8.17.1
       ajv-formats: 3.0.1(ajv@8.17.1)
-      db-errors: 0.2.3
       knex: 3.3.0(sqlite3@6.0.1)
+    optionalDependencies:
+      typescript: 6.0.3
 
   obug@3.0.0: {}
 
