@@ -82,7 +82,7 @@
     "knex": "3.3.0",
     "lefthook": "^2.1.4",
     "markdown-toc": "1.2.0",
-    "objection": "3.9.1",
+    "objection": "4.2.0",
     "prettier": "3.9.10",
     "prettier-plugin-organize-imports": "4.3.0",
     "prettier-plugin-packagejson": "3.0.2",
@@ -98,7 +98,7 @@
     "@nestjs/common": "^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0",
     "@nestjs/core": "^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0",
     "knex": "^2.0.0 || ^3.0.0",
-    "objection": "^3.0.0"
+    "objection": "^3.0.0 || ^4.0.0"
   },
   "packageManager": "pnpm@10.34.7",
   "volta": {
