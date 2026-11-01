@@ -218,8 +218,8 @@ importers:
         specifier: 1.2.0
         version: 1.2.0
       objection:
-        specifier: 4.2.0
-        version: 4.2.0(knex@3.3.0(sqlite3@6.0.1))(typescript@6.0.3)
+        specifier: 4.4.2
+        version: 4.4.2(knex@3.3.0(sqlite3@6.0.1))(typescript@6.0.3)
       prettier:
         specifier: 3.9.10
         version: 3.9.10
@@ -1721,8 +1721,8 @@ packages:
     resolution: {integrity: sha512-tqa/UMy/CCoYmj+H5qc07qvSL9dqcs/WZENZ1JbtWBlATP+iVOe778gE6MSijnyCnORzDuX6hU+LA4SZ09YjFQ==}
     engines: {node: '>=0.10.0'}
 
-  objection@4.2.0:
-    resolution: {integrity: sha512-oPif7LtnZHYwDJb77EbFd3KggGrwH7ss/rQaYRrRGhMWiNLL2vimJJ3zUm/HOQ5wMWVXFv8qXcE1dN54oYit6A==}
+  objection@4.4.2:
+    resolution: {integrity: sha512-Iavk3Gdl0RJI25MjjMwB2MG87x2pcB+QQjXqxHvaAWZIm/xJ+dLnyFk+/B+H0fEJOYypv0Y6vaeWJbMp+XZTnw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
       knex: ^3.3.0
@@ -2794,8 +2794,8 @@ snapshots:
   agent-base@7.1.3:
     optional: true
 
-  ajv-formats@3.0.1(ajv@8.17.1):
-    optionalDependencies:
+  ajv-formats@3.0.1:
+    dependencies:
       ajv: 8.17.1
 
   ajv@6.14.0:
@@ -3671,10 +3671,10 @@ snapshots:
     dependencies:
       isobject: 3.0.1
 
-  objection@4.2.0(knex@3.3.0(sqlite3@6.0.1))(typescript@6.0.3):
+  objection@4.4.2(knex@3.3.0(sqlite3@6.0.1))(typescript@6.0.3):
     dependencies:
       ajv: 8.17.1
-      ajv-formats: 3.0.1(ajv@8.17.1)
+      ajv-formats: 3.0.1
       knex: 3.3.0(sqlite3@6.0.1)
     optionalDependencies:
       typescript: 6.0.3
