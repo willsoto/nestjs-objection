@@ -92,54 +92,46 @@ export class ObjectionCoreModule implements OnApplicationShutdown {
     };
   }
 
-  private static createAsyncProviders(options: ObjectionModuleAsyncOptions): Provider[] {
-    if (options.useExisting || options.useFactory) {
-      return [this.createAsyncOptionsProvider(options)];
-    } else if (!options.useClass) {
-      throw new Error("Invalid configuration");
-    }
-
-    return [
-      this.createAsyncOptionsProvider(options),
-      {
-        provide: options.useClass,
-        useClass: options.useClass,
-      },
-    ];
-  }
-
   // The connection is registered under the `name` given to `registerAsync`, so
   // it must win over whatever the factory returns or shutdown can't find it.
-  private static createAsyncOptionsProvider(options: ObjectionModuleAsyncOptions): Provider {
+  private static createAsyncProviders(options: ObjectionModuleAsyncOptions): Provider[] {
     const { name } = options;
 
     if (options.useFactory) {
       const factory = options.useFactory.bind(options);
 
-      return {
-        provide: OBJECTION_MODULE_OPTIONS,
-        async useFactory(...args: unknown[]): Promise<ObjectionModuleOptions> {
-          return { ...(await factory(...args)), name };
+      return [
+        {
+          provide: OBJECTION_MODULE_OPTIONS,
+          async useFactory(...args: unknown[]): Promise<ObjectionModuleOptions> {
+            return { ...(await factory(...args)), name };
+          },
+          inject: options.inject || [],
         },
-        inject: options.inject || [],
-      };
+      ];
     }
 
-    const inject = options.useClass || options.useExisting;
+    const optionsFactoryClass = options.useClass || options.useExisting;
 
-    if (!inject) {
+    if (!optionsFactoryClass) {
       throw new Error("Invalid configuration. Must provide useFactory, useClass or useExisting");
     }
 
-    return {
+    const optionsProvider: FactoryProvider = {
       provide: OBJECTION_MODULE_OPTIONS,
       async useFactory(
         optionsFactory: ObjectionModuleOptionsFactory,
       ): Promise<ObjectionModuleOptions> {
         return { ...(await optionsFactory.createObjectionModuleOptions(name)), name };
       },
-      inject: [inject],
+      inject: [optionsFactoryClass],
     };
+
+    if (options.useClass) {
+      return [optionsProvider, { provide: options.useClass, useClass: options.useClass }];
+    }
+
+    return [optionsProvider];
   }
 
   async onApplicationShutdown(): Promise<void> {
