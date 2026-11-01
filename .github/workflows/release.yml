@@ -1,0 +1,16 @@
+name: "release"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    uses: "willsoto/actions/.github/workflows/node-release.yml@v6.0.1"
+    permissions:
+      contents: write
+      pull-requests: write
+      id-token: write
+    secrets:
+      RELEASE_TOKEN: ${{ secrets.GH_TOKEN }}
