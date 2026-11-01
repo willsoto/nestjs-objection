@@ -45,6 +45,10 @@ describe("ObjectionCoreModule", function () {
 
       expect(model).toBe(Model);
     });
+
+    it("provides the base model under the same token as registerAsync", function () {
+      expect(testingModule.get(OBJECTION_BASE_MODEL)).toBe(Model);
+    });
   });
 
   describe("#registerAsync", function () {
