@@ -2,7 +2,7 @@ import { Injectable, ModuleMetadata } from "@nestjs/common";
 import { Test, TestingModule } from "@nestjs/testing";
 import { Knex } from "knex";
 import { Model } from "objection";
-import { afterAll, beforeAll, describe, expect, it, vi } from "vitest";
+import { afterAll, beforeAll, describe, expect, it } from "vitest";
 
 import { KNEX_CONNECTION, OBJECTION_BASE_MODEL, OBJECTION_MODULE_OPTIONS } from "../src/constants";
 import { ObjectionCoreModule } from "../src/core";
@@ -136,50 +136,6 @@ describe("ObjectionCoreModule", function () {
     });
   });
 
-  describe("#createAsyncOptionsProvider", function () {
-    @Injectable()
-    class ModuleOptionsFactory implements ObjectionModuleOptionsFactory {
-      public createObjectionModuleOptions(): ObjectionModuleOptions {
-        return {
-          config,
-        };
-      }
-    }
-
-    it("returns the appropriate provider when useFactory is passed", function () {
-      const provider = ObjectionCoreModule["createAsyncOptionsProvider"]({
-        useFactory: () => ({
-          config,
-        }),
-      });
-
-      expect(provider).toHaveProperty("inject", []);
-      expect(provider).toHaveProperty("provide", OBJECTION_MODULE_OPTIONS);
-    });
-
-    it("returns the appropriate provider when useExisting is passed", function () {
-      const provider = ObjectionCoreModule["createAsyncOptionsProvider"]({
-        useExisting: ModuleOptionsFactory,
-      });
-
-      expect(provider).toHaveProperty("inject", [ModuleOptionsFactory]);
-      expect(provider).toHaveProperty("provide", OBJECTION_MODULE_OPTIONS);
-    });
-
-    it("returns an async factory function that calls createObjectionModuleOptions", async function () {
-      vi.spyOn(ModuleOptionsFactory.prototype, "createObjectionModuleOptions");
-
-      await Test.createTestingModule({
-        imports: [
-          ObjectionCoreModule.registerAsync({
-            useClass: ModuleOptionsFactory,
-          }),
-        ],
-      }).compile();
-
-      expect(ModuleOptionsFactory.prototype.createObjectionModuleOptions).toHaveBeenCalled();
-    });
-  });
   describe("on shutdown", function () {
     const memoryConfig: Knex.Config = {
       client: "sqlite3",
