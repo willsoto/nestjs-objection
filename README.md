@@ -46,6 +46,7 @@ pnpm add knex objection
 ```typescript
 import { Module } from "@nestjs/common";
 import { ObjectionModule } from "@willsoto/nestjs-objection";
+
 import { BaseModel } from "./base";
 import { User } from "./user";
 
@@ -80,6 +81,7 @@ import { Module } from "@nestjs/common";
 import { ObjectionModule } from "@willsoto/nestjs-objection";
 import knex from "knex";
 import { knexSnakeCaseMappers } from "objection";
+
 import { ConfigModule, ConfigService } from "../config";
 import { BaseModel } from "./base";
 import { User } from "./user";
@@ -147,6 +149,7 @@ export class PrimaryDatabaseHealthIndicator extends HealthIndicator {
 
 ```ts
 import { Inject, Injectable } from "@nestjs/common";
+
 import { User } from "./user";
 
 @Injectable()

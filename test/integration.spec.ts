@@ -1,6 +1,7 @@
 import { Test, TestingModule } from "@nestjs/testing";
 import { Knex } from "knex";
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
+
 import { KNEX_CONNECTION } from "../src";
 import { ConnectionCheck, ConnectionModule } from "./fixtures";
 
