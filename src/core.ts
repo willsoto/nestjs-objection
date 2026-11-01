@@ -40,8 +40,15 @@ export class ObjectionCoreModule implements OnApplicationShutdown {
       useValue: options,
     };
 
+    // The class token is kept for backwards compatibility; OBJECTION_BASE_MODEL
+    // matches what registerAsync provides.
     const objectionBaseModelProvider: ValueProvider = {
       provide: BaseModel,
+      useValue: BaseModel,
+    };
+
+    const objectionBaseModelTokenProvider: ValueProvider = {
+      provide: OBJECTION_BASE_MODEL,
       useValue: BaseModel,
     };
 
@@ -52,8 +59,17 @@ export class ObjectionCoreModule implements OnApplicationShutdown {
 
     return {
       module: ObjectionCoreModule,
-      providers: [objectionModuleOptions, objectionBaseModelProvider, knexConnectionProvider],
-      exports: [objectionBaseModelProvider, knexConnectionProvider],
+      providers: [
+        objectionModuleOptions,
+        objectionBaseModelProvider,
+        objectionBaseModelTokenProvider,
+        knexConnectionProvider,
+      ],
+      exports: [
+        objectionBaseModelProvider,
+        objectionBaseModelTokenProvider,
+        knexConnectionProvider,
+      ],
     };
   }
 
