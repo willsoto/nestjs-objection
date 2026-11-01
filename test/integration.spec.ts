@@ -31,11 +31,11 @@ describe("Integration", function () {
     expect(connectionCheck).toBeTruthy();
   });
 
-  it.skip("the connection correctly initialized", function () {
+  it("the connection correctly initialized", function () {
     expect(connectionCheck.connection).toBeTruthy();
   });
 
-  it.skip("#pingCheck", async function () {
+  it("#pingCheck", async function () {
     await expect(connectionCheck.pingCheck()).resolves.toEqual([{ "1": 1 }]);
   });
 });
