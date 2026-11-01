@@ -108,12 +108,19 @@ export class ObjectionCoreModule implements OnApplicationShutdown {
     ];
   }
 
+  // The connection is registered under the `name` given to `registerAsync`, so
+  // it must win over whatever the factory returns or shutdown can't find it.
   private static createAsyncOptionsProvider(options: ObjectionModuleAsyncOptions): Provider {
+    const { name } = options;
+
     if (options.useFactory) {
+      const factory = options.useFactory.bind(options);
+
       return {
         provide: OBJECTION_MODULE_OPTIONS,
-        // oxlint-disable-next-line typescript/unbound-method
-        useFactory: options.useFactory,
+        async useFactory(...args: unknown[]): Promise<ObjectionModuleOptions> {
+          return { ...(await factory(...args)), name };
+        },
         inject: options.inject || [],
       };
     }
@@ -129,9 +136,7 @@ export class ObjectionCoreModule implements OnApplicationShutdown {
       async useFactory(
         optionsFactory: ObjectionModuleOptionsFactory,
       ): Promise<ObjectionModuleOptions> {
-        const opts = await optionsFactory.createObjectionModuleOptions(options.name);
-
-        return opts;
+        return { ...(await optionsFactory.createObjectionModuleOptions(name)), name };
       },
       inject: [inject],
     };
