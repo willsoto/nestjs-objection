@@ -10,6 +10,18 @@
 
 * Drop support for Nest v7
 
+## [9.2.0](https://github.com/willsoto/nestjs-objection/compare/v9.1.0...v9.2.0) (2026-11-01)
+
+
+### Features
+
+* **core:** provide base model under OBJECTION_BASE_MODEL from register ([62553ec](https://github.com/willsoto/nestjs-objection/commit/62553ec2138f649949875966e70bf076747694e4))
+
+
+### Bug Fixes
+
+* **core:** close named registerAsync connections on shutdown ([79c6d1d](https://github.com/willsoto/nestjs-objection/commit/79c6d1d199948f96d1c5b4de44dabf3e994410aa))
+
 ## [9.1.0](https://github.com/willsoto/nestjs-objection/compare/v9.0.0...v9.1.0) (2026-11-01)
 
 
