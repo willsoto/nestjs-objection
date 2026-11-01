@@ -166,6 +166,8 @@ export class UserService {
 
 When using multiple connections, you must **name** each connection when registering it.
 Otherwise subsequent connections will override the previous ones.
+With `registerAsync`, set `name` on the `registerAsync` options themselves; any `name` returned
+from the factory is ignored.
 
 ```ts
 @Module({
@@ -177,8 +179,6 @@ Otherwise subsequent connections will override the previous ones.
       inject: [ConfigService],
       useFactory(config: ConfigService) {
         return {
-          // You must provide a name for the connection here as well...
-          name: "connection1",
           Model: BaseModel1,
           config: {
             client: "sqlite3",
