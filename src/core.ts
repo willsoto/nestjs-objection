@@ -11,6 +11,7 @@ import {
 import { ModuleRef } from "@nestjs/core";
 import { Knex, knex } from "knex";
 import { Model } from "objection";
+
 import { KNEX_CONNECTION, OBJECTION_BASE_MODEL, OBJECTION_MODULE_OPTIONS } from "./constants";
 import {
   Connection,

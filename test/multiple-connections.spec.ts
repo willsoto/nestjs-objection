@@ -2,6 +2,7 @@ import { Test, TestingModule } from "@nestjs/testing";
 import { Knex } from "knex";
 import { Model } from "objection";
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
+
 import { ObjectionCoreModule } from "../src/core";
 
 describe("when registering multiple connections", function () {
