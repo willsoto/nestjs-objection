@@ -1,4 +1,4 @@
-import { Injectable } from "@nestjs/common";
+import { Injectable, ModuleMetadata } from "@nestjs/common";
 import { Test, TestingModule } from "@nestjs/testing";
 import { Knex } from "knex";
 import { Model } from "objection";
@@ -178,6 +178,81 @@ describe("ObjectionCoreModule", function () {
       }).compile();
 
       expect(ModuleOptionsFactory.prototype.createObjectionModuleOptions).toHaveBeenCalled();
+    });
+  });
+  describe("on shutdown", function () {
+    const memoryConfig: Knex.Config = {
+      client: "sqlite3",
+      useNullAsDefault: true,
+      connection: { filename: ":memory:" },
+    };
+
+    async function closeAndGetConnection(
+      imports: ModuleMetadata["imports"],
+      token = KNEX_CONNECTION,
+    ): Promise<Knex> {
+      const module = await Test.createTestingModule({ imports }).compile();
+      const connection = module.get<Knex>(token);
+
+      await module.close();
+
+      return connection;
+    }
+
+    it("destroys the connection created by register", async function () {
+      const connection = await closeAndGetConnection([
+        ObjectionCoreModule.register({ config: memoryConfig }),
+      ]);
+
+      await expect(connection.raw("select 1")).rejects.toThrow();
+    });
+
+    it("destroys the connection created by registerAsync", async function () {
+      const connection = await closeAndGetConnection([
+        ObjectionCoreModule.registerAsync({ useFactory: () => ({ config: memoryConfig }) }),
+      ]);
+
+      await expect(connection.raw("select 1")).rejects.toThrow();
+    });
+
+    it("destroys a named registerAsync connection when the factory omits the name", async function () {
+      const connection = await closeAndGetConnection(
+        [
+          ObjectionCoreModule.registerAsync({
+            name: "named",
+            useFactory: () => ({ config: memoryConfig }),
+          }),
+        ],
+        "named",
+      );
+
+      await expect(connection.raw("select 1")).rejects.toThrow();
+    });
+
+    it("destroys a named registerAsync connection when useClass returns no name", async function () {
+      @Injectable()
+      class OptionsFactory implements ObjectionModuleOptionsFactory {
+        createObjectionModuleOptions(): ObjectionModuleOptions {
+          return { config: memoryConfig };
+        }
+      }
+
+      const connection = await closeAndGetConnection(
+        [ObjectionCoreModule.registerAsync({ name: "named", useClass: OptionsFactory })],
+        "named",
+      );
+
+      await expect(connection.raw("select 1")).rejects.toThrow();
+    });
+
+    it("destroys an unnamed registerAsync connection when the factory returns a name", async function () {
+      const connection = await closeAndGetConnection([
+        ObjectionCoreModule.registerAsync({
+          useFactory: () => ({ name: "ignored", config: memoryConfig }),
+        }),
+      ]);
+
+      await expect(connection.raw("select 1")).rejects.toThrow();
     });
   });
 });
