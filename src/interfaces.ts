@@ -28,10 +28,10 @@ export interface ObjectionModuleAsyncOptions extends Pick<
   name?: ObjectionModuleOptions["name"];
   useExisting?: Type<ObjectionModuleOptionsFactory>;
   useClass?: Type<ObjectionModuleOptionsFactory>;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  // oxlint-disable-next-line typescript/no-explicit-any
   inject?: any[];
   useFactory?(
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    // oxlint-disable-next-line typescript/no-explicit-any
     ...args: any[]
   ): Promise<ObjectionModuleOptions> | ObjectionModuleOptions;
 }

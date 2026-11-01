@@ -129,7 +129,7 @@ export class ObjectionCoreModule implements OnApplicationShutdown {
     if (options.useFactory) {
       return {
         provide: OBJECTION_MODULE_OPTIONS,
-        // eslint-disable-next-line @typescript-eslint/unbound-method
+        // oxlint-disable-next-line typescript/unbound-method
         useFactory: options.useFactory,
         inject: options.inject || [],
       };
