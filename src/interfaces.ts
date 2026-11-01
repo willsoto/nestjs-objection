@@ -1,5 +1,4 @@
-import { Type } from "@nestjs/common";
-import { ModuleMetadata } from "@nestjs/common/interfaces";
+import { ModuleMetadata, Type } from "@nestjs/common";
 import { Knex } from "knex";
 import { Model } from "objection";
 export interface ObjectionModuleOptions {
@@ -18,8 +17,10 @@ export interface ObjectionModuleOptionsFactory {
   ): Promise<ObjectionModuleOptions> | ObjectionModuleOptions;
 }
 
-export interface ObjectionModuleAsyncOptions
-  extends Pick<ModuleMetadata, "imports"> {
+export interface ObjectionModuleAsyncOptions extends Pick<
+  ModuleMetadata,
+  "imports"
+> {
   /**
    * The name for this connection if more than one database connection is required.
    * This field is **required** if you use multiple connetions.
