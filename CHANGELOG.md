@@ -10,6 +10,13 @@
 
 * Drop support for Nest v7
 
+## [9.1.0](https://github.com/willsoto/nestjs-objection/compare/v9.0.0...v9.1.0) (2026-11-01)
+
+
+### Features
+
+* support nestjs 12 ([8d1a6e7](https://github.com/willsoto/nestjs-objection/commit/8d1a6e713a136ca5ea02d01ec9eb39cc38fbc964))
+
 ## [8.1.2](https://github.com/willsoto/nestjs-objection/compare/v8.1.1...v8.1.2) (2023-09-29)
 
 
