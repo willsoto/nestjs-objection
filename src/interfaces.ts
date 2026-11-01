@@ -17,10 +17,7 @@ export interface ObjectionModuleOptionsFactory {
   ): Promise<ObjectionModuleOptions> | ObjectionModuleOptions;
 }
 
-export interface ObjectionModuleAsyncOptions extends Pick<
-  ModuleMetadata,
-  "imports"
-> {
+export interface ObjectionModuleAsyncOptions extends Pick<ModuleMetadata, "imports"> {
   /**
    * The name for this connection if more than one database connection is required.
    * This field is **required** if you use multiple connetions.

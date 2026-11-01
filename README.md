@@ -124,11 +124,7 @@ export class DatabaseModule {}
 
 ```ts
 import { Inject, Injectable } from "@nestjs/common";
-import {
-  HealthCheckError,
-  HealthIndicator,
-  HealthIndicatorResult,
-} from "@nestjs/terminus";
+import { HealthCheckError, HealthIndicator, HealthIndicatorResult } from "@nestjs/terminus";
 import { Connection, KNEX_CONNECTION } from "@willsoto/nestjs-objection";
 
 @Injectable()

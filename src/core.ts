@@ -11,11 +11,7 @@ import {
 import { ModuleRef } from "@nestjs/core";
 import { Knex, knex } from "knex";
 import { Model } from "objection";
-import {
-  KNEX_CONNECTION,
-  OBJECTION_BASE_MODEL,
-  OBJECTION_MODULE_OPTIONS,
-} from "./constants";
+import { KNEX_CONNECTION, OBJECTION_BASE_MODEL, OBJECTION_MODULE_OPTIONS } from "./constants";
 import {
   Connection,
   ObjectionModuleAsyncOptions,
@@ -55,18 +51,12 @@ export class ObjectionCoreModule implements OnApplicationShutdown {
 
     return {
       module: ObjectionCoreModule,
-      providers: [
-        objectionModuleOptions,
-        objectionBaseModelProvider,
-        knexConnectionProvider,
-      ],
+      providers: [objectionModuleOptions, objectionBaseModelProvider, knexConnectionProvider],
       exports: [objectionBaseModelProvider, knexConnectionProvider],
     };
   }
 
-  public static registerAsync(
-    options: ObjectionModuleAsyncOptions = {},
-  ): DynamicModule {
+  public static registerAsync(options: ObjectionModuleAsyncOptions = {}): DynamicModule {
     const connectionToken = options.name || KNEX_CONNECTION;
 
     const knexConnectionProvider: FactoryProvider = {
@@ -96,18 +86,12 @@ export class ObjectionCoreModule implements OnApplicationShutdown {
     return {
       module: ObjectionCoreModule,
       imports: options.imports,
-      providers: [
-        ...asyncProviders,
-        knexConnectionProvider,
-        objectionBaseModelProvider,
-      ],
+      providers: [...asyncProviders, knexConnectionProvider, objectionBaseModelProvider],
       exports: [objectionBaseModelProvider, knexConnectionProvider],
     };
   }
 
-  private static createAsyncProviders(
-    options: ObjectionModuleAsyncOptions,
-  ): Provider[] {
+  private static createAsyncProviders(options: ObjectionModuleAsyncOptions): Provider[] {
     if (options.useExisting || options.useFactory) {
       return [this.createAsyncOptionsProvider(options)];
     } else if (!options.useClass) {
@@ -123,9 +107,7 @@ export class ObjectionCoreModule implements OnApplicationShutdown {
     ];
   }
 
-  private static createAsyncOptionsProvider(
-    options: ObjectionModuleAsyncOptions,
-  ): Provider {
+  private static createAsyncOptionsProvider(options: ObjectionModuleAsyncOptions): Provider {
     if (options.useFactory) {
       return {
         provide: OBJECTION_MODULE_OPTIONS,
@@ -138,9 +120,7 @@ export class ObjectionCoreModule implements OnApplicationShutdown {
     const inject = options.useClass || options.useExisting;
 
     if (!inject) {
-      throw new Error(
-        "Invalid configuration. Must provide useFactory, useClass or useExisting",
-      );
+      throw new Error("Invalid configuration. Must provide useFactory, useClass or useExisting");
     }
 
     return {
@@ -148,9 +128,7 @@ export class ObjectionCoreModule implements OnApplicationShutdown {
       async useFactory(
         optionsFactory: ObjectionModuleOptionsFactory,
       ): Promise<ObjectionModuleOptions> {
-        const opts = await optionsFactory.createObjectionModuleOptions(
-          options.name,
-        );
+        const opts = await optionsFactory.createObjectionModuleOptions(options.name);
 
         return opts;
       },

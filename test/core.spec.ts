@@ -3,16 +3,9 @@ import { Test, TestingModule } from "@nestjs/testing";
 import { Knex } from "knex";
 import { Model } from "objection";
 import { afterAll, beforeAll, describe, expect, it, vi } from "vitest";
-import {
-  KNEX_CONNECTION,
-  OBJECTION_BASE_MODEL,
-  OBJECTION_MODULE_OPTIONS,
-} from "../src/constants";
+import { KNEX_CONNECTION, OBJECTION_BASE_MODEL, OBJECTION_MODULE_OPTIONS } from "../src/constants";
 import { ObjectionCoreModule } from "../src/core";
-import {
-  ObjectionModuleOptions,
-  ObjectionModuleOptionsFactory,
-} from "../src/interfaces";
+import { ObjectionModuleOptions, ObjectionModuleOptionsFactory } from "../src/interfaces";
 
 describe("ObjectionCoreModule", function () {
   let testingModule: TestingModule;
@@ -183,9 +176,7 @@ describe("ObjectionCoreModule", function () {
         ],
       }).compile();
 
-      expect(
-        ModuleOptionsFactory.prototype.createObjectionModuleOptions,
-      ).toHaveBeenCalled();
+      expect(ModuleOptionsFactory.prototype.createObjectionModuleOptions).toHaveBeenCalled();
     });
   });
 });
