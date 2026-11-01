@@ -4,7 +4,7 @@
 [![NPM downloads](https://img.shields.io/npm/dt/@willsoto/nestjs-objection.svg)](https://www.npmjs.com/package/@willsoto/nestjs-objection)
 ![](https://github.com/willsoto/nestjs-objection/workflows/tests/badge.svg)
 
-<!-- prettier-ignore-start -->
+<!-- oxfmt-ignore-start -->
 
 <!-- toc -->
 
@@ -21,7 +21,7 @@
 
 <!-- tocstop -->
 
-<!-- prettier-ignore-end -->
+<!-- oxfmt-ignore-end -->
 
 ## Description
 

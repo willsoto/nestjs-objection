@@ -1,21 +1,17 @@
 pre-commit:
   commands:
-    lint-ts:
-      glob: "*.ts"
+    lint:
+      glob: "*.{ts,js,mjs}"
       stage_fixed: true
-      run: pnpm exec eslint --fix {staged_files}
-    format-ts:
-      glob: "*.ts"
+      run: pnpm exec oxlint --fix {staged_files}
+    format:
+      glob: "*.{ts,js,mjs,json,md,yaml,yml}"
       stage_fixed: true
-      run: pnpm exec prettier --write {staged_files}
-    format-md-yaml:
-      glob: "*.{md,yaml,yml}"
-      stage_fixed: true
-      run: pnpm exec prettier --write {staged_files}
+      run: pnpm exec oxfmt {staged_files}
     readme-toc:
       glob: "README.md"
       stage_fixed: true
-      run: pnpm exec markdown-toc -i {staged_files} && pnpm exec prettier --write {staged_files}
+      run: pnpm exec markdown-toc -i {staged_files} && pnpm exec oxfmt {staged_files}
 
 commit-msg:
   commands:
