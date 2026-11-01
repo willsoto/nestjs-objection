@@ -72,16 +72,9 @@
     "knex": "^2.0.0 || ^3.0.0",
     "objection": "^3.0.0 || ^4.0.0"
   },
-  "packageManager": "pnpm@10.34.7",
+  "packageManager": "pnpm@12.17.0",
   "volta": {
     "node": "24.22.0",
-    "pnpm": "10.34.7"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@nestjs/core",
-      "lefthook",
-      "sqlite3"
-    ]
+    "pnpm": "12.17.0"
   }
 }
