@@ -82,12 +82,8 @@ describe("when registering multiple connections", function () {
     });
 
     it("created tables", async function () {
-      await expect(
-        connection1.schema.hasTable(Book.tableName),
-      ).resolves.toEqual(false);
-      await expect(
-        connection2.schema.hasTable(Author.tableName),
-      ).resolves.toEqual(false);
+      await expect(connection1.schema.hasTable(Book.tableName)).resolves.toEqual(false);
+      await expect(connection2.schema.hasTable(Author.tableName)).resolves.toEqual(false);
     });
   });
 
@@ -166,12 +162,8 @@ describe("when registering multiple connections", function () {
     });
 
     it("created tables", async function () {
-      await expect(
-        connection1.schema.hasTable(Book.tableName),
-      ).resolves.toEqual(false);
-      await expect(
-        connection2.schema.hasTable(Author.tableName),
-      ).resolves.toEqual(false);
+      await expect(connection1.schema.hasTable(Book.tableName)).resolves.toEqual(false);
+      await expect(connection2.schema.hasTable(Author.tableName)).resolves.toEqual(false);
     });
   });
 });

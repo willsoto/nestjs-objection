@@ -1,10 +1,7 @@
 import { DynamicModule, Module, Provider } from "@nestjs/common";
 import { Model } from "objection";
 import { ObjectionCoreModule } from "./core";
-import {
-  ObjectionModuleAsyncOptions,
-  ObjectionModuleOptions,
-} from "./interfaces";
+import { ObjectionModuleAsyncOptions, ObjectionModuleOptions } from "./interfaces";
 
 @Module({})
 export class ObjectionModule {
@@ -16,9 +13,7 @@ export class ObjectionModule {
     };
   }
 
-  public static registerAsync(
-    options: ObjectionModuleAsyncOptions,
-  ): DynamicModule {
+  public static registerAsync(options: ObjectionModuleAsyncOptions): DynamicModule {
     return {
       module: ObjectionModule,
       imports: [ObjectionCoreModule.registerAsync(options)],
