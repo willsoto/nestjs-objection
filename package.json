@@ -35,18 +35,18 @@
   "devDependencies": {
     "@commitlint/cli": "21.2.4",
     "@commitlint/config-conventional": "21.2.4",
-    "@nestjs/common": "12.4.0",
-    "@nestjs/core": "12.4.0",
-    "@nestjs/testing": "12.4.0",
+    "@nestjs/common": "12.5.0",
+    "@nestjs/core": "12.5.0",
+    "@nestjs/testing": "12.5.0",
     "@types/node": "26.6.6",
     "@vitest/coverage-v8": "^5.0.0",
     "knex": "3.3.0",
     "lefthook": "^2.1.4",
     "markdown-toc": "1.2.0",
     "objection": "4.4.3",
-    "oxfmt": "0.77.0",
-    "oxlint": "1.92.0",
-    "oxlint-tsgolint": "7.0.2006",
+    "oxfmt": "0.78.0",
+    "oxlint": "1.93.0",
+    "oxlint-tsgolint": "7.0.2007",
     "reflect-metadata": "0.2.2",
     "rimraf": "6.1.4",
     "rxjs": "7.8.2",
@@ -66,8 +66,8 @@
     ]
   },
   "volta": {
-    "node": "26.13.0",
-    "pnpm": "12.18.0"
+    "node": "26.13.1",
+    "pnpm": "12.21.0"
   },
-  "packageManager": "pnpm@12.18.0"
+  "packageManager": "pnpm@12.21.0"
 }
